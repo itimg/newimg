@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-CN" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则 | 云梦泽</title>
+<meta name="theme-color" content="#f9f9f9" />
+<meta name="keywords" content="Clash订阅转换" />
+<meta name="description" content="项目地址 clash  sub-web  subconverter  &nbsp; 准备工作 VPS/服务器  域名+域名解析服务商 比如（cloudflare） 安装nodejs和yarn centos安装命令   	yum update -y  	yum install -y curl wget sudo nodejs git..." />
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/"/> 
+<meta property="og:title" content="自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则 | 云梦泽">
+<meta property="og:description" content="项目地址 clash  sub-web  subconverter  &nbsp; 准备工作 VPS/服务器  域名+域名解析服务商 比如（cloudflare） 安装nodejs和yarn centos安装命令   	yum update -y  	yum install -y curl wget sudo nodejs git...">
+<meta property="og:image" content="https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png">
+<meta property="og:site_name" content="云梦泽">
+<link rel="shortcut icon" href="https://www.mffxz.com/wp-content/uploads/2021/08/161925.png">
+<link rel="apple-touch-icon" href="https://www.mffxz.com/wp-content/uploads/2021/08/161925-e1635064015167.png">
+
+<!-- 按排名排列的搜索引擎优化数学专业版 - https://s.rankmath.com/home -->
+<meta name="description" content="自建clash订阅转换 最全的Clash分流规则订阅平台自行搭建 关联本地Sub-Web前端搭建/SubConverter后端搭建/节点转换"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则 - 云梦泽" />
+<meta property="og:description" content="自建clash订阅转换 最全的Clash分流规则订阅平台自行搭建 关联本地Sub-Web前端搭建/SubConverter后端搭建/节点转换" />
+<meta property="og:url" content="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/" />
+<meta property="og:site_name" content="云梦泽" />
+<meta property="article:tag" content="Clash订阅转换" />
+<meta property="article:section" content="Linux" />
+<meta property="og:updated_time" content="2021-10-24T13:52:07+08:00" />
+<meta property="og:image" content="https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png" />
+<meta property="og:image:secure_url" content="https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png" />
+<meta property="og:image:width" content="768" />
+<meta property="og:image:height" content="409" />
+<meta property="og:image:alt" content="自建Clash订阅转换" />
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则 - 云梦泽" />
+<meta name="twitter:description" content="自建clash订阅转换 最全的Clash分流规则订阅平台自行搭建 关联本地Sub-Web前端搭建/SubConverter后端搭建/节点转换" />
+<meta name="twitter:image" content="https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["Organization","Person"],"@id":"https://www.mffxz.com/#person","name":"\u4e91\u68a6\u6cfd","url":"https://www.yygbk.com","logo":{"@type":"ImageObject","@id":"https://www.mffxz.com/#logo","url":"https://www.mffxz.com/wp-content/uploads/2021/08/161925.png","caption":"\u4e91\u68a6\u6cfd","inLanguage":"zh-CN","width":"80","height":"80"},"image":{"@id":"https://www.mffxz.com/#logo"}},{"@type":"WebSite","@id":"https://www.mffxz.com/#website","url":"https://www.mffxz.com","name":"\u4e91\u68a6\u6cfd","publisher":{"@id":"https://www.mffxz.com/#person"},"inLanguage":"zh-CN"},{"@type":"ImageObject","@id":"https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png","url":"https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png","width":"2465","height":"1313","inLanguage":"zh-CN"},{"@type":"Person","@id":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#author","name":"\u4e91\u68a6\u6cfd","image":{"@type":"ImageObject","@id":"https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=96&amp;d=mm&amp;r=g","url":"https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=96&amp;d=mm&amp;r=g","caption":"\u4e91\u68a6\u6cfd","inLanguage":"zh-CN"},"sameAs":["http://www.gjkey.com"]},{"@type":"WebPage","@id":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#webpage","url":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/","name":"\u81ea\u5efaClash\u8ba2\u9605\u8f6c\u6362\uff0cSub-Web\u524d\u7aef\u642d\u5efa\u6559\u7a0b+SubConverter\u540e\u7aef\u642d\u5efa\u6559\u7a0b\uff0c\u66f4\u6362ACL4SSR\u8fdc\u7a0b\u89c4\u5219 - \u4e91\u68a6\u6cfd","datePublished":"2021-10-08T13:15:19+08:00","dateModified":"2021-10-24T13:52:07+08:00","author":{"@id":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#author"},"isPartOf":{"@id":"https://www.mffxz.com/#website"},"primaryImageOfPage":{"@id":"https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png"},"inLanguage":"zh-CN"},{"@type":"NewsArticle","headline":"\u81ea\u5efaClash\u8ba2\u9605\u8f6c\u6362\uff0cSub-Web\u524d\u7aef\u642d\u5efa\u6559\u7a0b+SubConverter\u540e\u7aef\u642d\u5efa\u6559\u7a0b\uff0c\u66f4\u6362ACL4SSR\u8fdc\u7a0b\u89c4\u5219 - \u4e91\u68a6\u6cfd","keywords":"\u81ea\u5efaClash\u8ba2\u9605\u8f6c\u6362,\u66f4\u6362ACL4SSR\u8fdc\u7a0b\u89c4\u5219,Sub-Web\u524d\u7aef\u642d\u5efa\u6559\u7a0b,SubConverter\u540e\u7aef\u642d\u5efa\u6559\u7a0b,Clash\u8ba2\u9605\u8f6c\u6362,ACL4SSR\u89c4\u5219,v2ray\u8f6c\u6362clash,ss\u8f6c\u6362clash,ssr\u8f6c\u6362clash,Sub-Web\u642d\u5efa,subconverter\u642d\u5efa\u6559\u7a0b","datePublished":"2021-10-08T13:15:19+08:00","dateModified":"2021-10-24T13:52:07+08:00","author":{"@id":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#author"},"publisher":{"@id":"https://www.mffxz.com/#person"},"description":"\u81ea\u5efaclash\u8ba2\u9605\u8f6c\u6362 \u6700\u5168\u7684Clash\u5206\u6d41\u89c4\u5219\u8ba2\u9605\u5e73\u53f0\u81ea\u884c\u642d\u5efa \u5173\u8054\u672c\u5730Sub-Web\u524d\u7aef\u642d\u5efa/SubConverter\u540e\u7aef\u642d\u5efa/\u8282\u70b9\u8f6c\u6362","copyrightYear":"2021","copyrightHolder":{"@id":"https://www.mffxz.com/#person"},"name":"\u81ea\u5efaClash\u8ba2\u9605\u8f6c\u6362\uff0cSub-Web\u524d\u7aef\u642d\u5efa\u6559\u7a0b+SubConverter\u540e\u7aef\u642d\u5efa\u6559\u7a0b\uff0c\u66f4\u6362ACL4SSR\u8fdc\u7a0b\u89c4\u5219 - \u4e91\u68a6\u6cfd","@id":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#richSnippet","isPartOf":{"@id":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#webpage"},"image":{"@id":"https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png"},"inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#webpage"}}]}</script>
+<!-- /排名 数学 单词 新闻 SEO 插件 -->
+
+
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.18.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+		<link rel='stylesheet' id='iconfont-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/iconfont.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome4-css'  href='//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/v4-shims.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/bootstrap.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='lightbox-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/jquery.fancybox.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/style.min.css?ver=3.1009' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/jquery.min.js?ver=3.1009' id='jquery-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+/* <![CDATA[ */ 
+        function loadFunc(func) {var oldOnload = window.onload;if(typeof window.onload != "function"){window.onload = func;}else{window.onload = function(){oldOnload();func();}}} 
+        /* ]]> */
+</script>
+<link rel="alternate" type="application/json+oembed" href="https://www.mffxz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mffxz.com%2F%25e8%2587%25aa%25e5%25bb%25baclash%25e8%25ae%25a2%25e9%2598%2585%25e8%25bd%25ac%25e6%258d%25a2sub-web%25e5%2589%258d%25e7%25ab%25af%25e6%2590%25ad%25e5%25bb%25ba%25e6%2595%2599%25e7%25a8%258b%25e5%2592%258csubconverter%25e5%2590%258e%25e7%25ab%25af%25e6%2590%25ad%25e5%25bb%25ba%25e6%2595%2599%25e7%25a8%258b%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.mffxz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mffxz.com%2F%25e8%2587%25aa%25e5%25bb%25baclash%25e8%25ae%25a2%25e9%2598%2585%25e8%25bd%25ac%25e6%258d%25a2sub-web%25e5%2589%258d%25e7%25ab%25af%25e6%2590%25ad%25e5%25bb%25ba%25e6%2595%2599%25e7%25a8%258b%25e5%2592%258csubconverter%25e5%2590%258e%25e7%25ab%25af%25e6%2590%25ad%25e5%25bb%25ba%25e6%2595%2599%25e7%25a8%258b%2F&#038;format=xml" />
+<!-- Analytics by WP-Statistics v13.1 - https://wp-statistics.com/ -->
+<script>var WP_Statistics_http = new XMLHttpRequest();WP_Statistics_http.open('GET', 'https://www.mffxz.com/wp-json/wp-statistics/v2/hit?_=1635693232&_wpnonce=79df79be62&wp_statistics_hit_rest=yes&browser=未知&platform=未知&version=未知&referred=https://www.mffxz.com/{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E8{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}87{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AA{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E5{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}BB{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}BAclash{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E8{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AE{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}A2{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E9{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}98{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}85{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E8{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}BD{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AC{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E6{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}8D{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}A2sub-web{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E5{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}89{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}8D{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E7{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AB{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AF{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E6{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}90{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AD{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E5{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}BB{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}BA{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E6{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}95{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}99{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E7{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}A8{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}8B{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E5{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}92{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}8Csubconverter{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E5{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}90{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}8E{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E7{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AB{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AF{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E6{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}90{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}AD{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E5{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}BB{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}BA{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E6{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}95{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}99{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}E7{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}A8{ed3977bbf52eb0f6eb2aebe874fe931818881b4d8f9c53b6cfd060a3baa880c4}8B/&ip=75.119.139.141&exclusion_match=yes&exclusion_reason=CrawlerDetect&ua=WP Rocket/Preload&track_all=1&timestamp=1635722032&current_page_type=post&current_page_id=648&search_query&page_uri=/%E8%87%AA%E5%BB%BAclash%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2sub-web%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E5%92%8Csubconverter%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/&user_id=0', true);WP_Statistics_http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");WP_Statistics_http.send(null);</script>
+<link rel="amphtml" href="https://www.mffxz.com/%E8%87%AA%E5%BB%BAclash%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2sub-web%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E5%92%8Csubconverter%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/amp/"><!-- 自定义代码 -->
+<!-- end 自定义代码 -->
+</head> 
+<body class="post-template-default single single-post postid-648 single-format-standard io-grey-mode" >
+<script type="text/javascript">
+    var default_c = "io-grey-mode";
+    var night = document.cookie.replace(/(?:(?:^|.*;\s*)io_night_mode\s*\=\s*([^;]*).*$)|^.*$/, "$1"); 
+    if(night == "1"){
+        document.body.classList.remove("io-black-mode");
+        document.body.classList.add(default_c);
+    }else if(night == "0"){
+        document.body.classList.remove(default_c);
+        document.body.classList.add("io-black-mode");
+    }
+    </script> <div id="loading"><style>
+    .loader{--size:32px;--duration:800ms;width:32px;transform-style:preserve-3d;transform-origin:50% 50%;transform:rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);position:relative}
+    .loader .box{width:32px;height:32px;transform-style:preserve-3d;position:absolute;top:0;left:0}
+    .loader .box:nth-child(1){transform:translate(100%,0);animation:box1 800ms linear infinite}
+    .loader .box:nth-child(2){transform:translate(0,100%);animation:box2 800ms linear infinite}
+    .loader .box:nth-child(3){transform:translate(100%,100%);animation:box3 800ms linear infinite}
+    .loader .box:nth-child(4){transform:translate(200%,0);animation:box4 800ms linear infinite}
+    .loader .box > div{--translateZ:calc(var(--size) / 2);--rotateY:0deg;--rotateX:0deg;background:#f65c5c;width:100%;height:100%;transform:rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));position:absolute;top:auto;right:auto;bottom:auto;left:auto}
+    .loader .box > div:nth-child(1){top:0;left:0}
+    .loader .box > div:nth-child(2){background:#f21414;right:0;--rotateY:90deg}
+    .loader .box > div:nth-child(3){background:#f54444;--rotateX:-90deg}
+    .loader .box > div:nth-child(4){background:rgba(165,100,100,.15);top:0;left:0;--translateZ:calc(var(--size) * 3 * -1)}
+    @keyframes box1{0%,50%{transform:translate(100%,0)}
+    100%{transform:translate(200%,0)}
+    }@keyframes box2{0%{transform:translate(0,100%)}
+    50%{transform:translate(0,0)}
+    100%{transform:translate(100%,0)}
+    }@keyframes box3{0%,50%{transform:translate(100%,100%)}
+    100%{transform:translate(0,100%)}
+    }@keyframes box4{0%{transform:translate(200%,0)}
+    50%{transform:translate(200%,100%)}
+    100%{transform:translate(100%,100%)}
+    }
+</style>
+<div class="loader">
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div></div>   <div class="page-container">
+
+
+        <div id="sidebar" class="sticky sidebar-nav fade mini-sidebar">
+            <div class="modal-dialog h-100  sidebar-nav-inner">
+                <div class="sidebar-logo border-bottom border-color">
+                    <!-- logo -->
+                    <div class="logo overflow-hidden">
+                                                <a href="https://www.mffxz.com" class="logo-expanded">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/08/161925.png" height="40" class="logo-light" alt="云梦泽">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/08/161925.png" height="40" class="logo-dark d-none" alt="云梦泽">
+                        </a>
+                        <a href="https://www.mffxz.com" class="logo-collapsed">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" height="40" class="logo-light" alt="云梦泽">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" height="40" class="logo-dark d-none" alt="云梦泽">
+                        </a>
+                    </div>
+                    <!-- logo end -->
+                </div>
+                <div class="sidebar-menu flex-fill">
+                    <div class="sidebar-scroll" >
+                        <div class="sidebar-menu-inner">
+                            <ul>
+                                                                <li class="sidebar-item top-menu">
+                                    <a href="javascript:;" class="  change-href">
+                                        <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                        <span>站点推荐</span>
+                                    </a>
+                                    <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                    <ul>
+                                                                            </ul>
+                                </li> 
+                                                                            <li class="sidebar-item">
+                                                <a href="https://www.mffxz.com" target="">
+                                                    <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                    <span>首页</span>
+                                                </a>
+                                            </li> 
+                                                                                <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-133" class="" data-change="https://www.mffxz.com/#term-133">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>ACGLN</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-43" class=""><span>常用</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-132" class=""><span>动漫</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-134" class=""><span>漫画</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-135" class=""><span>轻小说</span></a>
+                                                </li>
+                                                                                        </ul>
+                                        </li>
+                                                                        <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-20" class="" data-change="https://www.mffxz.com/#term-20">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>活动促销</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-21" class=""><span>游戏活动</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-26" class=""><span>虚拟物品</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-27" class=""><span>实体物品</span></a>
+                                                </li>
+                                                                                        </ul>
+                                        </li>
+                                                                        <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-1" class="" data-change="https://www.mffxz.com/#term-1">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>建站相关</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-6" class=""><span>实用教程</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-19" class=""><span>常用脚本</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-13" class=""><span>CDN</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-14" class=""><span>VPS</span></a>
+                                                </li>
+                                                                                        </ul>
+                                        </li>
+                                                                        <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-8" class="" data-change="https://www.mffxz.com/#term-8">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>其他</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                                                                            <li>
+                                                    <a href="https://tz.ttt.bz/" target="">
+                                                        <span>探针</span>
+                                                    </a>
+                                                </li> 
+                                                                                                <li>
+                                                    <a href="https://www.mffxz.com/mibiao" target="">
+                                                        <span>米表</span>
+                                                    </a>
+                                                </li> 
+                                                                                            </ul>
+                                        </li>
+                                 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top py-2 border-color">
+                    <div class="flex-bottom">
+                        <ul> 
+                            Array 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content flex-fill page">
+		<div id="header" class="page-header sticky">
+			<div class="navbar navbar-expand-md">
+                <div class="container-fluid p-0">
+
+                    <a href="https://www.mffxz.com" class="navbar-brand d-md-none" title="云梦泽">
+						<img width="36" height="36" src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" class="logo-light" alt="云梦泽">
+						<img width="36" height="36" src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" class="logo-dark d-none" alt="云梦泽">
+                    </a>
+                    
+                    <div class="collapse navbar-collapse order-2 order-md-1">
+                        <div class="header-mini-btn">
+                            <label>
+                                <input id="mini-button" type="checkbox" >
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> 
+                                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55"></path>
+                                    <path class="line--2" d="M0 50h80"></path>
+                                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45"></path>
+                                </svg>
+                            </label>
+                        
+                        </div>
+                        						<ul class="navbar-nav site-menu mr-4">
+                             
+						</ul>
+                    </div>
+                    
+                    <ul class="nav navbar-menu text-xs order-1 order-md-2">
+                                                                        						<li class="nav-item d-md-none mobile-menu ml-3 ml-md-4">
+							<a href="javascript:" id="sidebar-switch" data-toggle="modal" data-target="#sidebar"><i class="iconfont icon-classification icon-2x"></i></a>
+						</li>
+                    </ul>
+				</div>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+<div id="content" class="container my-3 my-md-4">
+    <nav class="text-xs mb-3 mb-md-4"  aria-label="breadcrumb"><i class="iconfont icon-home"></i> <a class="crumbs" href="https://www.mffxz.com/">首页</a><i class="text-danger px-1">•</i><a href="https://www.mffxz.com/websiterelated/">建站相关</a><i class="text-danger px-1">•</i><a href="https://www.mffxz.com/websiterelated/tutorials/">实用教程</a><i class="text-danger px-1">•</i><a href="https://www.mffxz.com/websiterelated/tutorials/linux/" rel="category tag">Linux</a><i class="text-danger px-1">•</i><a href="https://www.mffxz.com/websiterelated/" rel="category tag">建站相关</a><i class="text-danger px-1">•</i><span aria-current="page">自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则</span></nav>    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel card">
+            <div class="card-body">
+                <div class="panel-header mb-4">
+                                        <h1 class="h3 mb-3">自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则</h1>
+                    <div class="d-flex flex-fill text-muted text-sm pb-4 border-bottom border-t">
+                    <span class="mr-3 d-none d-sm-block"><a href="https://www.mffxz.com/websiterelated/tutorials/linux/"><i class="iconfont icon-classification"></i> Linux</a></span>                    <span class="mr-3 d-none d-sm-block"><i class="iconfont icon-time"></i> 3周前</span>
+                    <span class="mr-3"><a href="https://www.mffxz.com/author/1/" title="云梦泽"><i class="iconfont icon-user-circle"></i> 云梦泽</a></span>
+                    <div class="flex-fill"></div>
+                                        <span class="mr-3"><a class="smooth-n" href="#comments"> <i class="iconfont icon-comment"></i> 0</a></span>
+                    
+                <span class="mr-3"><a class="btn-like btn-link-like " href="javascript:;" data-action="post_like" data-id="648"><i class="iconfont icon-like"></i> <span class="like-count">0</span></a></span>                    </div>
+                </div>
+                                <div class="panel-body single mt-2"> 
+                    <h2>项目地址</h2>
+<p><span><a href="https://github.com/Dreamacro/clash" target="_blank" rel="nofollow noopener" class="external">clash</a></span></p>
+<p><a href="https://github.com/CareyWang/sub-web" target="_blank" rel="nofollow noopener" class="external"><span>sub-web</span></a></p>
+<p><span><a href="https://github.com/tindy2013/subconverter" target="_blank" rel="nofollow noopener" class="external">subconverter</a></span></p>
+<p>&nbsp;</p>
+<h2>准备工作</h2>
+<p>VPS/服务器</p>
+<p>域名+域名解析服务商 比如（cloudflare）</p>
+<h2>安装nodejs和yarn</h2>
+<p>centos安装命令</p>
+<ol class="linenums">
+<li class="L0"><span class="pln">yum update </span><span class="pun">&#8211;</span><span class="pln">y</span></li>
+<li class="L1"><span class="pln">yum install </span><span class="pun">&#8211;</span><span class="pln">y curl wget sudo nodejs git</span></li>
+<li class="L2"><span class="pln">npm install </span><span class="pun">&#8211;</span><span class="pln">g cnpm </span><span class="pun">&#8212;</span><span class="pln">registry</span><span class="pun">=</span><span class="pln">https</span><span class="pun">:</span><span class="com">//registry.npm.taobao.org</span></li>
+<li class="L2"><span class="pln">cnpm install </span><span class="pun">&#8211;</span><span class="pln">g yarn</span></li>
+</ol>
+<p>ubuntu/debian安装命令</p>
+<ol>
+<li><span>apt update &amp;&amp; </span><span>apt-get upgrade</span></li>
+<li><span>apt-get install -y curl wget sudo nodejs git </span></li>
+<li><span>npm install -g cnpm &#8211;registry=https://registry.npm.taobao.org</span></li>
+<li><span>cnpm install -g yarn</span></li>
+</ol>
+<h2>搭建Sub-Web</h2>
+<p><span>拉取 sub-web 程序，并进入 sub-web 文件夹</span></p>
+<ol>
+<li class="L0"><span class="pln">git clone https</span><span class="pun">:</span><span class="com">//github.com/CareyWang/sub-web.git</span></li>
+<li class="L1"><span class="pln">cd </span><span class="kwd">sub</span><span class="pun">&#8211;</span><span class="pln">web</span></li>
+</ol>
+<p>构建依赖项，构建的过程较长</p>
+<ol class="linenums">
+<li class="L0"><span class="pln">yarn install</span></li>
+</ol>
+<p>运行客户端以进行本地开发。</p>
+<ol class="linenums">
+<li class="L0"><span class="pln">yarn serve</span></li>
+</ol>
+<h2>更换远程规则</h2>
+<p><span>在 <span style="color: #ff0000;">/root/</span>sub-web/src/views/Subconverter.vue 中找到 remoteConfig: [，敲下回车，插入下面内容（大约在第258行左右）</span></p>
+<ul>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR”</span><span class="pun">,</span></li>
+<li><span class="pln">options</span><span class="pun">:</span> <span class="pun">[</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online 默认版 分组比较全 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_AdblockPlus 更多去广告 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_AdblockPlus.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_NoAuto 无自动测速 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_NoReject 无广告拦截规则 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Mini 精简版 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Mini_AdblockPlus.ini 精简版 更多去广告 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Mini_NoAuto.ini 精简版 不带自动测速 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_NoAuto.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Mini_Fallback.ini 精简版 带故障转移 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_Fallback.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Mini_MultiMode.ini 精简版 自动测速、故障转移、负载均衡 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Full 全分组 重度用户使用 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Full_NoAuto.ini 全分组 无自动测速 重度用户使用 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Full_AdblockPlus 全分组 重度用户使用 更多去广告 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Online_Full_Netflix 全分组 重度用户使用 奈飞全量 (与Github同步)”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span></li>
+<li><span class="str">“https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Netflix.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR 本地 默认版 分组比较全”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Mini 本地 精简版”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_Mini.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Mini_NoAuto.ini 本地 精简版+无自动测速”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_Mini_NoAuto.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_Mini_Fallback.ini 本地 精简版+fallback”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_Mini_Fallback.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_BackCN 本地 回国”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_BackCN.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_NoApple 本地 无苹果分流”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_NoApple.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_NoAuto 本地 无自动测速 “</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_NoAuto.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_NoAuto_NoApple 本地 无自动测速&amp;无苹果分流”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_NoAuto_NoApple.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_NoMicrosoft 本地 无微软分流”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_NoMicrosoft.ini”</span></li>
+<li><span class="pun">},</span></li>
+<li><span class="pun">{</span></li>
+<li><span class="pln">label</span><span class="pun">:</span> <span class="str">“ACL4SSR_WithGFW 本地 GFW列表”</span><span class="pun">,</span></li>
+<li><span class="kwd">value</span><span class="pun">:</span> <span class="str">“config/ACL4SSR_WithGFW.ini”</span></li>
+<li><span class="pun">}</span></li>
+<li><span class="pun">]</span></li>
+<li><span class="pun">},</span></li>
+</ul>
+<h2>打包项目</h2>
+<p>输入以下命令对项目进行打包</p>
+<ol>
+<li class="L0"><span class="pln">yarn build</span></li>
+</ol>
+<p><span>打包完成后，会在 /root/sub-web 下面会生成一个 dist 目录，这个目录即为网页的发布目录</span></p>
+<ol>
+<li class="hljs-ln-line">VUE_APP_BOT_LINK：                                              TG链接，即点击前端网页TG图标会跳转的地址</li>
+<li class="hljs-ln-line">VUE_APP_BACKEND_RELEASE：                               后端项目地址，无需修改</li>
+<li class="hljs-ln-line">VUE_APP_SUBCONVERTER_REMOTE_CONFIG：     远程配置，无需修改</li>
+<li class="hljs-ln-line">VUE_APP_SUBCONVERTER_DEFAULT_BACKEND： API后端地址，请修改成我们自己想用的转换网址</li>
+<li class="hljs-ln-line">VUE_APP_MYURLS_DEFAULT_BACKEND：              短链接后端，如果你有自己的短链转换服务，可修改</li>
+<li class="hljs-ln-line">VUE_APP_CONFIG_UPLOAD_BACKEND：                文本托管后端，如果你有自己的，可修改</li>
+</ol>
+<p>预览效果</p>
+<img data-src="https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png" src="https://www.mffxz.com/wp-content/themes/onenav/images/t.png" alt="" width="2465" height="1313" class="alignnone size-full wp-image-650" title="自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则 MMVDU4XXJVQOSIDBFXY 自建Clash订阅转换,更换ACL4SSR远程规则,Sub-Web前端搭建教程,SubConverter后端搭建教程,Clash订阅转换,ACL4SSR规则,v2ray转换clash,ss转换clash,ssr转换clash,Sub-Web搭建,subconverter搭建教程">
+<p>&nbsp;</p>
+<h2>搭建SubConverter</h2>
+<p>&nbsp;</p>
+<h3>下载并解压后端程序</h3>
+<p><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cd </span></span><span style="color: #ff0000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">/root</span></span></span></span></p>
+<div class="hljs-ln-line"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">wget https://github.com/tindy2013/subconverter/releases/download/</span></span><span style="color: #ff0000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">V0.7.1</span></span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">/subconverter_linux64.tar.gz</span></span></div>
+<div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div>
+<div class="hljs-ln-line"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">tar -zxvf subconverter_linux64.tar.gz</span></span></div>
+<h3><span>修改配置文件参数</span></h3>
+<p><span>修改 /root/subconverter/pref.ini 文件   找到下面的参数进行修改</span></p>
+<ol>
+<li><span class="hljs-attr" style="color: #ff0000;">api_access_token</span><span><span style="color: #ff0000;">=</span>abcdefg                          #随意设置自己知道就行</span></li>
+<li class="hljs-ln-line"><span class="hljs-attr" style="color: #ff0000;"><span class="hljs-comment">managed_config_prefix</span></span><span class="hljs-comment"><span style="color: #ff0000;">=</span>https://后端域名    #设置成我们刚刚解析的后端域名</span></li>
+<li class="hljs-ln-line"><span style="color: #ff0000;"><span class="hljs-attr"><span class="hljs-comment">listen</span></span><span class="hljs-comment">=</span></span><span class="hljs-number"><span class="hljs-comment">127.0</span></span><span class="hljs-comment">.</span><span class="hljs-number"><span class="hljs-comment">0.1</span></span><span class="hljs-comment">                                            #这里改成 </span><span class="hljs-number"><span class="hljs-comment">127.0</span></span><span class="hljs-comment">.</span><span class="hljs-number"><span class="hljs-comment">0.1</span></span><span class="hljs-comment"> 进行反代</span></li>
+</ol>
+<h3><span>创建服务进程设置开机自启动</span></h3>
+<p>找到目录 <span>/etc/systemd/system 创建一个名为 <code>sub.service</code> 的文件，在文件中输入以下内容保存即可</span></p>
+<ol>
+<li class="L0"><span class="pun">[</span><span class="typ">Unit</span><span class="pun">]</span></li>
+<li class="L1"><span class="typ">Description</span><span class="pun">=</span><span class="pln">A API </span><span class="typ">For</span><span class="pln"> </span><span class="typ">Subscription</span><span class="pln"> </span><span class="typ">Convert</span></li>
+<li class="L2"><span class="typ">After</span><span class="pun">=</span><span class="pln">network</span><span class="pun">.</span><span class="pln">target</span></li>
+<li class="L3"><span class="pln"> </span></li>
+<li class="L4"><span class="pun">[</span><span class="typ">Service</span><span class="pun">]</span></li>
+<li class="L5"><span class="typ">Type</span><span class="pun">=</span><span class="pln">simple</span></li>
+<li class="L6"><span class="typ">ExecStart</span><span class="pun">=</span><span class="str">/root/</span><span class="pln">subconverter</span><span class="pun">/</span><span class="pln">subconverter</span></li>
+<li class="L7"><span class="typ">WorkingDirectory</span><span class="pun">=</span><span class="str">/root/</span><span class="pln">subconverter</span></li>
+<li class="L8"><span class="typ">Restart</span><span class="pun">=</span><span class="pln">always</span></li>
+<li class="L9"><span class="typ">RestartSec</span><span class="pun">=</span><span class="lit">10</span></li>
+<li class="L0"><span class="pln"> </span></li>
+<li class="L1"><span class="pun">[</span><span class="typ">Install</span><span class="pun">]</span></li>
+<li class="L2"><span class="typ">WantedBy</span><span class="pun">=</span><span class="pln">multi</span><span class="pun">&#8211;</span><span class="pln">user</span><span class="pun">.</span><span class="pln">target</span></li>
+</ol>
+<h4><span>设置开机自启</span></h4>
+<ol></ol>
+<ol>
+<li class="L0"><span class="pln">systemctl daemon</span><span class="pun">&#8211;</span><span class="pln">reload</span></li>
+<li class="L1"><span class="pln">systemctl start </span><span class="kwd">sub</span></li>
+<li class="L2"><span class="pln">systemctl enable </span><span class="kwd">sub</span></li>
+<li class="L3"><span class="pln">systemctl status </span><span class="kwd">sub</span></li>
+</ol>
+<h4>在项目目录中安装构建依赖项</h4>
+<ol class="linenums">
+<li class="L0"><span class="pln"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">yarn install</span></span></span></li>
+</ol>
+<h4>运行项目</h4>
+<ol class="linenums">
+<li><span class="pln"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">yarn serve</span></span></span></li>
+</ol>
+<img data-src="https://www.mffxz.com/wp-content/uploads/2021/10/VX72JO0R2PV2ZWC4CEQDB.png" src="https://www.mffxz.com/wp-content/themes/onenav/images/t.png" alt="" width="542" height="209" class="alignnone size-full wp-image-649" title="自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则 VX72JO0R2PV2ZWC4CEQDB 自建Clash订阅转换,更换ACL4SSR远程规则,Sub-Web前端搭建教程,SubConverter后端搭建教程,Clash订阅转换,ACL4SSR规则,v2ray转换clash,ss转换clash,ssr转换clash,Sub-Web搭建,subconverter搭建教程">
+<p><span>到目前为止，通过浏览器访问 <a href="http://服务器ip:8080" target="_blank" rel="nofollow noopener" class="external">http://服务器ip:8080</a></span><span>  可</span><span>以进行对前端 sub-web 的预览了</span></p>
+<h2>修改项目默认后端地址</h2>
+<p><span>找到 backendOptions: （通常在 257 行），替换后面的 <a href="http://127.0.0.1:25500/sub?" target="_blank" rel="nofollow noopener" class="external">http://127.0.0.1:25500/sub</a></span><span><a href="http://127.0.0.1:25500/su" target="_blank" rel="nofollow noopener" class="external">?</a> 为</span><br />
+<span class="external-link"><a class="external no-external-link" href="https://xn--6qq24eowb01gxq2c6sf/sub" target="_blank" rel="nofollow noopener">https://你的前端域名/sub<span>?</span></a></span></p>
+<p>&nbsp;</p>
+<p>根据注释和自身需要进行修改即可，到目前为止整个项目基本都已经安装完成了</p>
+<p>&nbsp;</p>
+<h2><span>Caddy 网页反代</span></h2>
+<p>安装命令</p>
+<ol>
+<li><span class="hljs-attribute"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">wget </span></span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">-N &#8212;</span></span></span><span class="hljs-literal"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">no</span></span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">-check-certificate https://raw.githubusercontent.com/seal0207/caddy_install/master/caddy_install.sh &amp;&amp; chmod +x caddy_install.sh &amp;&amp; bash caddy_install.sh</span></span></span></li>
+</ol>
+<p><span>配置caddy,输入以下命令</span></p>
+<div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div>
+<ol>
+<li>echo &#8221;<br />
+https://后端域名 {<br />
+gzip<br />
+proxy / 127.0.0.1:25500 {<br />
+websocket<br />
+header_upstream Host {host}<br />
+header_upstream X-Real-IP {remote}<br />
+header_upstream X-Forwarded-For {remote}<br />
+header_upstream X-Forwarded-Port {server_port}<br />
+header_upstream X-Forwarded-Proto {scheme}<br />
+}<br />
+}<br />
+{1}<br />
+https://前端域名 {<br />
+root /root/sub-web/dist<br />
+gzip<br />
+} &#8221; &gt; /usr/local/caddy/Caddyfile</li>
+</ol>
+                                    </div>
+            
+                <div class="tags my-2">
+                    <i class="iconfont icon-tags"></i><a href="https://www.mffxz.com/tag/clash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2/" rel="tag" class="tag-clash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2 color-1">Clash订阅转换</a>                </div>
+                                 
+                            </div>
+            </div>
+            <div class="single-top-area text-sm card mt-4">
+                    
+                <div class="card-body"> 
+                    <strong>版权声明：</strong><a href="https://www.mffxz.com/author/1/" title="云梦泽">云梦泽</a> 发表于 2021年10月8日 下午1:15。<br/>
+                    <strong>转载请注明：</strong><a href="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/" rel="bookmark" title="本文固定链接 https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/">自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则 | 云梦泽</a>
+                </div>
+                    
+            </div>
+            <div class="near-navigation rounded mt-4 py-2">
+                                                <div class="nav previous border-right border-color">
+                    <a class="near-permalink" href="https://www.mffxz.com/wordpress%e4%bc%aa%e9%9d%99%e6%80%81%e8%a7%84%e5%88%99/">
+                    <span>上一篇</span>
+                    <h4 class="near-title">WordPress伪静态规则</h4>
+                    </a>
+                </div>
+                                                <div class="nav none border-left border-color" style="text-align: right;">
+                    <span>下一篇</span>
+                    <h4 class="near-title">没有更多了...</h4>    
+                </div>
+                            </div>
+            <h4 class="text-gray text-lg my-4"><i class="site-tag iconfont icon-book icon-lg mr-1" ></i>相关文章</h4>
+            <div class="row mb-n4 customize-site"> 
+                                <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/ubuntu%e5%ae%89%e8%a3%85vnc%e5%92%8c%e5%9b%be%e5%83%8f%e5%8c%96%e6%a1%8c%e9%9d%a2/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg44-scaled.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/ubuntu%e5%ae%89%e8%a3%85vnc%e5%92%8c%e5%9b%be%e5%83%8f%e5%8c%96%e6%a1%8c%e9%9d%a2/" target="_blank" class="list-title text-md overflowClip_2">
+                        Ubuntu安装vnc和图像化桌面                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/ubuntu%e5%ae%89%e8%a3%85vnc%e5%92%8c%e5%9b%be%e5%83%8f%e5%8c%96%e6%a1%8c%e9%9d%a2/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/%e8%85%be%e8%ae%af%e4%ba%91%e8%bd%bb%e9%87%8f%e5%ba%94%e7%94%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%b3%e9%97%ad%e7%9b%91%e6%8e%a7%e7%a8%8b%e5%ba%8f/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg56.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/%e8%85%be%e8%ae%af%e4%ba%91%e8%bd%bb%e9%87%8f%e5%ba%94%e7%94%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%b3%e9%97%ad%e7%9b%91%e6%8e%a7%e7%a8%8b%e5%ba%8f/" target="_blank" class="list-title text-md overflowClip_2">
+                        腾讯云轻量应用服务器关闭监控程序                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/%e8%85%be%e8%ae%af%e4%ba%91%e8%bd%bb%e9%87%8f%e5%ba%94%e7%94%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%b3%e9%97%ad%e7%9b%91%e6%8e%a7%e7%a8%8b%e5%ba%8f/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/ubuntu-%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%af%ad%e8%a8%80%e5%8c%85/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg45.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/ubuntu-%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%af%ad%e8%a8%80%e5%8c%85/" target="_blank" class="list-title text-md overflowClip_2">
+                        Ubuntu安装中文语言包                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/ubuntu-%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%af%ad%e8%a8%80%e5%8c%85/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/%e7%94%b2%e9%aa%a8%e6%96%87vps%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/屏幕截图-2021-05-16-142024.png"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/%e7%94%b2%e9%aa%a8%e6%96%87vps%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/" target="_blank" class="list-title text-md overflowClip_2">
+                        甲骨文VPS使用教程                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/%e7%94%b2%e9%aa%a8%e6%96%87vps%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/" target="_blank" class="list-title text-md overflowClip_2">
+                        查看Linux服务器虚拟化类型命令                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/wordpress%e4%bc%aa%e9%9d%99%e6%80%81%e8%a7%84%e5%88%99/" target="_blank" data-src="//iowen.gitee.io/ioimg/screenshots/2.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/wordpress%e4%bc%aa%e9%9d%99%e6%80%81%e8%a7%84%e5%88%99/" target="_blank" class="list-title text-md overflowClip_2">
+                        WordPress伪静态规则                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/wordpress%e4%bc%aa%e9%9d%99%e6%80%81%e8%a7%84%e5%88%99/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                        </div>
+            
+<!-- comments -->
+<div id="comments" class="comments">
+	<h2 id="comments-list-title" class="comments-title h5 mx-1 my-4">
+		<i class="iconfont icon-comment"></i>
+		<span class="noticom">
+			<a href="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/#respond" class="comments-title" >暂无评论</a> 
+		</span>
+	</h2> 
+	<div class="card">
+		<div class="card-body"> 
+						<div id="respond_box">
+				<div id="respond" class="comment-respond">
+										<form action="https://www.mffxz.com/wp-comments-post.php" method="post" id="commentform" class="text-sm mb-4">	
+						<div class="visitor-avatar d-flex flex-fill mb-2">
+														<img width="82" height="82" class="v-avatar rounded-circle" src="https://www.mffxz.com/wp-content/themes/onenav/images/gravatar.jpg">
+													</div> 
+						<div class="comment-textarea mb-3">
+							<textarea name="comment" id="comment" class="form-control" placeholder="输入评论内容..." tabindex="4" cols="50" rows="3"></textarea>
+						</div>
+							
+						<div id="comment-author-info" class="row  row-sm">
+							<div class="col-sm-6 col-lg-4 mb-3"><input type="text" name="author" id="author" class="form-control" value="" size="22" placeholder="昵称" tabindex="2"/></div>	
+							<div class="col-sm-6 col-lg-4 mb-3"><input type="text" name="email" id="email" class="form-control" value="" size="22" placeholder="邮箱" tabindex="3" /></div>
+							<div class="col-sm-12 col-lg-4 mb-3"><input type="text" name="url" id="url" class="form-control" value="" size="22"placeholder="网址"  tabindex="4" /></div>
+						</div>
+																		<div class="com-footer text-right">
+							<input type="hidden" id="_wpnonce" name="_wpnonce" value="d679ee7f10" /><input type="hidden" name="_wp_http_referer" value="/%E8%87%AA%E5%BB%BAclash%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2sub-web%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E5%92%8Csubconverter%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" />							<a rel="nofollow" id="cancel-comment-reply-link" style="display: none;" href="javascript:;" class="btn btn-light custom_btn-outline mx-2">再想想</a>
+														<input class="btn btn-dark custom_btn-d" name="submit" type="submit" id="submit" tabindex="5" value="发表评论"/>
+														<input type='hidden' name='comment_post_ID' value='648' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</div>
+					</form>
+										<div class="clear"></div>
+									</div>
+			</div>	
+						<div id="loading-comments"><span></span></div>
+						<div class="not-comment card"><div class="card-body nothing text-center color-d">暂无评论...</div></div>
+					
+		</div>	
+	</div>
+</div><!-- comments end -->
+        </div> 
+        <div class="sidebar sidebar-tools col-lg-4 pl-xl-4 d-none d-lg-block">
+            
+
+	
+						<div id="add-widgets" class="card widget_text bk">
+				
+				<div class="card-header">
+					<span><i class="iconfont icon-category mr-2"></i>添加小工具</span>
+				</div>
+				<div class="card-body text-sm">
+					<a href="https://www.mffxz.com/wp-admin/widgets.php" target="_blank">点此为“正文侧边栏”添加小工具</a>
+				</div>
+			</div>
+			
+	
+        </div>
+    </div> 
+</div>
+             
+            <footer class="main-footer footer-type-1 text-xs">
+                <div id="footer-tools" class="d-flex flex-column">
+                    <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
+                        <i class="iconfont icon-to-up"></i>
+                    </a>
+                                                                                <a href="javascript:" id="switch-mode" class="btn rounded-circle switch-dark-mode m-1" data-toggle="tooltip" data-placement="left" title="夜间模式">
+                        <i class="mode-ico iconfont icon-light"></i>
+                    </a>
+                </div>
+                <div class="footer-inner">
+                    <div class="footer-text">
+                                                Copyright © 2021 云梦泽  
+                                                &nbsp;&nbsp;Designed by <a href="https://www.iotheme.cn" target="_blank"><strong>一为</strong></a>&nbsp;&nbsp;                                            </div>
+                </div>
+            </footer>
+                    </div><!-- main-content end -->
+    </div><!-- page-container end -->
+<script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.mffxz.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/clipboard.min.js?ver=3.1009' id='clipboard-mini-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/popper.min.js?ver=3.1009' id='popper-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/bootstrap.min.js?ver=3.1009' id='bootstrap-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/theia-sticky-sidebar.js?ver=3.1009' id='sidebar-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/lazyload.min.js?ver=3.1009' id='lazyload-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/jquery.fancybox.min.js?ver=3.1009' id='lightbox-js-js'></script>
+<script type='text/javascript' id='appjs-js-extra'>
+/* <![CDATA[ */
+var theme = {"ajaxurl":"https:\/\/www.mffxz.com\/wp-admin\/admin-ajax.php","addico":"https:\/\/www.mffxz.com\/wp-content\/themes\/onenav\/images\/add.png","order":"asc","formpostion":"top","defaultclass":"io-grey-mode","isCustomize":"1","icourl":"https:\/\/api.iowen.cn\/favicon\/","icopng":".png","urlformat":"1","customizemax":"10","newWindow":"1","lazyload":"1","minNav":"1","loading":"1","hotWords":"baidu","classColumns":" col-sm-6 col-md-4 col-xl-5a col-xxl-6a ","apikey":"TWpBeU1USTJNemd4TWpZM0d6RS9oYkhWSE9UVjNiM1puU2xWck0xQjJNRnB6YmpaTWFsSTJaVWhsZFRoTg==","isHome":"","version":"3.1009"};
+var localize = {"liked":"\u60a8\u5df2\u7ecf\u8d5e\u8fc7\u4e86!","like":"\u8c22\u8c22\u70b9\u8d5e!","networkerror":"\u7f51\u7edc\u9519\u8bef --.","selectCategory":"\u4e3a\u4ec0\u4e48\u4e0d\u9009\u5206\u7c7b\u3002","addSuccess":"\u6dfb\u52a0\u6210\u529f\u3002","timeout":"\u8bbf\u95ee\u8d85\u65f6\uff0c\u8bf7\u518d\u8bd5\u8bd5\uff0c\u6216\u8005\u624b\u52a8\u586b\u5199\u3002","lightMode":"\u65e5\u95f4\u6a21\u5f0f","nightMode":"\u591c\u95f4\u6a21\u5f0f","editBtn":"\u7f16\u8f91","okBtn":"\u786e\u5b9a","urlExist":"\u8be5\u7f51\u5740\u5df2\u7ecf\u5b58\u5728\u4e86 --.","cancelBtn":"\u53d6\u6d88","successAlert":"\u6210\u529f","infoAlert":"\u4fe1\u606f","warningAlert":"\u8b66\u544a","errorAlert":"\u9519\u8bef","extractionCode":"\u7f51\u76d8\u63d0\u53d6\u7801\u5df2\u590d\u5236\uff0c\u70b9\u201c\u786e\u5b9a\u201d\u8fdb\u5165\u4e0b\u8f7d\u9875\u9762\u3002"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/app.min.js?ver=3.1009' id='appjs-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-includes/js/comment-reply.min.js?ver=5.8.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/comments-ajax.js?ver=3.1009' id='comments-ajax-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+ 
+<!-- 自定义代码 -->
+<!-- end 自定义代码 -->
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1635693232 -->

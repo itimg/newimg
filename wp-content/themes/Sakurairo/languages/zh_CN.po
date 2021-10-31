@@ -1,0 +1,650 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sakurairo\n"
+"POT-Creation-Date: 2021-08-24 18:20+0800\n"
+"PO-Revision-Date: 2021-08-24 18:20+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:18
+#, php-format
+msgid "page %s"
+msgstr "第 %s 页"
+
+#: 404.php:47
+msgid "return to previous page"
+msgstr "返回上一页"
+
+#: 404.php:48
+msgid "return to home page"
+msgstr "返回首页"
+
+#: 404.php:51
+msgid "Don't worry, search in site?"
+msgstr "别着急，试试站内检索？"
+
+#: 404.php:54 footer.php:56 search.php:42
+msgid "Search..."
+msgstr "搜索..."
+
+#: archive.php:55 author.php:76 index.php:73
+msgid " Previous"
+msgstr " 更早的文章"
+
+#: comments.php:21
+msgid "view comments"
+msgstr "查看评论"
+
+#: comments.php:22 comments.php:27
+msgid " comment"
+msgstr " 条评论"
+
+#: comments.php:22 comments.php:27
+msgid " comments"
+msgstr " 条评论"
+
+#: comments.php:50
+msgid "no comment"
+msgstr "暂无评论"
+
+#: comments.php:61
+msgid "I'm not a robot"
+msgstr "我可不是机器人呢"
+
+#: comments.php:62
+msgid "Comment in private"
+msgstr "私密评论"
+
+#: comments.php:63
+msgid "Comment reply notify"
+msgstr "邮件通知"
+
+#: comments.php:71
+msgid "Leave a Reply to"
+msgstr "回复给"
+
+#: comments.php:72
+msgid "Cancel Reply"
+msgstr "取消回复"
+
+#: comments.php:73
+msgid "BiuBiuBiu~"
+msgstr "BiuBiuBiu~"
+
+#: comments.php:74
+msgid "You are a surprise that I will only meet once in my life"
+msgstr "你是我一生只会遇见一次的惊喜"
+
+#: comments.php:78
+msgid "Click me OωO"
+msgstr "戳我呀 OωO"
+
+#: comments.php:79
+msgid "Woooooow ヾ(≧∇≦*)ゝ"
+msgstr "嘿嘿嘿 ヾ(≧∇≦*)ゝ"
+
+#: comments.php:100
+msgid "Auto pull nickname and avatar with a QQ num. entered"
+msgstr "输入QQ号将自动拉取昵称和头像"
+
+#: comments.php:100
+msgid "Nickname or QQ number"
+msgstr "昵称或QQ号"
+
+#: comments.php:100
+msgid "Name* "
+msgstr "昵称 "
+
+#: comments.php:102
+msgid "You will receive notification by email"
+msgstr "你将收到回复通知"
+
+#: comments.php:102
+msgid "email"
+msgstr "邮箱"
+
+#: comments.php:102
+msgid "Must* "
+msgstr "必须* "
+
+#: comments.php:104
+msgid "Advertisement is forbidden 😀"
+msgstr "禁止小广告😀"
+
+#: comments.php:104
+msgid "Site"
+msgstr "网站"
+
+#: footer.php:70 footer.php:78
+msgid "Want to find something?"
+msgstr "想要找点什么呢？"
+
+#: footer.php:80
+msgid "Search"
+msgstr "搜索"
+
+#: footer.php:132
+msgid "Widgets"
+msgstr "小工具"
+
+#: functions.php:92
+msgid "Nav Menus"
+msgstr "导航菜单"
+
+#: functions.php:199 functions.php:210
+msgid "Ideas"
+msgstr "说说"
+
+#: functions.php:200
+msgid "Idea"
+msgstr "说说"
+
+#: functions.php:201 functions.php:202
+msgid "Publish New Idea"
+msgstr "发布新说说"
+
+#: functions.php:203
+msgid "Edit Idea"
+msgstr "编辑说说"
+
+#: functions.php:204
+msgid "New Idea"
+msgstr "新说说"
+
+#: functions.php:205
+msgid "View Idea"
+msgstr "查看说说"
+
+#: functions.php:206
+msgid "Search Idea"
+msgstr "搜索说说"
+
+#: functions.php:207
+msgid "Not Found Idea"
+msgstr "没有找到说说"
+
+#: functions.php:208
+msgid "No Idea in the Trash"
+msgstr "没有在垃圾桶的说说"
+
+#: functions.php:307
+msgid "Copied!"
+msgstr "复制成功！"
+
+#: functions.php:308
+msgid "Copy Code"
+msgstr "拷贝代码"
+
+#: functions.php:309
+msgid ""
+"Your cover API seems to not support Cross Origin Access. In this case, Cover "
+"Cache won't take effect."
+msgstr "你的封面API好像不支持跨域调用,这种情况下缓存是不会生效的哦。"
+
+#: functions.php:310
+msgid "Commiting...."
+msgstr "提交中...."
+
+#: functions.php:311
+msgid "Succeed"
+msgstr "成功"
+
+#: functions.php:312
+msgid "10 files max per request"
+msgstr "每次上传上限为10张"
+
+#: functions.php:313
+msgid ""
+"5 MB max per file.\n"
+"\n"
+"「{0}」\n"
+"\n"
+"This image is too large~Please reupload!"
+msgstr "图片上传大小限制为5 MB\\n\\n「{0}」\\n\\n这张图太大啦~请重新上传噢！"
+
+#: functions.php:314
+msgid "Uploading..."
+msgstr "上传中..."
+
+#: functions.php:315
+msgid "Uploaded successfully~"
+msgstr "上传成功~"
+
+#: functions.php:316
+msgid ""
+"Upload failed!\n"
+"File Name=> {0}\n"
+"code=> {1}\n"
+"{2}"
+msgstr "上传失败！\\n文件名=> {0}\\ncode=> {1}\\n{2}"
+
+#: functions.php:317
+msgid "Upload failed, please retry."
+msgstr "上传失败，请重试."
+
+#: functions.php:318
+msgid "Page Load failed. HTTP {0}"
+msgstr "页面加载出错了 HTTP {0}"
+
+#: functions.php:319
+msgid "Glad you come, but we've got nothing left."
+msgstr "很高兴你翻到这里，但是真的没有了..."
+
+#: functions.php:406 inc/theme_plus.php:191 layouts/authorprofile.php:11
+msgid "Author"
+msgstr "作者"
+
+#: functions.php:406
+msgid "Blogger"
+msgstr "博客作者"
+
+#: functions.php:412
+msgid "Location"
+msgstr "来自"
+
+#: functions.php:418
+msgid "Private"
+msgstr "私密"
+
+#: functions.php:420
+msgid "Yes"
+msgstr "是"
+
+#: functions.php:422
+msgid "No"
+msgstr "否"
+
+#: functions.php:425
+msgid "Edit"
+msgstr "编辑"
+
+#: functions.php:514
+msgid ""
+"Please install pulgin <a href=\"https://wordpress.org/plugins/wp-statistics/"
+"\" target=\"_blank\">WP-Statistics</a>"
+msgstr ""
+"请安装插件 <a href=\"https://wordpress.org/plugins/wp-statistics/\" target="
+"\"_blank\">WP-Statistics</a>"
+
+#: functions.php:544
+msgid "This guy is so lazy ╮(╯▽╰)╭"
+msgstr "这家伙好懒╮(╯▽╰)╭"
+
+#: functions.php:1213
+msgid "All expand/collapse"
+msgstr "全部展开/收缩"
+
+#: functions.php:1234
+msgid " "
+msgstr " "
+
+#: functions.php:1238
+msgid " post(s)"
+msgstr " 篇文章"
+
+#: functions.php:1261 functions.php:1264 inc/theme_plus.php:483
+msgid "Dashboard"
+msgstr "管理后台"
+
+#: functions.php:1492
+msgid "<b>ERROR</b>: This email domain (<b>@"
+msgstr "<b>错误</b>: 邮箱格式出错 (<b>@"
+
+#: functions.php:1591
+msgid "QQ"
+msgstr ""
+
+#: functions.php:1653
+msgid "Sidebar"
+msgstr "侧栏"
+
+#: functions.php:1783
+msgid ""
+"<b> For a better experience, please do not set <a href=\"/wp-admin/options-"
+"permalink.php\"> permalink </a> as plain. To do this, you may need to "
+"configure <a href=\"https://www.wpdaxue.com/wordpress-rewriterule.html\" "
+"target=\"_blank\"> pseudo-static </a>. </ b>"
+msgstr ""
+"<b> 为了更好的使用体验，请不要将<a href=\"/wp-admin/options-permalink.php\">"
+"固定链接</a>设置为朴素。为此，您可能需要配置<a href=\"https://www.wpdaxue."
+"com/wordpress-rewriterule.html\" target=\"_blank\">伪静态</a></b>"
+
+#: header.php:41
+#, php-format
+msgid "page %s "
+msgstr "第 %s 页 "
+
+#: inc/categories-images.php:45 inc/categories-images.php:66
+msgid "category/tag image"
+msgstr "分类/标签图像"
+
+#: inc/categories-images.php:48 inc/categories-images.php:68
+#: inc/categories-images.php:197
+msgid "add image"
+msgstr "添加图像"
+
+#: inc/categories-images.php:69 inc/categories-images.php:198
+msgid "remove image"
+msgstr "删除图像"
+
+#: inc/categories-images.php:211
+msgid "image"
+msgstr "图像"
+
+#: inc/categories-images.php:223
+msgid "no image"
+msgstr "暂无"
+
+#: inc/classes/Cache.php:70 inc/theme_plus.php:723
+msgid "The comment is private"
+msgstr "这是一条私密评论"
+
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "发布于 %s"
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "由 %s 写作"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr "在 分类%1$s中"
+
+#: inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr "在标签 %1$s中"
+
+#. translators: %s: post title
+#: inc/template-tags.php:65
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "<span class=\"screen-reader-text\"> 在 %s</span>中留言"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:72 tpl/content-page.php:35
+#, php-format
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+#: inc/theme_plus.php:61
+msgid " days ago"
+msgstr " 天前"
+
+#: inc/theme_plus.php:62
+msgid " hours ago"
+msgstr " 小时前"
+
+#: inc/theme_plus.php:63
+msgid " minutes ago"
+msgstr " 分钟前"
+
+#: inc/theme_plus.php:64
+msgid " seconds ago"
+msgstr " 秒前"
+
+#: inc/theme_plus.php:72
+msgid "Posted on "
+msgstr "发布于 "
+
+#: inc/theme_plus.php:131
+msgid "Please upgrade wordpress to version 4.4+"
+msgstr "请升级到4.4以上版本"
+
+#: inc/theme_plus.php:237
+msgid "dashboard"
+msgstr "管理后台"
+
+#: inc/theme_plus.php:239
+msgid "home"
+msgstr "主页"
+
+#: inc/theme_plus.php:246
+msgid "Login successful, "
+msgstr "登录成功， "
+
+#: inc/theme_plus.php:246
+msgid "seconds later automatically transfer to"
+msgstr "秒后自动转到"
+
+#: inc/theme_plus.php:269
+msgid "Change avatar"
+msgstr "更换头像"
+
+#: inc/theme_plus.php:270
+msgid "Hello, "
+msgstr "欢迎 "
+
+#: inc/theme_plus.php:274
+msgid "Home"
+msgstr "首页"
+
+#: inc/theme_plus.php:276
+msgid "Manage"
+msgstr "管理"
+
+#: inc/theme_plus.php:278
+msgid "Logout"
+msgstr "退出登录"
+
+#: inc/theme_plus.php:278
+msgid "Sign out? "
+msgstr "退出登录？ "
+
+#: inc/theme_plus.php:303 inc/theme_plus.php:358 inc/theme_plus.php:426
+#: tpl/content-single.php:20 tpl/single-image.php:18
+msgid "View"
+msgid_plural "Views"
+msgstr[0] "次阅读"
+
+#: inc/theme_plus.php:315 inc/theme_plus.php:373 inc/theme_plus.php:441
+#, php-format
+msgid "Search results for \" %s \""
+msgstr "关于“ %s ”的搜索结果"
+
+#: inc/theme_plus.php:421
+msgid "EDIT"
+msgstr "编辑"
+
+#: inc/theme_plus.php:484
+msgid "New post"
+msgstr "撰写文章"
+
+#: inc/theme_plus.php:486
+msgid "Profile"
+msgstr "个人资料"
+
+#: inc/theme_plus.php:487
+msgid "Sign out"
+msgstr "退出登录"
+
+#: layouts/post-nextprev.php:11
+msgid "Previous Post"
+msgstr "上一篇文章"
+
+#: layouts/post-nextprev.php:14
+msgid "Next Post"
+msgstr "下一篇文章"
+
+#: search.php:19
+#, php-format
+msgid "search result: %s"
+msgstr "搜索结果：%s"
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "NOTHING"
+msgstr "啥也没有呀"
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "1 Comment"
+msgstr "1 评论"
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "Comments"
+msgstr "条评论"
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "Comment Closed"
+msgstr "评论关闭"
+
+#: tpl/content-image.php:40 tpl/content-status.php:36 tpl/content-thumb.php:58
+#: tpl/content.php:40
+msgid "Hit"
+msgid_plural "Hits"
+msgstr[0] "热度"
+
+#: tpl/content-none.php:14
+msgid "There is nothing here！"
+msgstr "没有找到任何东西！"
+
+#: tpl/content-none.php:21
+#, php-format
+msgid ""
+"Ready to post your first article? <a href=\"%1$s\">Click here to start</a>."
+msgstr "准备好发布你的第一篇文章了么？ <a href=\"%1$s\">点击这里开始</a>。"
+
+#: tpl/content-none.php:25
+msgid "Didn't find what you want, look at the other ones."
+msgstr "没有找到你想要的，看看其他的吧。"
+
+#: tpl/content-none.php:43
+msgid "We didn't seem to find what you want. Maybe you can search for it."
+msgstr "我们似乎没有找到你想要的东西. 或许你可以搜索一下试试."
+
+#: tpl/content-page.php:24 tpl/content-single.php:29 tpl/single-image.php:28
+msgid "Pages:"
+msgstr "页面："
+
+#: user/page-bangumi.php:30 user/page-followVideos.php:29
+msgid "Please fill in the Bilibili UID in Sakura Options."
+msgstr "请在后台设置填写 Bilibili UID 后继续。"
+
+#: user/page-login.php:18
+msgid "Remember_Me"
+msgstr "记住我"
+
+#: user/page-register.php:14 user/page-register.php:16
+#: user/page-register.php:19 user/page-register.php:24
+#: user/page-register.php:26 user/page-register.php:29
+#: user/page-register.php:34 user/page-register.php:36
+#: user/page-register.php:43
+msgid "Error"
+msgstr "错误"
+
+#: user/page-register.php:14
+msgid "Please enter username."
+msgstr "请输入用户名。"
+
+#: user/page-register.php:16
+msgid "Invalid characters, please enter a valid username."
+msgstr "此用户名包含无效字符，请输入有效的用户名。"
+
+#: user/page-register.php:19
+msgid "This username has been registered."
+msgstr "该用户名已被注册。"
+
+#: user/page-register.php:24
+msgid "Please enter email address."
+msgstr "请填写电子邮件地址。"
+
+#: user/page-register.php:26
+msgid "Invalid email address."
+msgstr "电子邮件地址不正确。"
+
+#: user/page-register.php:29
+msgid "This email address has been registered."
+msgstr "该电子邮件地址已经被注册。"
+
+#: user/page-register.php:34
+msgid "Password length is at least 6 digits."
+msgstr "密码长度至少6位。"
+
+#: user/page-register.php:36
+msgid "Inconsistent password entered twice."
+msgstr "两次输入的密码不一致。"
+
+#: user/page-register.php:43
+msgid "Unable to complete registration request...Please contact"
+msgstr "无法完成注册请求... 请联系"
+
+#: user/page-register.php:43
+msgid "administrator"
+msgstr "管理员"
+
+#: user/page-register.php:70
+msgid "Sign up"
+msgstr "注册"
+
+#: user/page-register.php:77
+msgid "Success! Redirecting......"
+msgstr "注册成功！正在跳转......"
+
+#: user/page-register.php:82
+msgid "Registration is not open yet."
+msgstr "暂未开放注册。"
+
+#. Theme Name of the plugin/theme
+msgid "Sakurairo"
+msgstr "桜いろ"
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/mirai-mamori/Sakurairo"
+msgstr "https://github.com/mirai-mamori/Sakurairo"
+
+#. Description of the plugin/theme
+msgid ""
+"A colorful, Easy-to-use, Perfect Experience, and Powerful Customizable "
+"WordPress Theme (Based on Theme Sakura)"
+msgstr ""
+"一个多彩，轻松上手，体验完善，具有强大自定义功能的WordPress主题（基于Sakura主"
+"题）"
+
+#. Author of the plugin/theme
+msgid "Created by Fuukei"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://iro.tw/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "文章模版"
+msgstr "文章模版"
+
+#. Template Name of the plugin/theme
+msgid "友情链接模版"
+msgstr "友情链接模版"
+
+#. Template Name of the plugin/theme
+msgid "说说模版"
+msgstr "说说模版"

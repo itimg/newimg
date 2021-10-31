@@ -1,0 +1,6366 @@
+# Copyright (C) 2021 rank-math
+# This file is distributed under the same license as the rank-math package.
+msgid ""
+msgstr ""
+"Project-Id-Version: rank-math\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: 简体中文\n"
+"Last-Translator: 云梦泽\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
+"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-28 06:12+0000\n"
+"PO-Revision-Date: 2021-07-28 18:05+0000\n"
+"Language: zh_CN\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8"
+
+#. translators: WordPress Version
+msgid ""
+"You are using the outdated WordPress, please update it to version %s or "
+"higher."
+msgstr "您正在使用过时的WordPress，请将其更新到版本%或更高版本。"
+
+#. translators: PHP Version
+msgid ""
+"Rank Math requires PHP version %s or above. Please update PHP to run this "
+"plugin."
+msgstr "排名数学需要PHP版本%s或以上。请更新PHP以运行此插件。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Setup Wizard"
+msgstr "设置向导"
+
+#. translators: 1. Bold text 2. Bold text
+msgid ""
+"%1$s A filter to remove the Rank Math data from the database is present. "
+"Deactivating & Deleting this plugin will remove everything related to the "
+"Rank Math plugin. %2$s"
+msgstr "存在从数据库中删除排名数学数据的筛选器。停用和删除此插件将删除与排名数学插件相关的一切。%2$s"
+
+msgid "CAUTION:"
+msgstr "谨慎："
+
+msgid "This action is IRREVERSIBLE."
+msgstr "此操作不可逆转。"
+
+msgid "Getting Started"
+msgstr "开始"
+
+msgid "Documentation"
+msgstr "文档"
+
+msgid "Once Weekly"
+msgstr "每周一次"
+
+msgid "Rank Math"
+msgstr "排名 数学"
+
+#. translators: %s is a Rank Math link.
+msgid "Powered by %s"
+msgstr "由%s 供电"
+
+msgid "SEO Score"
+msgstr "搜索引擎优化分数"
+
+msgid "Show SEO Score on Front-end"
+msgstr "显示前端的 SEO 分数"
+
+msgid "Off"
+msgstr "关闭"
+
+msgid "On"
+msgstr "上"
+
+msgid "Home"
+msgstr "家"
+
+#. translators: Archive title
+#. translators: placeholder
+msgid "Archives for %s"
+msgstr "%s 的档案"
+
+#. translators: Search query term
+#. translators: placeholder
+msgid "Results for %s"
+msgstr "%s 的结果"
+
+msgid "404 Error: page not found"
+msgstr "404 错误：未找到页面"
+
+#. translators: placeholder is the site title.
+msgid "[%s] An update is available for Rank Math"
+msgstr "[%]排名数学可进行更新"
+
+msgid "Hello,"
+msgstr "你好"
+
+#. translators: placeholder is the site URL.
+msgid ""
+"This is an automated email to let you know that there is an update available "
+"for the Rank Math SEO plugin installed on: %s"
+msgstr "这是一个自动电子邮件，让您知道有一个更新可用于安装在排名数学SEO插件：%s"
+
+#. translators: placeholder is the new admin page URL.
+msgid ""
+"To ensure your site is always on the latest, most up-to-date version of Rank "
+"Math - we recommend logging into the admin area to update the plugin as soon "
+"as possible: %s"
+msgstr "为了确保您的网站始终处于最新、最新的排名数学版本上 - 我们建议登录到管理员区域，以便尽快更新插件：%"
+
+msgid ""
+"If you have any questions or experience any issues – our support team is at "
+"your disposal:"
+msgstr "如果您有任何问题或遇到任何问题-我们的支持团队随时可供您使用："
+
+msgid "https://support.rankmath.com/"
+msgstr "https://support.rankmath.com/"
+
+msgid "Rank Math Team"
+msgstr "排名 数学团队"
+
+msgid "Rank Math Free"
+msgstr "排名 数学 免费"
+
+msgid "https://rankmath.com/changelog/#free"
+msgstr "https://rankmath.com/changelog/#free"
+
+#. translators: placeholders are the old and new version numbers.
+msgid "%1$s: Old %2$s -> New %3$s | Changelog: %4$s"
+msgstr "%1$s： 旧 2$s - > 新 %3$s |更改日志： %4$s"
+
+msgid "Rank Math SEO"
+msgstr "排名 数学搜索引擎优化"
+
+msgid "Rank Math Dashboard"
+msgstr "排名 数学仪表板"
+
+msgid "Dashboard"
+msgstr "挡泥板"
+
+msgid "Homepage SEO"
+msgstr "主页搜索引擎优化"
+
+msgid "Edit Homepage SEO Settings"
+msgstr "编辑主页 SEO 设置"
+
+#. translators: Post Type Singular Name
+#. translators: Taxonomy Singular Name
+msgid "SEO Settings for %s"
+msgstr "%s 的搜索引擎优化设置"
+
+msgid "Edit default SEO settings for this post type"
+msgstr "编辑此帖子类型的默认 SEO 设置"
+
+msgid "Edit SEO settings for this archive page"
+msgstr "编辑此存档页的 SEO 设置"
+
+msgid "SEO Settings for Date Archives"
+msgstr "日期档案的 SEO 设置"
+
+msgid "SEO Settings for Search Page"
+msgstr "搜索页面的 SEO 设置"
+
+msgid "Edit SEO settings for the search results page"
+msgstr "编辑搜索结果页面的 SEO 设置"
+
+msgid "Mark this page"
+msgstr "标记此页面"
+
+msgid "As Pillar Content"
+msgstr "作为支柱内容"
+
+msgid "As NoIndex"
+msgstr "作为无因德克斯"
+
+msgid "As NoFollow"
+msgstr "作为无跟随"
+
+msgid "External Tools"
+msgstr "外部工具"
+
+msgid "Google PageSpeed"
+msgstr "谷歌页面速"
+
+msgid "Google PageSpeed Insights"
+msgstr "谷歌页面速见"
+
+msgid "Google Mobile-Friendly"
+msgstr "谷歌移动友好型"
+
+msgid "Google Mobile-Friendly Test"
+msgstr "谷歌移动友好测试"
+
+msgid "Google Rich Results (Mobile)"
+msgstr "谷歌丰富业绩（移动）"
+
+msgid "Google Rich Results Test - Googlebot Smartphone"
+msgstr "谷歌丰富结果测试 - 谷歌机器人智能手机"
+
+msgid "Google Rich Results (Desktop)"
+msgstr "谷歌丰富成果（桌面）"
+
+msgid "Google Rich Results Test - Googlebot Desktop"
+msgstr "谷歌丰富结果测试 - 谷歌机器人桌面"
+
+msgid "Google Cache"
+msgstr "谷歌缓存"
+
+msgid "See Google's cached version of your site"
+msgstr "查看谷歌缓存版本的网站"
+
+msgid "Facebook Debugger"
+msgstr "脸谱调试器"
+
+msgid "Facebook Sharing Debugger"
+msgstr "脸谱共享调试器"
+
+msgid "Modules"
+msgstr "模块"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid "Import &amp; Export"
+msgstr "进出口"
+
+msgid "Search Options"
+msgstr "搜索选项"
+
+msgid "Easy Mode"
+msgstr "简单模式"
+
+msgid "Advanced Mode"
+msgstr "高级模式"
+
+msgid "None"
+msgstr "没有"
+
+#. translators: sitename
+msgid "I just installed @RankMathSEO #WordPress Plugin. It looks great! %s"
+msgstr "我刚刚安装了@RankMathSEO #WordPress插件。它看起来很棒！% s"
+
+#. translators: sitename
+msgid "I just installed Rank Math SEO WordPress Plugin. It looks promising!"
+msgstr "我刚刚安装了排名数学SEO单词按插件。看起来很有希望！"
+
+msgid "SEO by Rank Math"
+msgstr "按排名数学分列的搜索引擎优化"
+
+msgid "Tweet"
+msgstr "鸣叫"
+
+msgid "Share"
+msgstr "共享"
+
+msgid "Help &amp; Support"
+msgstr "帮助和支持"
+
+msgid "Twitter username (without @)"
+msgstr "推特用户名（无@）"
+
+msgid "Facebook profile URL"
+msgstr "脸谱网址网址"
+
+msgid "Rank Math Overview"
+msgstr "排名 数学概述"
+
+msgid "Latest Blog Posts from Rank Math"
+msgstr "排名数学的最新博客文章"
+
+msgid "Error in fetching."
+msgstr "取取错误。"
+
+msgid "NEW"
+msgstr "新增功能"
+
+msgid "Blog"
+msgstr "博客"
+
+msgid "(opens in a new window)"
+msgstr "（在新窗口中打开）"
+
+msgid "Go Pro"
+msgstr "转到专业版"
+
+msgid ""
+"The canonical URL you entered does not seem to be a valid URL. Please double "
+"check it in the SEO meta box &raquo; Advanced tab."
+msgstr "您输入的规范网址似乎不是有效的URL。请在SEO元框»高级选项卡中仔细检查它。"
+
+msgid "Copy Link URL to Clipboard"
+msgstr "将链接网址复制到剪贴板"
+
+msgid "Insert Link in Content"
+msgstr "在内容中插入链接"
+
+msgid "You are not authorized to perform this action."
+msgstr "您未获授权执行此操作。"
+
+#. translators: placeholder is the plugin name.
+msgid ""
+"Hey, we noticed you've been using %s for more than two weeks now – that's "
+"awesome!"
+msgstr "嘿，我们注意到你已经使用了超过两个星期的%s了-这是真棒！"
+
+msgctxt "plugin name inside the review notice"
+msgid "Rank Math SEO"
+msgstr "排名 数学搜索引擎优化"
+
+msgid ""
+"Could you please do us a BIG favor and give it a rating on WordPress.org to "
+"help us spread the word and boost our motivation?"
+msgstr "你能帮我们一个大忙， 给它一个评级 WordPress.org， 以帮助我们传播这个词， 提高我们的动机？"
+
+msgid "Co-founder of Rank Math"
+msgstr "排名数学联合创始人"
+
+msgid "Yes, you deserve it"
+msgstr "是的，这是你应得的"
+
+msgid "No, maybe later"
+msgstr "不，也许以后吧"
+
+msgid "I already did"
+msgstr "我已经做了"
+
+#. translators: placeholder is a wp.org review link
+msgid ""
+"If you like Rank Math, please take a minute to rate it on WordPress.org: %s"
+msgstr "如果你喜欢排名数学，请花一分钟来评价它 WordPress.org：%s"
+
+msgid "Rate Rank Math SEO"
+msgstr "率排名数学搜索引擎优化"
+
+msgid ""
+"Hey, we noticed you've been using Rank Math SEO for more than two weeks now –"
+" <em>that's awesome!</em> <br>Could you please do us a BIG favor and give it "
+"a rating on WordPress to help us spread the word and boost our motivation?"
+msgstr ""
+"嘿，我们注意到你已经使用排名数学SEO两个多星期了-<em>那真棒！ </em> <br>"
+"你能帮我们一个大忙，并给它一个评级WordPress来帮助我们传播这个词，提高我们的动机？"
+
+msgid "I already did. Please don't show this message again."
+msgstr "我已经做了请不要再显示此消息。"
+
+msgid "Please use the correct format."
+msgstr "请使用正确的格式。"
+
+msgid "This field is required."
+msgstr "此字段是必需的。"
+
+msgid "Please enter a valid email address."
+msgstr "请输入有效的电子邮件地址。"
+
+msgid "Please enter a valid URL."
+msgstr "请输入有效的网址。"
+
+#. translators: plugin url
+msgid "Thank you for using <a href=\"%s\" target=\"_blank\">Rank Math</a>"
+msgstr "感谢您使用 <a href=\"%s\" target=\"_blank\">排名数学</a>"
+
+msgid "Insert/edit link"
+msgstr "插入/编辑链接"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Add Link"
+msgstr "添加链接"
+
+msgid "(no title)"
+msgstr "（无标题）"
+
+msgid "No matches found."
+msgstr "未找到匹配项。"
+
+msgid "Link selected."
+msgstr "选择链接。"
+
+msgid "Link inserted."
+msgstr "插入链接。"
+
+msgid "Add <code>rel=\"nofollow\"</code>"
+msgstr "添加<code>雷尔]\"不跟随\"</code>"
+
+msgid "Add <code>rel=\"sponsored\"</code>"
+msgstr "添加<code>雷尔]\"赞助\"</code>"
+
+msgid "Link Title"
+msgstr "链接标题"
+
+msgid "Snippet"
+msgstr "片段"
+
+msgid ""
+"Specify a maximum text-length, in characters, of a snippet for your page."
+msgstr "指定页面片段的最大文本长度（字符）。"
+
+msgid "Video Preview"
+msgstr "视频预览"
+
+msgid "Specify a maximum duration in seconds of an animated video preview."
+msgstr "在动画视频预览的几秒钟内指定最长持续时间。"
+
+msgid "Image Preview"
+msgstr "图像预览"
+
+msgid ""
+"Specify a maximum size of image preview to be shown for images on this page."
+msgstr "指定要显示此页面上图像的最大大小的图像预览。"
+
+msgid "Large"
+msgstr "大"
+
+msgid "Standard"
+msgstr "标准"
+
+msgid "Import & Export"
+msgstr "进出口"
+
+msgid ""
+"Are you sure you want to import settings into Rank Math? Don't worry, your "
+"current configuration will be saved as a backup."
+msgstr "您是否确定要将设置导入排名数学？别担心，您当前的配置将作为备份保存。"
+
+msgid ""
+"Are you sure you want to restore this backup? Your current configuration "
+"will be overwritten."
+msgstr "您是否确定要恢复此备份？您当前的配置将被覆盖。"
+
+msgid "Are you sure you want to delete this backup?"
+msgstr "您是否确定要删除此备份？"
+
+msgid "Are you sure you want erase all traces of this plugin?"
+msgstr "您是否确定要擦除此插件的所有痕迹？"
+
+#. translators: Plugin name
+msgid "Cleanup of %s data successfully done."
+msgstr "成功清理%的数据。"
+
+#. translators: Plugin name
+msgid "Cleanup of %s data failed."
+msgstr "百分比数据的清理失败。"
+
+msgid "Action not allowed."
+msgstr "不允许采取行动。"
+
+msgid "Unable to create backup this time."
+msgstr "这次无法创建备份。"
+
+#. translators: Backup formatted date
+#. translators: Snapshot formatted date
+msgid "Backup: %s"
+msgstr "备份：%"
+
+msgid "Backup created successfully."
+msgstr "成功创建备份。"
+
+msgid "No backup key found to delete."
+msgstr "未发现要删除的备份密钥。"
+
+msgid "Backup successfully deleted."
+msgstr "备份成功删除。"
+
+msgid "No backup key found to restore."
+msgstr "未找到恢复的备份密钥。"
+
+msgid "Backup does not exist."
+msgstr "不存在备份。"
+
+msgid "Backup restored successfully."
+msgstr "备份已成功恢复。"
+
+msgid ""
+"Settings successfully imported. Your old configuration has been saved as a "
+"backup."
+msgstr "设置成功导入。您的旧配置已保存为备份。"
+
+msgid "No settings found to be imported."
+msgstr "未发现任何设置为导入。"
+
+msgid "Settings could not be imported:"
+msgstr "无法导入设置："
+
+msgid "Settings could not be imported: Upload failed."
+msgstr "无法导入设置：上传失败。"
+
+#. translators: placeholder is the post type name.
+msgid ""
+"Rank Math has detected a new post type: %1$s. You may want to check the "
+"settings of the <a href=\"%2$s\">Titles &amp; Meta page</a>."
+msgstr "排名数学已检测到一个新的职位类型：%1$s.您可能需要检查 <a href=\"%2$s\">标题和元页面的</a>设置。"
+
+#. translators: placeholder is the post type names separated with commas.
+msgid ""
+"Rank Math has detected new post types: %1$s. You may want to check the "
+"settings of the <a href=\"%2$s\">Titles &amp; Meta page</a>."
+msgstr "排名数学已检测到新的帖子类型：%1$s。您可能需要检查 <a href=\"%2$s\">标题和元页面的</a>设置。"
+
+msgid ""
+"Please activate the WPML String Translation plugin to convert Rank Math "
+"Setting values in different languages."
+msgstr "请激活 WPML 字符串翻译插件，以以不同语言转换排名数学设置值。"
+
+msgid ""
+"<b>Rank Math Warning:</b> Changing the permalinks on a live, indexed site "
+"may result in serious loss of traffic if done incorrectly. Consider adding a "
+"new redirection from the old URL format to the new one."
+msgstr "<b>兰克数学警告：</b>如果做错了，更改实时索引网站上的永久链接可能会导致流量严重损失。考虑将旧 URL 格式的新重定向添加到新格式中。"
+
+msgid "Links"
+msgstr "链接"
+
+#. translators: Link to kb article
+msgid "Change how some of the links open and operate on your website. %s."
+msgstr "更改某些链接在您的网站上的打开和操作方式。% s."
+
+msgid "Learn More"
+msgstr "了解更多信息"
+
+msgid "Breadcrumbs"
+msgstr "面包屑"
+
+#. translators: Link to kb article
+msgid "Here you can set up the breadcrumbs function. %s"
+msgstr "在这里，您可以设置面包屑功能。% s"
+
+msgid "Learn more"
+msgstr "了解更多信息"
+
+msgid ""
+"Use the following code in your theme template files to display breadcrumbs."
+msgstr "在主题模板文件中使用以下代码来显示面包屑。"
+
+msgid "Webmaster Tools"
+msgstr "网站站长工具"
+
+#. translators: Link to kb article
+msgid "Enter verification codes for third-party webmaster tools. %s"
+msgstr "输入第三方网站站长工具的验证码。% s"
+
+msgid "Others"
+msgstr "别人"
+
+#. translators: Link to kb article
+msgid "Change some uncommon but essential settings here. %s."
+msgstr "在此处更改一些不同寻常但必不可少的设置。% s."
+
+msgid "Edit .htaccess"
+msgstr "编辑。赫塔切斯"
+
+#. translators: Link to kb article
+msgid "Edit the contents of your .htaccess file easily. %s."
+msgstr "轻松编辑您的.htaccess文件的内容。% s."
+
+msgid "SEO Settings"
+msgstr "搜索引擎优化设置"
+
+msgid "General Settings"
+msgstr "一般设置"
+
+msgid "Global Meta"
+msgstr "全球元"
+
+#. translators: Link to KB article
+msgid "Change Global meta settings that take effect across your website. %s."
+msgstr "更改在您的网站上生效的全球元设置。% s."
+
+msgid "Local SEO"
+msgstr "本地搜索引擎优化"
+
+#. translators: Redirection page url
+msgid ""
+"Optimize for local searches and Knowledge Graph using these settings. %s."
+msgstr "使用这些设置优化本地搜索和知识图。% s."
+
+msgid ""
+"Use the <code>[rank_math_contact_info]</code> shortcode to display contact "
+"information in a nicely formatted way. You should also claim your business "
+"on Google if you have not already."
+msgstr ""
+"使用<code>[rank_math_contact_info]</code>"
+"短代码以格式化良好的方式显示联系信息。如果您还没有在谷歌上申请您的业务，您也应该在谷歌上申请。"
+
+msgid "Social Meta"
+msgstr "社交元"
+
+#. translators: Link to social setting KB article
+msgid "Add social meta to your website's Schema for Knowledge Graph cards. %s."
+msgstr "将社交元添加到您网站的知识图卡示模式中。% s."
+
+msgid "Homepage"
+msgstr "主页"
+
+#. translators: Link to KB article
+msgid "Add SEO meta and OpenGraph details to your homepage. %s."
+msgstr "将 SEO 元和打开图详细信息添加到主页。% s."
+
+msgid "Authors"
+msgstr "作者"
+
+#. translators: Link to KB article
+msgid "Change SEO options related to the author archives. %s."
+msgstr "更改与作者档案相关的 SEO 选项。% s."
+
+msgid "Misc Pages"
+msgstr "密斯奇页面"
+
+#. translators: Link to KB article
+msgid ""
+"Customize SEO meta settings of pages like search results, 404s, etc. %s."
+msgstr "自定义搜索结果、404s等页面的SEO元设置。"
+
+msgid "SEO Titles &amp; Meta"
+msgstr "SEO 标题 » 元"
+
+msgid "Titles &amp; Meta"
+msgstr "标题 » 元"
+
+msgid "Post Types:"
+msgstr "帖子类型："
+
+msgid "Attachments"
+msgstr "附件"
+
+#. translators: 1. post type name 2. link
+#. translators: 1. taxonomy name 2. link
+msgid "Change Global SEO, Schema, and other settings for %1$s. %2$s"
+msgstr "更改全球搜索引擎优化、架构和其他设置，更改为 %1$s. %2$s"
+
+msgid "Post Formats"
+msgstr "后格式"
+
+msgid "Post Formats Archive"
+msgstr "后格式存档"
+
+msgid "Failed to backup .htaccess file. Please check file permissions."
+msgstr "未能备份。赫塔切斯文件。请检查文件权限。"
+
+msgid "Failed to update .htaccess file. Please check file permissions."
+msgstr "未能更新。赫塔切斯文件。请检查文件权限。"
+
+msgid ".htaccess file updated successfully."
+msgstr "。成功更新了任务文件。"
+
+msgid "Panel"
+msgstr "面板"
+
+msgid "Save Changes"
+msgstr "保存更改"
+
+msgid "Reset Options"
+msgstr "重置选项"
+
+msgid "Bulk Edit This Field"
+msgstr "批量编辑此字段"
+
+msgid "Save All Edits"
+msgstr "保存所有编辑"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "SEO Details"
+msgstr "搜索引擎优化详细信息"
+
+msgid "SEO Title"
+msgstr "SEO 标题"
+
+msgid "SEO Desc"
+msgstr "塞奥 · 德斯克"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Alternative Text"
+msgstr "替代文本"
+
+msgid "Save"
+msgstr "救"
+
+msgid "No Index"
+msgstr "无索引"
+
+msgid "Is Pillar"
+msgstr "是支柱"
+
+msgid "Focus Keyword"
+msgstr "焦点关键字"
+
+msgid "Keyword"
+msgstr "关键词"
+
+msgid "Not Set"
+msgstr "未设置"
+
+msgid "SEO Score: Good"
+msgstr "SEO 分数： 不错"
+
+msgid "SEO Score: Ok"
+msgstr "搜索引擎优化分数：确定"
+
+msgid "SEO Score: Bad"
+msgstr "SEO 分数： 坏"
+
+msgid "Focus Keyword Not Set"
+msgstr "焦点关键字未设置"
+
+msgid "Articles noindexed"
+msgstr "文章未表达"
+
+msgid "Pillar Content"
+msgstr "支柱内容"
+
+msgid "Rank Math Product Registration"
+msgstr "排名 数学产品注册"
+
+msgid "Return to dashboard"
+msgstr "返回仪表板"
+
+msgid "Rank Math plugin could not be connected."
+msgstr "排名数学插件无法连接。"
+
+msgid "Unable to connect Rank Math."
+msgstr "无法连接排名数学。"
+
+msgid "Skip Now"
+msgstr "立即跳过"
+
+msgid "Next"
+msgstr "下一个"
+
+msgid "Connect Your Account"
+msgstr "连接您的帐户"
+
+msgid "Connect FREE Account"
+msgstr "连接免费帐户"
+
+#. translators: Link to Free Account Benefits KB article
+msgid ""
+"By connecting your free account, you get keyword suggestions directly from "
+"Google when entering the focus keywords. Not only that, get access to our "
+"revolutionary SEO Analyzer inside WordPress that scans your website for SEO "
+"errors and suggest improvements. %s"
+msgstr ""
+"通过连接您的免费帐户，您在输入焦点关键字时会直接从 Google 获得关键字建议。不仅如此，请访问 WordPress 内部的革命性 SEO "
+"分析仪，该分析仪可扫描您的网站以了解 SEO 错误并建议改进。% s"
+
+msgid "Read more by following this link."
+msgstr "请按照此链接阅读更多内容。"
+
+msgid "Account Successfully Connected"
+msgstr "帐户成功连接"
+
+msgid "You have successfully activated Rank Math."
+msgstr "您已成功激活排名数学。"
+
+msgid "Preview"
+msgstr "预览"
+
+msgid "Desktop Preview"
+msgstr "桌面预览版"
+
+msgid "Mobile Preview"
+msgstr "移动预览"
+
+msgid "Click to enter permalink"
+msgstr "单击以输入永久链接"
+
+msgid "Click to enter custom title"
+msgstr "单击以输入自定义标题"
+
+msgid "Click to enter custom meta description"
+msgstr "单击以输入自定义元描述"
+
+msgid "Noindex robots meta is enabled"
+msgstr "启用了无功能机器人元"
+
+msgid ""
+"This page will not appear in search results. You can disable noindex in the "
+"Advanced tab."
+msgstr "此页面不会显示在搜索结果中。您可以在高级选项卡中禁用无指数。"
+
+msgid "Price range: "
+msgstr "价格范围："
+
+msgid "Calories: "
+msgstr "卡路里："
+
+#. translators: total reviews
+msgid "Rating: %s"
+msgstr "评分： % s"
+
+#. translators: total reviews
+msgid "%s reviews"
+msgstr "%的评论"
+
+msgid "Price"
+msgstr "价格"
+
+msgid "Price range"
+msgstr "价格范围"
+
+msgid "Cooking time"
+msgstr "烹饪时间"
+
+msgid "Calories"
+msgstr "卡路里"
+
+msgid "In Stock"
+msgstr "库存"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Location"
+msgstr "位置"
+
+msgid "Rating"
+msgstr "额定值"
+
+msgid "Out of stock"
+msgstr "库存"
+
+msgid "In stock"
+msgstr "库存"
+
+msgid "Requirements"
+msgstr "要求"
+
+msgid "Import"
+msgstr "进口"
+
+msgid "Your Site"
+msgstr "您的网站"
+
+msgid "Analytics"
+msgstr "分析学"
+
+msgid "Sitemaps"
+msgstr "站点图"
+
+msgid "Optimization"
+msgstr "优化"
+
+msgid "Ready"
+msgstr "准备"
+
+msgid "Role Manager"
+msgstr "角色经理"
+
+msgid "404 + Redirection"
+msgstr "404 + 重定向"
+
+msgid "Schema Markup"
+msgstr "示波标记"
+
+msgid "Advance Options"
+msgstr "预选方案"
+
+msgid "Deactivated"
+msgstr "关闭"
+
+msgid "Skip Step"
+msgstr "跳过步骤"
+
+#. translators: %s: product tag
+msgid "Products tagged &ldquo;%s&rdquo;"
+msgstr "标记为\"%\"的产品"
+
+#. translators: %s expands to the current page number
+msgid "Page %s"
+msgstr "页百分比"
+
+msgid ""
+"Search Engine Optimization by Rank Math PRO - https://s.rankmath.com/home"
+msgstr "按排名排列的搜索引擎优化数学专业版 - https://s.rankmath.com/home"
+
+msgid "Search Engine Optimization by Rank Math - https://s.rankmath.com/home"
+msgstr "按排名数学进行搜索引擎优化 - https://s.rankmath.com/home"
+
+msgid "Rank Math WordPress SEO plugin"
+msgstr "排名 数学 单词 新闻 SEO 插件"
+
+msgid "Address:"
+msgstr "地址："
+
+msgid "Hours:"
+msgstr "小时："
+
+msgid "Telephone"
+msgstr "电话"
+
+msgid "Email:"
+msgstr "电子邮件："
+
+msgid "Play icon"
+msgstr "播放图标"
+
+msgid "GIF icon"
+msgstr "GIF图标"
+
+msgid "Index"
+msgstr "指数"
+
+msgid ""
+"Instructs search engines to index and show these pages in the search results."
+msgstr "指示搜索引擎在搜索结果中索引和显示这些页面。"
+
+msgid ""
+"Prevents pages from being indexed and displayed in search engine result pages"
+msgstr "防止将页面索引并显示在搜索引擎结果页面中"
+
+msgid "No Follow"
+msgstr "无跟随"
+
+msgid "Prevents search engines from following links on the pages"
+msgstr "防止搜索引擎关注页面上的链接"
+
+msgid "No Archive"
+msgstr "无存档"
+
+msgid "Prevents search engines from showing Cached links for pages"
+msgstr "防止搜索引擎显示页面缓存链接"
+
+msgid "No Image Index"
+msgstr "无图像索引"
+
+msgid ""
+"Lets you specify that you do not want your pages to appear as the referring "
+"page for images that appear in image search results"
+msgstr "允许您指定不希望您的页面显示为图像搜索结果中显示的图像的参考页面"
+
+msgid "No Snippet"
+msgstr "无片段"
+
+msgid "Prevents a snippet from being shown in the search results"
+msgstr "防止在搜索结果中显示片段"
+
+msgid "Any"
+msgstr "任何"
+
+msgid "Article"
+msgstr "品"
+
+msgid "Book"
+msgstr "书"
+
+msgid "Course"
+msgstr "课程"
+
+msgid "Event"
+msgstr "事件"
+
+msgid "Job Posting"
+msgstr "职位发布"
+
+msgid "Music"
+msgstr "音乐"
+
+msgid "Product"
+msgstr "产品"
+
+msgid "Recipe"
+msgstr "食谱"
+
+msgid "Restaurant"
+msgstr "餐厅"
+
+msgid "Video"
+msgstr "视频"
+
+msgid "Person"
+msgstr "人"
+
+msgid "Service"
+msgstr "服务"
+
+msgid "Software Application"
+msgstr "软件应用程序"
+
+msgid "Review (Unsupported)"
+msgstr "评论（未支持）"
+
+msgid "301 Permanent Move"
+msgstr "301 永久移动"
+
+msgid "302 Temporary Move"
+msgstr "302 临时移动"
+
+msgid "307 Temporary Redirect"
+msgstr "307 临时重定向"
+
+msgid "410 Content Deleted"
+msgstr "410 内容已删除"
+
+msgid "451 Content Unavailable for Legal Reasons"
+msgstr "451 内容因法律原因不可用"
+
+msgid "Exact"
+msgstr "确切"
+
+msgid "Contains"
+msgstr "包含"
+
+msgid "Starts With"
+msgstr "从"
+
+msgid "End With"
+msgstr "结束与"
+
+msgid "Regex"
+msgstr "雷雷克斯"
+
+msgid "Customer Service"
+msgstr "顾客服务"
+
+msgid "Technical Support"
+msgstr "技术支持"
+
+msgid "Billing Support"
+msgstr "计费支持"
+
+msgid "Bill Payment"
+msgstr "账单付款"
+
+msgid "Sales"
+msgstr "销售"
+
+msgid "Reservations"
+msgstr "保留"
+
+msgid "Credit Card Support"
+msgstr "信用卡支持"
+
+msgid "Emergency"
+msgstr "紧急"
+
+msgid "Baggage Tracking"
+msgstr "行李追踪"
+
+msgid "Roadside Assistance"
+msgstr "路边援助"
+
+msgid "Package Tracking"
+msgstr "包跟踪"
+
+msgid "Worldwide"
+msgstr "全球"
+
+msgid "Argentina"
+msgstr "阿根廷"
+
+msgid "Australia"
+msgstr "澳大利亚"
+
+msgid "Austria"
+msgstr "奥地利"
+
+msgid "Belgium"
+msgstr "比利时"
+
+msgid "Brazil"
+msgstr "巴西"
+
+msgid "Canada"
+msgstr "加拿大"
+
+msgid "Chile"
+msgstr "智利"
+
+msgid "Colombia"
+msgstr "哥伦比亚"
+
+msgid "Czechia"
+msgstr "捷克"
+
+msgid "Denmark"
+msgstr "丹麦"
+
+msgid "Egypt"
+msgstr "埃及"
+
+msgid "Finland"
+msgstr "芬兰"
+
+msgid "France"
+msgstr "法国"
+
+msgid "Germany"
+msgstr "德国"
+
+msgid "Greece"
+msgstr "希腊"
+
+msgid "Hong Kong"
+msgstr "香港"
+
+msgid "Hungary"
+msgstr "匈牙利"
+
+msgid "India"
+msgstr "印度"
+
+msgid "Indonesia"
+msgstr "印度尼西亚"
+
+msgid "Ireland"
+msgstr "爱尔兰"
+
+msgid "Israel"
+msgstr "以色列"
+
+msgid "Italy"
+msgstr "意大利"
+
+msgid "Japan"
+msgstr "日本"
+
+msgid "Kenya"
+msgstr "肯尼亚"
+
+msgid "Malaysia"
+msgstr "马来西亚"
+
+msgid "Mexico"
+msgstr "墨西哥"
+
+msgid "Netherlands"
+msgstr "荷兰"
+
+msgid "New Zealand"
+msgstr "新西兰"
+
+msgid "Nigeria"
+msgstr "尼日利亚"
+
+msgid "Norway"
+msgstr "挪威"
+
+msgid "Philippines"
+msgstr "菲律宾"
+
+msgid "Poland"
+msgstr "波兰"
+
+msgid "Portugal"
+msgstr "葡萄牙"
+
+msgid "Romania"
+msgstr "罗马尼亚"
+
+msgid "Russia"
+msgstr "俄罗斯"
+
+msgid "Saudi Arabia"
+msgstr "沙特阿拉伯"
+
+msgid "Singapore"
+msgstr "新加坡"
+
+msgid "South Africa"
+msgstr "南非"
+
+msgid "South Korea"
+msgstr "韩国"
+
+msgid "Sweden"
+msgstr "瑞典"
+
+msgid "Switzerland"
+msgstr "瑞士"
+
+msgid "Taiwan"
+msgstr "台湾"
+
+msgid "Thailand"
+msgstr "泰国"
+
+msgid "Turkey"
+msgstr "土耳其"
+
+msgid "Ukraine"
+msgstr "乌克兰"
+
+msgid "United Kingdom"
+msgstr "英国"
+
+msgid "United States"
+msgstr "美国"
+
+msgid "Vietnam"
+msgstr "越南"
+
+msgid "WooCommerce Product"
+msgstr "伍商业产品"
+
+msgid "EDD Product"
+msgstr "EDD 产品"
+
+msgid "Robots Meta"
+msgstr "机器人梅塔"
+
+msgid "Custom values for robots meta tag."
+msgstr "机器人元标记的自定义值。"
+
+msgid "Advanced Robots Meta"
+msgstr "高级机器人元"
+
+msgid "Canonical URL"
+msgstr "规范网址"
+
+msgid ""
+"The canonical URL informs search crawlers which page is the main page if you "
+"have double content."
+msgstr "规范 URL 通知搜索爬行器，如果您有双重内容，哪个页面是主页。"
+
+msgid "Breadcrumb Title"
+msgstr "面包屑标题"
+
+msgid "Breadcrumb Title to use for this post"
+msgstr "面包屑标题用于此帖子"
+
+msgid "Edit Snippet"
+msgstr "编辑片段"
+
+msgid "Close Editor"
+msgstr "关闭编辑器"
+
+msgid ""
+"This is what will appear in the first line when this post shows up in the "
+"search results."
+msgstr "当此帖子显示在搜索结果中时，这将出现在第一行中。"
+
+msgid "Permalink"
+msgstr "佩尔马林克"
+
+msgid "Editing Homepage permalink is not possible."
+msgstr "无法编辑主页永久链接。"
+
+msgid ""
+"This is the unique URL of this page, displayed below the post title in the "
+"search results."
+msgstr "这是此页面中唯一的 URL，显示在搜索结果中的帖子标题下方。"
+
+msgid "Description"
+msgstr "描述"
+
+msgid ""
+"This is what will appear as the description when this post shows up in the "
+"search results."
+msgstr "当此帖子显示在搜索结果中时，将显示为描述。"
+
+msgid "Trends"
+msgstr "趋势"
+
+#. translators: Link to kb article
+msgid ""
+"Insert keywords you want to rank for. Try to <a href=\"%s\" "
+"target=\"_blank\">attain 100/100 points</a> for better chances of ranking."
+msgstr ""
+"插入您要排名的关键字。尝试 <a href=\"%s\" target=\"_blank\">达到100/100分</a> ，以获得更好的排名机会。"
+
+#. translators: link to pricing page.
+msgid "Want more? %s version"
+msgstr "想要更多？%s 版本"
+
+msgid "Upgrade today to the PRO"
+msgstr "今天升级到专业版"
+
+msgid "Example: Rank Math SEO"
+msgstr "示例：排名数学搜索引擎优化"
+
+msgid "This post is Pillar Content"
+msgstr "此帖子是支柱内容"
+
+msgid ""
+"Select one or more Pillar Content posts for each post tag or category to "
+"show them in the Link Suggestions meta box."
+msgstr "为每个帖子标签或类别选择一个或多个支柱内容帖子，以在链接建议元框中显示它们。"
+
+msgid "Facebook"
+msgstr "脸谱网"
+
+msgid "Twitter"
+msgstr "唽"
+
+msgid "Facebook Preview"
+msgstr "脸谱预览"
+
+msgid "Twitter Preview"
+msgstr "推特预览"
+
+msgid "2 hrs"
+msgstr "2小时"
+
+msgid "2h"
+msgstr "2h"
+
+#. translators: Link to global title setting
+msgid ""
+"Set your default image for Facebook & Twitter by adding <a href=\"%s\" "
+"target=\"_blank\">OpenGraph Thumbnail</a>"
+msgstr "通过添加<a href=\"%s\" target=\"_blank\">打开图缩略图</a>为 Facebook 和推特设置默认图像"
+
+#. translators: link to title setting screen
+msgid ""
+"Customize the title, description and images of your post used while sharing "
+"on Facebook and Twitter. <a href=\"%s\" target=\"_blank\">Read more</a>"
+msgstr ""
+"自定义在 Facebook 和 Twitter 上共享时使用的帖子的标题、描述和图像。 <a href=\"%s\" target=\"_blank\">"
+"阅读更多</a>"
+
+msgid "Image"
+msgstr "图像"
+
+msgid "Add Image"
+msgstr "添加图像"
+
+msgid "Upload at least 600x315px image. Recommended size is 1200x630px."
+msgstr "上传至少600x315px图像。推荐尺寸为1200x630px。"
+
+msgid ""
+"Image is smaller than the minimum size, please select a different image."
+msgstr "图像小于最小大小，请选择不同的图像。"
+
+msgid "Add icon overlay to thumbnail"
+msgstr "将图标叠加到缩略图中"
+
+msgid ""
+"Please be careful with this option. Although this option will help increase "
+"CTR on Facebook, it might get you penalised if over-used."
+msgstr "请小心这个选项。虽然此选项将有助于增加 Facebook 上的 CTR，但如果过度使用，可能会受到处罚。"
+
+msgid "Icon overlay"
+msgstr "图标叠加"
+
+msgid "Author Profile URL"
+msgstr "作者简介网址"
+
+#. translators: option page link
+msgid ""
+"Insert a Facebook profile URL to display author name when the page is shared "
+"on Facebook.<br>The author name will be clickable if the profile is set to "
+"allow public followers.<br>You can set up default URL for fallback in <a "
+"href=\"%s\" target=\"_blank\">SEO &raquo; Titles &amp; Meta &raquo; "
+"Social</a>."
+msgstr ""
+"在 Facebook 上共享页面时，插入 Facebook 个人资料 URL 以显示作者姓名。<br>"
+"如果配置文件设置为允许公共关注者，则作者姓名将可单击。<br>您可以在 <a href=\"%s\" target=\"_blank\">"
+"SEO»标题和元»社交</a>中设置退回的默认URL。"
+
+msgid "Use Data from Facebook Tab"
+msgstr "使用来自脸谱网标签的数据"
+
+msgid "Summary Card with Large Image"
+msgstr "带大图像的摘要卡"
+
+msgid "Summary Card"
+msgstr "摘要卡"
+
+msgid "App Card"
+msgstr "应用卡"
+
+msgid "Player Card"
+msgstr "玩家卡"
+
+msgid "Card type"
+msgstr "卡类型"
+
+#. translators: Link to twitter player card doc
+msgid ""
+"Video clips and audio streams have a special place on the Twitter platform "
+"thanks to the Player Card. Player Cards must be submitted for approval "
+"before they can be used. More information: %s"
+msgstr "由于玩家卡，视频剪辑和音频流在Twitter平台上占有特殊位置。玩家卡必须提交审批才能使用。更多信息： % s"
+
+#. translators: Link to twitter app card doc
+msgid ""
+"The App Card is a great way to represent mobile applications on Twitter and "
+"to drive installs. More information: %s"
+msgstr "应用卡是在推特上表示移动应用程序和驱动安装的好方法。更多信息： % s"
+
+msgid ""
+"Images for this Card support an aspect ratio of 2:1 with minimum dimensions "
+"of 300x157 or maximum of 4096x4096 pixels. Images must be less than 5MB in "
+"size."
+msgstr "此卡的图像支持宽幅比为 2：1，最小尺寸为 300x157 或最大尺寸为 4096x4096 像素。图像的大小必须小于 5MB。"
+
+msgid ""
+"Please be careful with this option. Although this option will help increace "
+"CTR on Facebook, it might get you penalised if over-used."
+msgstr "请小心这个选项。虽然此选项将有助于在 Facebook 上增加 CTR，但如果过度使用，可能会受到处罚。"
+
+msgid "Author Twitter Username"
+msgstr "作者推特用户名"
+
+#. translators: option page link
+msgid ""
+"Insert Twitter username to add twitter:creator tag to posts when the page is "
+"shared on Twitter.<br>You can set up default username for fallback in <a "
+"href=\"%s\" target=\"_blank\">SEO &raquo; Titles &amp; Meta &raquo; "
+"Social</a>."
+msgstr ""
+"在 Twitter 上共享页面时，将 Twitter 用户名插入 Twitter 用户名以添加 Twitter：创建者标签到帖子中。<br>您可以在 "
+"<a href=\"%s\" target=\"_blank\">SEO»标题和元»社交</a>中设置退回的默认用户名。"
+
+msgid "Player URL"
+msgstr "玩家网址"
+
+msgid ""
+"HTTPS URL to iFrame player. This must be a HTTPS URL which does not generate "
+"active mixed content warnings in a web browser. The audio or video player "
+"must not require plugins such as Adobe Flash."
+msgstr ""
+"HTTPS网址到i帧播放器。这必须是 HTTPS URL，不会在 Web 浏览器中生成活动混合内容警告。音频或视频播放器不得要求插入电源（如 Adobe "
+"Flash）。"
+
+msgid "Player Size"
+msgstr "玩家大小"
+
+msgid ""
+"iFrame width and height, specified in pixels in the following format: "
+"600x400."
+msgstr "iFrame 宽度和高度，以以下格式的像素指定：600x400。"
+
+msgid "Stream URL"
+msgstr "流式网址"
+
+msgid ""
+"Optional URL to raw stream that will be rendered in Twitter’s mobile "
+"applications directly. If provided, the stream must be delivered in the MPEG-"
+"4 container format (the .mp4 extension). The container can store a mix of "
+"audio and video with the following codecs: Video: H.264, Baseline Profile "
+"(BP), Level 3.0, up to 640 x 480 at 30 fps. Audio: AAC, Low Complexity "
+"Profile (LC)."
+msgstr ""
+"可选网址到原始流，将直接在Twitter的移动应用程序中呈现。如果提供，流必须以 MPEG-4 容器格式（."
+"mp4扩展）交付。容器可以存储音频和视频的混合与以下编解码器：视频：H.264，基线配置文件 （BP）， 级别 3.0， 高达 640 x 480 在 "
+"30 fps.音频：AAC，低复杂性配置文件（LC）。"
+
+msgid "Stream Content Type"
+msgstr "流内容类型"
+
+msgid ""
+"The MIME type/subtype combination that describes the content contained in "
+"twitter:player:stream. Takes the form specified in RFC 6381. Currently "
+"supported content_type values are those defined in RFC 4337 (MIME Type "
+"Registration for MP4)."
+msgstr ""
+"描述推特中包含内容的 MIME 类型/子类型组合：播放器：流。采用 RFC 6381 中指定的表格。当前支持content_type值是 RFC "
+"4337（MP4 的 MIME 类型注册）中定义的值。"
+
+msgid "App Description"
+msgstr "应用描述"
+
+msgid ""
+"You can use this as a more concise description than what you may have on the "
+"app store. This field has a maximum of 200 characters. (optional)"
+msgstr "您可以使用此描述作为比应用商店中可能具有的更简洁的描述。此字段最多具有 200 个字符。（可选）"
+
+msgid "iPhone App Name"
+msgstr "iPhone 应用程序名称"
+
+msgid "The name of your app to show."
+msgstr "要显示的应用名称。"
+
+msgid "iPhone App ID"
+msgstr "iPhone 应用程序 ID"
+
+msgid "The numeric representation of your app ID in the App Store."
+msgstr "应用商店中应用 ID 的数字表示。"
+
+msgid "iPhone App URL"
+msgstr "iPhone 应用程序网址"
+
+msgid "Your app's custom URL scheme (must include \"://\")."
+msgstr "应用的自定义 URL 方案（必须包括\"：//\"）。"
+
+msgid "iPad App Name"
+msgstr "iPad 应用程序名称"
+
+msgid "iPad App ID"
+msgstr "iPad 应用程序 ID"
+
+msgid "iPad App URL"
+msgstr "iPad 应用程序网址"
+
+msgid "Google Play App Name"
+msgstr "谷歌播放应用程序名称"
+
+msgid "Google Play App ID"
+msgstr "谷歌播放应用程序ID"
+
+msgid "Your app ID in the Google Play (.i.e. \"com.android.app\")"
+msgstr "谷歌播放中的应用 ID（即\"com.android.app\"）"
+
+msgid "Google Play App URL"
+msgstr "谷歌播放应用程序网址"
+
+msgid "App Country"
+msgstr "应用国家/地区"
+
+msgid ""
+"If your application is not available in the US App Store, you must set this "
+"value to the two-letter country code for the App Store that contains your "
+"application."
+msgstr "如果您的应用程序在美国应用商店中不可用，您必须将此值设置为包含您应用程序的应用商店的两个字母的国家代码。"
+
+msgid "Items per page"
+msgstr "每页项目"
+
+msgid "404 Monitor"
+msgstr "404 监视器"
+
+msgid ""
+"Records the URLs on which visitors & search engines run into 404 Errors. You "
+"can also turn on Redirections to redirect the error causing URLs to other "
+"URLs."
+msgstr "记录访问者和搜索引擎遇到 404 个错误的网址。您还可以打开重定向，将导致 URL 的错误重定向到其他 URL。"
+
+msgid "Local SEO & Knowledge Graph"
+msgstr "本地搜索引擎优化与知识图"
+
+msgid ""
+"Dominate the search results for the local audiences by optimizing your "
+"website for Local SEO and it also helps you to add code related to Knowledge "
+"Graph."
+msgstr "通过优化本地 SEO 网站来主导本地受众的搜索结果，它还可帮助您添加与知识图相关的代码。"
+
+msgid "Redirections"
+msgstr "重 定向"
+
+msgid ""
+"Redirect non-existent content easily with 301 and 302 status code. This can "
+"help improve your site ranking. Also supports many other response codes."
+msgstr "用 301 和 302 状态代码轻松重定向不存在的内容。这有助于改善您的网站排名。还支持许多其他响应代码。"
+
+msgid "Schema (Structured Data)"
+msgstr "架构（结构数据）"
+
+msgid ""
+"Enable support for the structured data, which adds Schema code in your "
+"website, resulting in rich search results, better CTR and more traffic."
+msgstr "启用结构化数据的支持，这些数据在您的网站上添加了 Schema 代码，从而产生丰富的搜索结果、更好的 CTR 和更多的流量。"
+
+msgid "Sitemap"
+msgstr "站点图"
+
+msgid ""
+"Enable Rank Math's sitemap feature, which helps search engines intelligently "
+"crawl your website's content. It also supports hreflang tag."
+msgstr "启用排名数学的站点图功能，这有助于搜索引擎智能地爬行您的网站内容。它还支持赫里夫朗标签。"
+
+msgid "Link Counter"
+msgstr "链接计数器"
+
+msgid ""
+"Counts the total number of internal, external links, to and from links "
+"inside your posts. You can also see the same count in the Posts List Page."
+msgstr "计算帖子内的内部、外部链接总数。您还可以在帖子列表页面中看到相同的计数。"
+
+msgid "Image SEO"
+msgstr "图像搜索引擎优化"
+
+msgid ""
+"Advanced Image SEO options to supercharge your website. Automate the task of "
+"adding the ALT and Title tags to your images on the fly."
+msgstr "高级图像 SEO 选项以增强您的网站。自动将 ALT 和标题标记添加到图像的任务。"
+
+msgid "Instant Indexing"
+msgstr "即时索引"
+
+msgid ""
+"Directly notify search engines(Bing) when pages are added, updated or "
+"removed."
+msgstr "添加、更新或删除页面时，直接通知搜索引擎（Bing）。"
+
+#. translators: Link to kb article
+msgid ""
+"The Role Manager allows you to use WordPress roles to control which of your "
+"site users can have edit or view access to Rank Math's settings."
+msgstr "角色管理器允许您使用 WordPress 角色来控制哪些网站用户可以编辑或查看排名数学设置的访问权限。"
+
+msgid ""
+"Connect Rank Math with Google Search Console to see the most important "
+"information from Google directly in your WordPress dashboard."
+msgstr "将排名数学与谷歌搜索控制台连接起来，直接在 WordPress 仪表板中查看来自 Google 的最重要信息。"
+
+msgid "SEO Analysis"
+msgstr "搜索引擎优化分析"
+
+msgid ""
+"Let Rank Math analyze your website and your website's content using 70+ "
+"different tests to provide tailor-made SEO Analysis to you."
+msgstr "让排名数学使用 70 多个不同的测试分析您的网站和网站的内容，为您提供量身定制的 SEO 分析。"
+
+msgid "Robots Txt"
+msgstr "机器人特克斯特"
+
+msgid "Version Control"
+msgstr "版本控制"
+
+msgid "Database Tools"
+msgstr "数据库工具"
+
+msgid "Status"
+msgstr "地位"
+
+msgid "AMP"
+msgstr "放大 器"
+
+#. translators: Link to AMP plugin
+msgid ""
+"Install %s to make Rank Math work with Accelerated Mobile Pages. Rank Math "
+"automatically adds required meta tags in all the AMP pages."
+msgstr "安装%s，使排名数学工作与加速移动页面。排名数学自动添加所需的元标记在所有AMP页面。"
+
+msgid "AMP plugin"
+msgstr "放大器插件"
+
+msgid "bbPress"
+msgstr "bb 新闻"
+
+msgid ""
+"Add proper Meta tags to your bbPress forum posts, categories, profiles, etc. "
+"Get more options to take control of what search engines see and how they see "
+"it."
+msgstr "将适当的元标记添加到您的bbPress论坛帖子、类别、配置文件等。获取更多选项，以控制搜索引擎看到的内容和查看方式。"
+
+msgid "Please activate bbPress plugin to use this module."
+msgstr "请激活bbPress插件以使用此模块。"
+
+msgid "BuddyPress"
+msgstr "巴迪出版社"
+
+msgid ""
+"Enable the BuddyPress module for Rank Math SEO to make your BuddyPress forum "
+"SEO friendly by adding proper meta tags to all forum pages."
+msgstr "启用巴迪新闻模块排名数学SEO，使您的巴迪新闻论坛SEO友好通过添加适当的元标签到所有论坛页面。"
+
+msgid "Please activate BuddyPress plugin to use this module."
+msgstr "请激活巴迪新闻插件以使用此模块。"
+
+msgid "WooCommerce"
+msgstr "伍商业"
+
+msgid ""
+"Optimize WooCommerce Pages for Search Engines by adding required metadata "
+"and Product Schema which will make your site stand out in the SERPs."
+msgstr "通过添加所需的元数据和产品架构来优化搜索引擎的 WooCommerce 页面，这将使您的网站在 SERP 中脱颖而出。"
+
+msgid "Please activate WooCommerce plugin to use this module."
+msgstr "请激活伍商业插件以使用此模块。"
+
+msgid "ACF"
+msgstr "ACF"
+
+msgid ""
+"ACF support helps Rank Math SEO read and analyze content written in the "
+"Advanced Custom Fields. If your theme uses ACF, you should enable this "
+"option."
+msgstr "ACF 支持可帮助对数学 SEO 进行排名，以阅读和分析在高级自定义字段中编写的内容。如果您的主题使用ACF，则应启用此选项。"
+
+msgid "Please activate ACF plugin to use this module."
+msgstr "请激活ACF插件以使用此模块。"
+
+msgid "Google Web Stories"
+msgstr "谷歌网络故事"
+
+msgid ""
+"Make any Story created with the Web Stories WordPress plugin SEO-Ready with "
+"automatic support for Schema and Meta tags."
+msgstr "使用网络故事WordPress插件SEO-Ready创建任何故事，并自动支持\"图式\"和\"元\"标签。"
+
+msgid "Please activate Web Stories plugin to use this module."
+msgstr "请激活网络故事插件以使用此模块。"
+
+msgid "Post ID"
+msgstr "后 ID"
+
+msgid "ID of the current post/page"
+msgstr "当前帖子/页面的 ID"
+
+msgid "Focus Keyword of the current post"
+msgstr "当前帖子的重点关键字"
+
+msgid "Focus Keywords"
+msgstr "焦点关键字"
+
+msgid "Focus Keywords of the current post"
+msgstr "聚焦当前帖子的关键字"
+
+msgid "Custom Field (advanced)"
+msgstr "自定义字段（高级）"
+
+msgid "Custom field value."
+msgstr "自定义字段值。"
+
+msgid "Custom field value"
+msgstr "自定义字段值"
+
+msgid "Page"
+msgstr "页"
+
+msgid ""
+"Page number with context (i.e. page 2 of 4). Only displayed on page 2 and "
+"above."
+msgstr "具有上下文的页码（即第 2 页（共 4 页）。仅显示在第 2 页及以上。"
+
+msgid "Page Number"
+msgstr "页码"
+
+msgid "Current page number"
+msgstr "当前页码"
+
+msgid "Max Pages"
+msgstr "最大页面"
+
+msgid "Max pages number"
+msgstr "最大页数"
+
+msgid "Post Type Name Singular"
+msgstr "后类型名称 单数"
+
+msgid "Name of current post type (singular)"
+msgstr "当前帖子类型名称（单数）"
+
+msgid "Post Type Name Plural"
+msgstr "后类型名称复数"
+
+msgid "Name of current post type (plural)"
+msgstr "当前帖子类型名称（复数）"
+
+msgid "Products"
+msgstr "产品"
+
+#. translators: 1: current page number, 2: total number of pages.
+msgid "Page %1$d of %2$d"
+msgstr "页面 %1$d 的 %2$d"
+
+msgid "Author ID"
+msgstr "作者 ID"
+
+msgid "Author's user ID of the current post, page or author archive."
+msgstr "作者当前帖子、页面或作者存档的用户 ID。"
+
+msgid "Post Author"
+msgstr "帖子作者"
+
+msgid "Display author's nicename of the current post, page or author archive."
+msgstr "显示作者当前帖子、页面或作者档案的美名。"
+
+msgid "Author Description"
+msgstr "作者描述"
+
+msgid "Author's biographical info of the current post, page or author archive."
+msgstr "作者的履历信息，目前的职位，页面或作者档案。"
+
+msgid "Example Post title"
+msgstr "示例帖子标题"
+
+msgid "Separator Character"
+msgstr "分离器字符"
+
+msgid "Separator character, as set in the Title Settings"
+msgstr "标题设置中的分离器字符"
+
+msgid "Search Query"
+msgstr "搜索查询"
+
+msgid "Search query (only available on search results page)"
+msgstr "搜索查询（仅在搜索结果页面上提供）"
+
+msgid "example search"
+msgstr "示例搜索"
+
+msgid "Counter"
+msgstr "计数器"
+
+msgid "Starts at 1 and increments by 1."
+msgstr "从1开始，以1为增量。"
+
+msgid "File Name"
+msgstr "文件名"
+
+msgid "File Name of the attachment"
+msgstr "附件的文件名称"
+
+msgid "Site Title"
+msgstr "网站标题"
+
+msgid "Title of the site"
+msgstr "网站名称"
+
+msgid "Site Description"
+msgstr "网站描述"
+
+msgid "Description of the site"
+msgstr "网站说明"
+
+msgid "Current Date"
+msgstr "当前日期"
+
+msgid "Current server date"
+msgstr "当前服务器日期"
+
+msgid "Current Day"
+msgstr "当前日"
+
+msgid "Current server day"
+msgstr "当前服务器日"
+
+msgid "Current Month"
+msgstr "当月"
+
+msgid "Current server month"
+msgstr "当前服务器月"
+
+msgid "Current Year"
+msgstr "本年度"
+
+msgid "Current server year"
+msgstr "当前服务器年份"
+
+msgid "Current Time"
+msgstr "当前时间"
+
+msgid "Current server time"
+msgstr "当前服务器时间"
+
+msgid "Current Time (advanced)"
+msgstr "当前时间（高级）"
+
+msgid "Current server time with custom formatting pattern."
+msgstr "当前具有自定义格式模式的服务器时间。"
+
+msgid "Organization Name"
+msgstr "组织名称"
+
+msgid "The Organization Name added in Local SEO Settings."
+msgstr "在本地 SEO 设置中添加的组织名称。"
+
+msgid "Organization Logo"
+msgstr "组织徽标"
+
+msgid "Organization Logo added in Local SEO Settings."
+msgstr "在本地 SEO 设置中添加的组织徽标。"
+
+msgid "Organization URL"
+msgstr "组织网址"
+
+msgid "Organization URL added in Local SEO Settings."
+msgstr "组织网址已添加到本地SEO设置中。"
+
+msgid ""
+"Variable names can only contain alphanumeric characters, underscores and "
+"dashes."
+msgstr "可变名称只能包含字母数字字符、下划线和破折号。"
+
+msgid "The variable has already been registered."
+msgstr "变量已注册。"
+
+#. translators: Taxonomy name.
+msgid "%s Title"
+msgstr "%s 标题"
+
+#. translators: Taxonomy name.
+msgid "%s Description"
+msgstr "%s 描述"
+
+msgid "Custom Term title."
+msgstr "自定义术语标题。"
+
+msgid "Custom Term description."
+msgstr "自定义术语描述。"
+
+msgid "Post Title"
+msgstr "帖子标题"
+
+msgid "Title of the current post/page"
+msgstr "当前帖子/页面的标题"
+
+msgid "Post Title of parent page"
+msgstr "后父页标题"
+
+msgid "Title of the parent page of the current post/page"
+msgstr "当前帖子/页面的母页标题"
+
+msgid "Post Excerpt"
+msgstr "后摘录"
+
+msgid "Excerpt of the current post (or auto-generated if it does not exist)"
+msgstr "当前帖子的摘录（或如果不存在则自动生成）"
+
+msgid "Excerpt of the current post (without auto-generation)"
+msgstr "当前帖子摘录（无自动生成）"
+
+msgid "Post Excerpt Only"
+msgstr "仅限后摘录"
+
+msgid "Custom or Generated SEO Title of the current post/page"
+msgstr "当前帖子/页面的自定义或生成 SEO 标题"
+
+msgid "SEO Description"
+msgstr "搜索引擎优化描述"
+
+msgid "Custom or Generated SEO Description of the current post/page"
+msgstr "当前帖子/页面的自定义或生成 SEO 描述"
+
+msgid "Post URL"
+msgstr "发布网址"
+
+msgid "URL of the current post/page"
+msgstr "当前帖子/页面的网址"
+
+msgid "Post Thumbnail"
+msgstr "后缩略图"
+
+msgid "Current Post Thumbnail"
+msgstr "当前后缩略图"
+
+msgid "Date Published"
+msgstr "发布日期"
+
+msgid ""
+"Publication date of the current post/page <strong>OR</strong> specified date "
+"on date archives"
+msgstr "当前帖子/页的发布日期<strong>OR</strong>指定日期的日期档案"
+
+msgid "Date Modified"
+msgstr "日期修改"
+
+msgid "Last modification date of the current post/page"
+msgstr "当前帖子/页面的最后修改日期"
+
+msgid "Date Published (advanced)"
+msgstr "发布日期（高级）"
+
+msgid "Publish date with custom formatting pattern."
+msgstr "发布带有自定义格式模式的日期。"
+
+msgid "Date Modified (advanced)"
+msgstr "日期修改（高级）"
+
+msgid "Modified date with custom formatting pattern."
+msgstr "修改日期与自定义格式模式。"
+
+msgid "Post Category"
+msgstr "邮政类别"
+
+msgid ""
+"First category (alphabetically) associated to the current post <strong>"
+"OR</strong> current category on category archives"
+msgstr "与当前职位相关的第一类（按字母顺序排列）<strong>OR</strong>类别档案中的当前类别"
+
+msgid "Example Category"
+msgstr "示例类别"
+
+msgid "Post Categories"
+msgstr "邮政类别"
+
+msgid "Comma-separated list of categories associated to the current post"
+msgstr "与当前职位相关的类别的逗号分离列表"
+
+msgid "Example Category 1, Example Category 2"
+msgstr "示例类别 1，示例类别 2"
+
+msgid "Categories (advanced)"
+msgstr "类别（高级）"
+
+msgid ""
+"Output list of categories associated to the current post, with customization "
+"options."
+msgstr "与当前帖子相关的类别的输出列表，并具有自定义选项。"
+
+msgid "Post Tag"
+msgstr "邮政标签"
+
+msgid ""
+"First tag (alphabetically) associated to the current post <strong>OR</strong>"
+" current tag on tag archives"
+msgstr "与当前帖子相关的第一个标签（按字母顺序排列）<strong>OR</strong>标签存档上的当前标签"
+
+msgid "Example Tag"
+msgstr "示例标记"
+
+msgid "Post Tags"
+msgstr "邮政标签"
+
+msgid "Comma-separated list of tags associated to the current post"
+msgstr "与当前帖子相关的标记组合分离列表"
+
+msgid "Example Tag 1, Example Tag 2"
+msgstr "示例标记 1、示例标记 2"
+
+msgid "Tags (advanced)"
+msgstr "标签（高级）"
+
+msgid ""
+"Output list of tags associated to the current post, with customization "
+"options."
+msgstr "与当前帖子相关的标签输出列表，并具有自定义选项。"
+
+msgid "Example Tag 1 | Example Tag 2"
+msgstr "示例标记 1 |示例标记 2"
+
+msgid "Current Term"
+msgstr "当前期限"
+
+msgid "Current term name"
+msgstr "当前术语名称"
+
+msgid "Example Term"
+msgstr "示例术语"
+
+msgid "Term Description"
+msgstr "术语描述"
+
+msgid "Current term description"
+msgstr "当前术语描述"
+
+msgid "Example Term Description"
+msgstr "示例术语描述"
+
+msgid "Custom Term (advanced)"
+msgstr "自定义术语（高级）"
+
+msgid "Custom term value."
+msgstr "自定义术语值。"
+
+msgid "Custom term value"
+msgstr "自定义术语值"
+
+msgid "Custom Term description"
+msgstr "自定义术语描述"
+
+msgid "The $id variable is required."
+msgstr "需要$id变量。"
+
+msgid "Example"
+msgstr "例"
+
+#. translators: variable name
+msgid "The $%1$s is required for variable %2$s."
+msgstr "可变 2$s 需要 $1$s。"
+
+msgid "Module slug"
+msgstr "模块蛞蝓"
+
+msgid "Module state either on or off"
+msgstr "模块状态打开或关闭"
+
+msgid "Site disconnected successfully."
+msgstr "网站成功断开连接。"
+
+msgid "Site token"
+msgstr "站点令牌"
+
+msgid "No meta rows found to update."
+msgstr "未发现要更新的元行。"
+
+msgid "Sorry, you are not allowed to create/update redirection."
+msgstr "很抱歉，不允许创建/更新重定向。"
+
+msgid "Sorry, you are not allowed to edit this post type."
+msgstr "很抱歉，您不允许编辑此帖子类型。"
+
+msgid "Sorry, you are not allowed to edit this post."
+msgstr "很抱歉，您不允许编辑此帖子。"
+
+msgid "Invalid post ID."
+msgstr "无效的后ID。"
+
+msgid "Sorry, field is empty which is not allowed."
+msgstr "对不起，字段是空的，不允许。"
+
+msgid "Object Type i.e. post, term, user"
+msgstr "对象类型 即帖子、术语、用户"
+
+msgid "Object unique id"
+msgstr "对象唯一的 ID"
+
+msgid "Meta to add or update data."
+msgstr "元以添加或更新数据。"
+
+msgid "schemas to add or update data."
+msgstr "计划添加或更新数据。"
+
+msgid "Error: Nonce verification failed"
+msgstr "错误：无验证失败"
+
+#. translators: placeholders are the opening and closing anchor tags.
+msgid ""
+"Thank you for updating Rank Math! We've completely revamped our Analytics "
+"module with Google Analytics & Google Search Console integrations. For a "
+"seamless experience, please re-authenticate your Google account. %1$sClick "
+"here to Connect%2$s"
+msgstr ""
+"感谢您更新排名数学！我们已经完全修改了我们的分析模块与谷歌分析和谷歌搜索控制台集成。有关无缝体验，请重新验证您的 Google "
+"帐户。%1$点击这里连接%2$s"
+
+#. translators: placeholders are the opening and closing anchor tags.
+msgid ""
+"Rank Math: Introducing SEO Performance Reports via Email. %1$sClick here to "
+"enable it%2$s."
+msgstr "排名数学：通过电子邮件介绍SEO性能报告。%1$点击这里，使其成为%2$s。"
+
+#. translators: %1$s: post type label, %2$s: edit redirection URL.
+#. translators: %1$s: post type label, %2$s: edit redirection URL.
+#. translators: %1$s: term name, %2$s: edit redirection URL.
+msgid ""
+"SEO Notice: you just changed the slug of a %1$s and Rank Math has "
+"automatically created a redirection. You can edit the redirection by <a "
+"href=\"%2$s\">clicking here</a>."
+msgstr "SEO通知：您刚刚更改了%1$s的插图，排名数学已自动创建重定向。您可以通过 <a href=\"%2$s\">单击此处</a>编辑重定向。"
+
+#. translators: 1. url to new screen, 2. old trashed post permalink
+msgid ""
+"<strong>SEO Notice:</strong> A previously published post has been moved to "
+"trash. You may redirect it <code>%2$s</code> to <a href=\"%1$s\">new url</a>."
+msgstr ""
+"<strong>SEO 通知：</strong> 先前发表的帖子已被移到垃圾桶中。您可以将其重定 <code>%2$s</code> 向到 <a "
+"href=\"%1$s\">新的网址</a>。"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Import Settings"
+msgstr "导入设置"
+
+msgid "Import plugin settings, global meta, sitemap settings, etc."
+msgstr "导入插件设置、全球元、站点图设置等。"
+
+msgid "Import Post Meta"
+msgstr "导入后元"
+
+msgid ""
+"Import meta information of your posts/pages like the focus keyword, titles, "
+"descriptions, robots meta, OpenGraph info, etc."
+msgstr "导入您的帖子/页面的元信息，如焦点关键字、标题、描述、机器人元、打开图信息等。"
+
+msgid "Import Term Meta"
+msgstr "导入术语元"
+
+msgid "Import data like category, tag, and CPT meta data from SEO."
+msgstr "从 SEO 导入类别、标签和 CPT 元数据。"
+
+msgid "Import Author Meta"
+msgstr "导入作者梅塔"
+
+msgid ""
+"Import meta information like titles, descriptions, focus keyword, robots "
+"meta, etc., of your author archive pages."
+msgstr "导入作者存档页面的元信息，如标题、描述、焦点关键字、机器人元等。"
+
+msgid "Import Redirections"
+msgstr "导入重定向"
+
+msgid "Import all the redirections you have already set up in Yoast Premium."
+msgstr "导入您在Yoast高级版中已设置的所有重定向。"
+
+msgid "Import Blocks"
+msgstr "导入块"
+
+msgid "Import and convert all compatible blocks in post contents."
+msgstr "导入并转换邮政内容中所有兼容的块。"
+
+msgid "Import Locations"
+msgstr "导入位置"
+
+msgid "Import Locations Settings from Yoast plugin."
+msgstr "从Yoast插件导入位置设置。"
+
+msgid "Import News Settings"
+msgstr "导入新闻设置"
+
+msgid "Import News Settings from Yoast News Add-on."
+msgstr "从约斯特新闻附加组件导入新闻设置。"
+
+msgid "Import Video Sitemap Settings"
+msgstr "导入视频站点图设置"
+
+msgid "Import Video Sitemap Settings from Yoast Video Add-on."
+msgstr "从 Yoast 视频附加组件导入视频站点图设置。"
+
+msgid "Unable to perform action this time."
+msgstr "这次无法执行操作。"
+
+msgid "Import Schemas"
+msgstr "进口切马斯"
+
+msgid "Import all Schema data for Posts, Pages, and custom post types."
+msgstr "导入所有用于帖子、页面和自定义帖子类型的图马数据。"
+
+msgid "Import AIO SEO plugin settings, global meta, sitemap settings, etc."
+msgstr "导入 AIO SEO 插件设置、全球元、站点图设置等。"
+
+msgid ""
+"Import meta information of your posts/pages like the titles, descriptions, "
+"robots meta, OpenGraph info, etc."
+msgstr "导入您的帖子/页面的元信息，如标题、描述、机器人元、打开图形信息等。"
+
+msgid ""
+"Import meta information of your terms like the titles, descriptions, robots "
+"meta, OpenGraph info, etc."
+msgstr "导入您的术语的元信息，如标题、描述、机器人元、打开图形信息等。"
+
+msgid "Settings imported successfully."
+msgstr "成功导入的设置。"
+
+msgid "News Settings imported successfully."
+msgstr "成功导入新闻设置。"
+
+msgid "Video Settings imported successfully."
+msgstr "成功导入视频设置。"
+
+msgid "Plugin deactivated successfully."
+msgstr "插件成功停用。"
+
+#. translators: start, end, total
+msgid "Imported post meta for posts %1$s - %2$s out of %3$s "
+msgstr "职位的导入后元数 %1$s - %2$s 出%3$s"
+
+#. translators: total
+msgid "Imported term meta for %s terms."
+msgstr "%条款的导入术语元。"
+
+#. translators: start, end, total
+msgid "Imported user meta for users %1$s - %2$s out of %3$s "
+msgstr "用户导入用户元数 %1$s - %2$s 出 %3$s"
+
+#. translators: total
+msgid "Imported %s redirections."
+msgstr "导入%的重定向。"
+
+#. translators: start, end, total
+msgid "Imported blocks from posts %1$s - %2$s out of %3$s "
+msgstr "从帖子中导入块 %1$s - 从 %3$s 中输入块"
+
+msgid "Settings import failed."
+msgstr "设置导入失败。"
+
+msgid "Posts meta import failed."
+msgstr "后元导入失败。"
+
+msgid "Term meta import failed."
+msgstr "术语元导入失败。"
+
+msgid "User meta import failed."
+msgstr "用户元导入失败。"
+
+msgid "There are no redirection to import."
+msgstr "没有重定向导入。"
+
+msgid "Blocks import failed."
+msgstr "块导入失败。"
+
+msgid "Plugin settings and site-wide meta data."
+msgstr "插件设置和站点范围的元数据。"
+
+msgid "No post found."
+msgstr "未找到帖子。"
+
+msgid "Link Suggestions"
+msgstr "链接建议"
+
+msgid ""
+"Click on the button to copy URL or insert link in content. You can also drag "
+"and drop links in the post content."
+msgstr "单击按钮以复制 URL 或在内容中插入链接。您还可以在帖子内容中拖放链接。"
+
+msgid ""
+"We can't show any link suggestions for this post. Try selecting categories "
+"and tags for this post, and mark other posts as Pillar Content to make them "
+"show up here."
+msgstr "我们无法显示此帖子的任何链接建议。尝试为此帖子选择类别和标签，并将其他帖子标记为支柱内容，使其显示在这里。"
+
+msgid "General"
+msgstr "常规"
+
+msgid "This tab contains general options."
+msgstr "此选项卡包含一般选项。"
+
+msgid "Advanced"
+msgstr "高深"
+
+msgid "This tab contains advance options."
+msgstr "此选项卡包含预选选项。"
+
+msgid "Social"
+msgstr "社会的"
+
+msgid "This tab contains social options."
+msgstr "此选项卡包含社交选项。"
+
+msgid ""
+"The featured image should be at least 200 by 200 pixels to be picked up by "
+"Facebook and other social media sites."
+msgstr "特色图像应至少为 200 x 200 像素，由 Facebook 和其他社交媒体网站接收。"
+
+msgid "username"
+msgstr "用户名"
+
+msgid "Next steps&hellip;"
+msgstr "后续步骤..."
+
+msgid "Setup Rank Math"
+msgstr "设置排名数学"
+
+msgid "How to Properly Setup Rank Math"
+msgstr "如何正确设置排名数学"
+
+msgid "Upgrade to PRO"
+msgstr "升级到专业版"
+
+msgid "Advanced Schema, Analytics and much more..."
+msgstr "高级图解、分析等..."
+
+msgid "Import Data"
+msgstr "导入数据"
+
+msgid "How to Import Data from Your Previous SEO Plugin"
+msgstr "如何从以前的 SEO 插件导入数据"
+
+msgid "Improve SEO Score"
+msgstr "提高搜索引擎优化分数"
+
+msgid "How to Make Your Posts Pass All the Tests"
+msgstr "如何让您的帖子通过所有测试"
+
+msgid "Product Support"
+msgstr "产品支持"
+
+msgid "Online Documentation"
+msgstr "在线文档"
+
+msgid "Understand all the capabilities of Rank Math"
+msgstr "了解排名数学的所有功能"
+
+msgid "Ticket Support"
+msgstr "票务支持"
+
+msgid "Direct help from our qualified support team"
+msgstr "我们合格的支持团队提供直接帮助"
+
+msgid "Affiliate Program"
+msgstr "联盟计划"
+
+msgid "Earn flat 30% on every sale!"
+msgstr "每次销售均获得30%的单位收益！"
+
+msgid "Account"
+msgstr "帐户"
+
+msgid "Connected"
+msgstr "连接"
+
+msgid "Not Connected"
+msgstr "未连接"
+
+#. translators: variables used to wrap the text in the strong tag.
+msgid ""
+"You have successfully activated Rank Math. If you find the plugin useful, "
+"%1$s feel free to recommend it to your friends or colleagues %2$s."
+msgstr "您已成功激活排名数学。如果您发现插件有用， %1$s 可以随意推荐给您的朋友或同事 2$s。"
+
+msgid "Disconnect Account"
+msgstr "断开帐户"
+
+msgid ""
+"The plugin is currently not connected with your Rank Math account. Click on "
+"the button below to login or register for FREE using your %1$sGoogle account,"
+" Facebook account%2$s or %1$syour email account%2$s."
+msgstr ""
+"插件当前未连接到您的排名数学帐户。点击下面的按钮登录或注册免费使用您的 %1$sGoogle 帐户， Facebook 帐户% 2$s 或 "
+"%1$我们的电子邮件帐户% 2$s."
+
+msgid "Connect Now"
+msgstr "立即连接"
+
+msgid "Sorry, you are not allowed to deactivate plugins for this site."
+msgstr "很抱歉，您不允许停用此站点的插件。"
+
+#. translators: plugin name
+msgid "You are not allowed to deactivate this plugin: %s."
+msgstr "不允许停用此插件：% s。"
+
+#. translators: deactivation link
+msgid ""
+"Please keep only one SEO plugin active, otherwise, you might lose your "
+"rankings and traffic. %s."
+msgstr "请只保持一个SEO插件处于活动状态，否则，您可能会失去排名和流量。% s."
+
+msgid "Click here to Deactivate"
+msgstr "单击此处以停用"
+
+#. translators: deactivation link
+msgid ""
+"Please keep only one Sitemap plugin active, otherwise, you might lose your "
+"rankings and traffic. %s."
+msgstr "请只保持一个网站图插件激活，否则，你可能会失去你的排名和流量。% s."
+
+#. translators: Option Description
+msgid "Easy %s"
+msgstr "简单%"
+
+msgid ""
+"For websites where you only want to change the basics and let Rank Math do "
+"most of the heavy lifting. Most settings are set to default as per industry "
+"best practices. One just has to set it and forget it."
+msgstr "对于网站，你只想改变基础知识，让排名数学做大部分的重担。根据行业最佳实践，大多数设置设置为默认。一个人只需要设置它， 忘记它。"
+
+#. translators: Option Description
+msgid "Advanced %s"
+msgstr "高级%"
+
+msgid ""
+"For the advanced users who want to control every SEO aspect of the website. "
+"You are offered options to change everything and have full control over the "
+"website’s SEO."
+msgstr "对于想要控制网站的每个 SEO 方面的高级用户。您可以选择更改所有内容，并完全控制网站的 SEO。"
+
+#. translators: Option Description
+msgid "Custom Mode %s"
+msgstr "自定义模式%s"
+
+msgid ""
+"Select this if you have a custom Rank Math settings file you want to use."
+msgstr "如果您有要使用的自定义排名数学设置文件，请选择此文件。"
+
+msgid "<strong>Note</strong> You can easily switch between modes at any point."
+msgstr "<strong>注</strong>您可以在任何时候轻松地在模式之间切换。"
+
+msgid "Import SEO Settings"
+msgstr "导入 SEO 设置"
+
+msgid "You can import SEO settings from the following plugins:"
+msgstr "您可以从以下插件导入 SEO 设置："
+
+msgid "Importing: "
+msgstr "进口："
+
+msgid "Completed"
+msgstr "完成"
+
+msgid "Deactivating Plugins..."
+msgstr "停用插件。。。"
+
+msgid "Skip, Don't Import Now"
+msgstr "跳过，现在不要导入"
+
+msgid "Continue"
+msgstr "继续"
+
+msgid "Start Import"
+msgstr "开始导入"
+
+msgid "Input Data From:"
+msgstr "输入数据来自："
+
+#. translators: 1 is plugin name
+msgid "Import meta data from the %1$s plugin."
+msgstr "从%1$s插件导入元数据。"
+
+msgid "Import settings and meta data from the %1$s plugin."
+msgstr "从%1$s插件导入设置和元数据。"
+
+#. translators: 2 is link to Knowledge Base article
+msgid ""
+"The process may take a few minutes if you have a large number of posts or "
+"pages <a href=\"%2$s\" target=\"_blank\">Learn more about the import process "
+"here.</a>"
+msgstr ""
+"如果您有大量帖子或页面，此过程可能需要几分钟时间 <a href=\"%2$s\" target=\"_blank\">"
+"，请在此处了解有关导入流程的更多信息。</a>"
+
+#. translators: 1 is plugin name
+msgid ""
+" %1$s plugin will be disabled automatically moving forward to avoid "
+"conflicts. <strong>It is thus recommended to import the data you need now."
+"</strong>"
+msgstr "%1$s 插件将自动禁用，以避免冲突。因此，建议导入您现在需要的数据<strong></strong>"
+
+msgid "Save and Continue"
+msgstr "保存并继续"
+
+msgid "Set default values for the 404 error monitor here."
+msgstr "在此处为 404 错误监视器设置默认值。"
+
+#. translators: Link to kb article
+msgid ""
+"The 404 monitor will let you see if visitors or search engines bump into any "
+"<code>404 Not Found</code> error while browsing your site."
+msgstr "404 显示器将允许您查看访问者或搜索引擎在浏览网站时是否遇到任何<code>404 未找到</code>错误。"
+
+msgid "Set default values for the redirection module from here."
+msgstr "从此处为重定向模块设置默认值。"
+
+msgid "Learn more about Redirections."
+msgstr "了解有关重定向的更多了解。"
+
+msgid ""
+"Set up temporary or permanent redirections. Combined with the 404 monitor, "
+"you can easily redirect faulty URLs on your site, or add custom redirections."
+msgstr "设置临时或永久重定向。结合 404 监视器，您可以轻松地重定向网站上的故障 URL，或添加自定义重定向。"
+
+msgid "SEO Tweaks"
+msgstr "搜索引擎优化调整"
+
+#. translators: Link to How to Optimization KB article
+msgid ""
+"Automate some of your SEO tasks like making external links nofollow, "
+"redirecting attachment pages, etc. %s"
+msgstr "自动执行某些SEO任务，例如使外部链接不再跟随、重定向附件页面等。"
+
+msgid "Noindex Empty Category and Tag Archives"
+msgstr "无内存空类别和标签存档"
+
+msgid ""
+"Setting empty archives to <code>noindex</code> is useful for avoiding "
+"indexation of thin content pages and dilution of page rank. As soon as a "
+"post is added, the page is updated to <code>index</code>."
+msgstr ""
+"将空存档设置为<code>无 idex</code>对于避免内容页的索引和页面排名的稀释非常有用。一旦添加帖子，页面将更新为<code>"
+"index</code>。"
+
+msgid "Nofollow External Links"
+msgstr "无跟随外部链接"
+
+msgid ""
+"Automatically add <code>rel=\"nofollow\"</code> attribute for external links "
+"appearing in your posts, pages, and other post types. The attribute is "
+"dynamically applied when the content is displayed, and the stored content is "
+"not changed."
+msgstr ""
+"对于帖子、页面和其他帖子类型中出现的外部链接，自动添加<code>rel=\"不跟随\"</code>属性。显示内容时动态应用属性，并且存储的内容不更改。"
+
+msgid "Open External Links in New Tab/Window"
+msgstr "在新选项卡/窗口中打开外部链接"
+
+msgid ""
+"Automatically add a <code>target=\"_blank\"</code> attribute to external "
+"links appearing in your posts, pages, and other post types. The attributes "
+"are applied when the content is displayed, which does not change the stored "
+"content."
+msgstr ""
+"自动添加<code>目标+\"_blank\"</code>属性到帖子、页面和其他帖子类型中显示的外部链接。显示内容时应用属性，这不会改变存储的内容。"
+
+msgid "Set capabilities here."
+msgstr "在此处设置功能。"
+
+msgid "Schema Markup "
+msgstr "示波标记"
+
+msgid ""
+"Schema adds metadata to your website, resulting in rich search results and "
+"more traffic."
+msgstr "Schema 将元数据添加到您的网站，从而产生丰富的搜索结果和更多的流量。"
+
+msgid "Schema Type"
+msgstr "模式类型"
+
+msgid ""
+"Use automatic structured data to mark up content, to help Google better "
+"understand your content's context for display in Search. You can set "
+"different defaults for your posts here."
+msgstr "使用自动结构化数据标记内容，帮助 Google 更好地了解您的内容上下文，以便在搜索中显示。您可以在此处为您的帖子设置不同的默认值。"
+
+#. translators: Google article snippet doc link
+#. translators: Google article snippet doc link
+msgid ""
+"Google does not allow Person as the Publisher for articles. Organization "
+"will be used instead. You can read more about this <a href=\"%s\" "
+"target=\"_blank\">here</a>."
+msgstr ""
+"谷歌不允许人作为文章的发布者。将改为使用组织。你可以 <a href=\"%s\" target=\"_blank\">在这里</a>阅读更多关于这个。"
+
+msgid "Article Type"
+msgstr "文章类型"
+
+msgid "Blog Post"
+msgstr "博客文章"
+
+msgid "News Article"
+msgstr "新闻文章"
+
+#. translators: Post type name
+msgid "Schema Type for %s"
+msgstr "用于 %s 的模式类型"
+
+msgid "Default rich snippet selected when creating a new product."
+msgstr "在创建新产品时选择的默认丰富片段。"
+
+msgid "Default rich snippet selected when creating a new post of this type. "
+msgstr "在创建此类新帖子时选择的默认丰富片段。"
+
+msgid "None (Click here to set one)"
+msgstr "无（单击此处设置一个）"
+
+msgid "Connect Google&trade; Services"
+msgstr "连接谷歌™服务"
+
+#. translators: Link to How to Setup Google Search Console KB article
+msgid ""
+"Rank Math automates everything, use below button to connect your site with "
+"Google Search Console and Google Analytics. It will verify your site and "
+"submit sitemaps automatically. %s"
+msgstr "排名数学自动所有内容，使用下面的按钮将您的网站与谷歌搜索控制台和谷歌分析连接起来。它将验证您的网站并自动提交站点图。% s"
+
+msgid "Read more about it here."
+msgstr "在此处阅读更多有关它。"
+
+#. translators: Link to How to Setup Sitemap KB article
+msgid ""
+"Choose your Sitemap configuration and select which type of posts or pages "
+"you want to include in your Sitemaps. %s"
+msgstr "选择您的网站图配置，并选择您希望在站点图中包含的帖子或页面类型。% s"
+
+msgid "Learn more."
+msgstr "了解更多信息。"
+
+msgid ""
+"XML Sitemaps help search engines index your website&#039;s content more "
+"effectively."
+msgstr "XML 网站图可帮助搜索引擎更有效地索引网站内容。"
+
+msgid "Include Images"
+msgstr "包括图像"
+
+msgid ""
+"Include reference to images from the post content in sitemaps. This helps "
+"search engines index your images better."
+msgstr "在站点图中包括帖子内容中的图像。这有助于搜索引擎更好地索引您的图像。"
+
+msgid "Public Post Types"
+msgstr "公共邮政类型"
+
+msgid ""
+"Select post types to enable SEO options for them and include them in the "
+"sitemap."
+msgstr "选择帖子类型，以便为他们启用 SEO 选项，并将它们包含在站点图中。"
+
+msgid "Public Taxonomies"
+msgstr "公共分类"
+
+msgid ""
+"Select taxonomies to enable SEO options for them and include them in the "
+"sitemap."
+msgstr "选择分类，以便为他们启用 SEO 选项，并将它们包含在站点图中。"
+
+#. translators: sitename
+msgid "%1$s is a&hellip;"
+msgstr "%1$s是一个。。。"
+
+msgid "Business Type"
+msgstr "业务类型"
+
+msgid ""
+"Select the type that best describes your business. If you can't find one "
+"that applies exactly, use the generic \"Organization\" or \"Local Business\" "
+"types."
+msgstr "选择最能描述您业务的类型。如果您找不到准确适用的，请使用通用的\"组织\"或\"本地业务\"类型。"
+
+msgid "Company Name"
+msgstr "公司名称"
+
+msgid "Logo for Google"
+msgstr "谷歌的标志"
+
+msgid ""
+"<strong>Min Size: 160Χ90px, Max Size: 1920X1080px</strong>.<br />A squared "
+"image is preferred by the search engines."
+msgstr "<strong>最小尺寸：160Χ90px，最大尺寸：1920X1080px</strong>。<br />搜索引擎更喜欢方形图像。"
+
+msgid "Default Social Share Image"
+msgstr "默认社交共享图像"
+
+msgid ""
+"When a featured image is not set, this image will be used as a thumbnail "
+"when your post is shared on Facebook. <strong>Recommended image size 1200 x "
+"630 pixels.</strong>"
+msgstr ""
+"未设置特色图像时，当您的帖子在 Facebook 上共享时，此图像将用作缩略图。<strong>改版图像尺寸 1200 x 630 像素 "
+"</strong>。"
+
+msgid "Personal Blog"
+msgstr "个人博客"
+
+msgid "Community Blog/News Site"
+msgstr "社区博客/新闻网站"
+
+msgid "Personal Portfolio"
+msgstr "个人投资组合"
+
+msgid "Small Business Site"
+msgstr "小型企业网站"
+
+msgid "Webshop"
+msgstr "网上商店"
+
+msgid "Other Personal Website"
+msgstr "其他个人网站"
+
+msgid "Other Business Website"
+msgstr "其他商业网站"
+
+msgid "Page not found"
+msgstr "找不到页面"
+
+#. translators: delete counter
+msgid "%d log(s) deleted."
+msgstr "已删除%d日志。"
+
+#. translators: delete counter
+msgid "Log cleared - %d items deleted."
+msgstr "日志已清除-已删除的%d项。"
+
+msgid "Overview"
+msgstr "概述"
+
+msgid "Screen Content"
+msgstr "屏幕内容"
+
+msgid "Available Actions"
+msgstr "可用操作"
+
+msgid "Bulk Actions"
+msgstr "批量操作"
+
+msgid "Are you sure you wish to delete all 404 error logs?"
+msgstr "您是否确定要删除所有404个错误日志？"
+
+#. translators: 1. Link to KB article 2. Link to redirection setting scree
+msgid "Monitor broken pages that ruin user-experience and affect SEO. %s."
+msgstr "监视破坏用户体验并影响 SEO 的损坏页面。% s."
+
+msgid "View Report"
+msgstr "查看报告"
+
+msgid "Log Count"
+msgstr "日志计数"
+
+msgid "Total number of 404 pages opened by the users."
+msgstr "用户打开的 404 页总数。"
+
+msgid "URL Hits"
+msgstr "网址命中"
+
+msgid "Total number visits received on all the 404 pages."
+msgstr "所有 404 页的访问总数。"
+
+msgid "Review 404 errors on your site"
+msgstr "查看网站上的 404 个错误"
+
+msgid "No valid id found."
+msgstr "未找到有效的ID。"
+
+msgid "Log item successfully deleted."
+msgstr "成功删除日志项。"
+
+msgid "The 404 error log is empty."
+msgstr "404 错误日志为空。"
+
+msgid "Clear Log"
+msgstr "清除日志"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "View Redirection"
+msgstr "查看重定向"
+
+msgid "Redirect"
+msgstr "重定向"
+
+msgid "URI"
+msgstr "乌里"
+
+msgid "Referer"
+msgstr "推荐人"
+
+msgid "User-Agent"
+msgstr "用户代理"
+
+msgid "Hits"
+msgstr "打"
+
+msgid "Access Time"
+msgstr "访问时间"
+
+msgid "Data fetching cancelled."
+msgstr "数据提取已取消。"
+
+msgid "Google oAuth is not authorized."
+msgstr "谷歌oAuth未获授权。"
+
+msgid "Data fetching started in the background."
+msgstr "数据提取从后台开始。"
+
+msgid "Not a valid settings founds to delete cache."
+msgstr "找不到要删除缓存的有效设置。"
+
+msgid "Review analytics and sitemaps"
+msgstr "查看分析和站点图"
+
+msgid "Analytics cache cleared."
+msgstr "已清除分析缓存。"
+
+msgid "Post re-index in progress."
+msgstr "发布重新索引正在进行中。"
+
+#. translators: Auth URL
+msgid ""
+"It seems like the connection with your Google account & Rank Math needs to "
+"be made again. <a href=\"%s\" class=\"rank-math-reconnect-google\">Please "
+"click here.</a>"
+msgstr ""
+"似乎与您的谷歌帐户和排名数学的连接需要再次作出。 <a href=\"%s\" class=\"rank-math-reconnect-google\">"
+"请点击这里。</a>"
+
+msgid "Last 30 Days"
+msgstr "过去30天"
+
+msgid "Search Traffic"
+msgstr "搜索流量"
+
+msgid "This is the number of pageviews carried out by visitors from Google."
+msgstr "这是来自谷歌的访客进行的网页浏览次数。"
+
+msgid "Total Impressions"
+msgstr "总印象"
+
+msgid "How many times your site showed up in the search results."
+msgstr "您的网站在搜索结果中显示的次数。"
+
+msgid "Total Clicks"
+msgstr "总点击次数"
+
+msgid "Total Keywords"
+msgstr "关键字总数"
+
+msgid "Total number of keywords your site ranking below 100 position."
+msgstr "您的网站排名低于 100 位置的关键字总数。"
+
+msgid "Average Position"
+msgstr "平均位置"
+
+msgid ""
+"Rank Math is importing latest data from connected Google Services, %1$s "
+"remaining."
+msgstr "排名数学正在从互联的谷歌服务导入最新数据，剩余为 1 美元。"
+
+msgid "Cancel Fetch"
+msgstr "取消获取"
+
+#. translators: %s: amount of time
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s 年份"
+msgstr[1] ""
+
+#. translators: %s: amount of time
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] "百分比月"
+msgstr[1] ""
+
+#. translators: %s: amount of time
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] "%s 周"
+msgstr[1] ""
+
+#. translators: %s: amount of time
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%的一天"
+msgstr[1] ""
+
+#. translators: %s: amount of time
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s 小时"
+msgstr[1] ""
+
+#. translators: %s: amount of time
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%秒"
+msgstr[1] ""
+
+#. translators: %s: amount of time
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%秒"
+msgstr[1] ""
+
+msgid "Now!"
+msgstr "现在！"
+
+msgid "Are you sure you want to do this?"
+msgstr "你确定要这么做吗？"
+
+msgid "You are about to delete all the previously imported data."
+msgstr "您即将删除所有以前导入的数据。"
+
+msgid "You are about to delete your 90 days cache."
+msgstr "您即将删除您的90天缓存。"
+
+msgid "Are you sure you want to disconnect Google services from your site?"
+msgstr "您是否确定要将 Google 服务与您的网站断开连接？"
+
+msgid "Cache deleted."
+msgstr "缓存已删除。"
+
+#. translators: Link to kb article
+msgid ""
+"See your Google Search Console, Analytics and AdSense data without leaving "
+"your WP dashboard. %s."
+msgstr "请参阅您的谷歌搜索控制台、分析和广告感知数据，而无需离开您的 WP 仪表板。% s."
+
+msgid "Purge Analytics Cache"
+msgstr "清除分析缓存"
+
+#. translators: 1. Review Schema documentation link
+msgid "Clear analytics cache to re-calculate all the stats again."
+msgstr "清除分析缓存以重新计算所有统计数据。"
+
+msgid "here"
+msgstr "这里"
+
+msgid "Clear Cache"
+msgstr "清除缓存"
+
+msgid "Rebuild Index for Analytics"
+msgstr "分析重建索引"
+
+#. translators: 1. Review Schema documentation link
+msgid ""
+"Missing some posts/pages in the Analytics data? Clear the index and build a "
+"new one for more accurate stats."
+msgstr "缺少分析数据中的一些帖子/页面？清除索引并构建新的索引以获得更准确的统计数据。"
+
+msgid "Rebuild Index"
+msgstr "重建指数"
+
+#. translators: placeholder is "rankmath.com" as a link.
+msgid "This email was sent to you as a registered member of %s."
+msgstr "此电子邮件是作为%s 的注册会员发送给您的。"
+
+#. translators: placeholder is "click here" as a link.
+msgid "To update your email preferences, %s."
+msgstr "要更新您的电子邮件首选项，%s。"
+
+msgid "click here"
+msgstr "单击此处"
+
+#. translators: placeholder is the site URL.
+msgid "Rank Math [SEO Report] - %s"
+msgstr "排名数学 [SEO 报告] - % s"
+
+msgid "Sorry, no post found for given id."
+msgstr "对不起，没有找到给定的ID的帖子。"
+
+msgid "BuddyPress:"
+msgstr "巴迪出版社："
+
+msgid "Groups"
+msgstr "组"
+
+msgid "This tab contains SEO options for BuddyPress Group pages."
+msgstr "此选项卡包含巴迪新闻群页的 SEO 选项。"
+
+msgid "Group name."
+msgstr "组名。"
+
+msgid "Group name of the current group"
+msgstr "当前组的组名"
+
+msgid "Group Description."
+msgstr "组描述。"
+
+msgid "Group description of the current group"
+msgstr "当前组的组描述"
+
+msgid "No Rank Math transients found."
+msgstr "找不到排名数学瞬态。"
+
+#. translators: placeholder is the number of transients deleted.
+msgid "%d Rank Math transient cleared."
+msgid_plural "%d Rank Math transients cleared."
+msgstr[0] "%d 排名数学瞬时清除。"
+msgstr[1] ""
+
+msgid "SEO Analysis data has already been cleared."
+msgstr "SEO 分析数据已清除。"
+
+msgid "SEO Analysis data successfully deleted."
+msgstr "成功删除 SEO 分析数据。"
+
+msgid "No Internal Links data found."
+msgstr "未找到内部链接数据。"
+
+msgid "Internal Links successfully deleted."
+msgstr "内部链接成功删除。"
+
+msgid "No 404 log data found."
+msgstr "未找到 404 个日志数据。"
+
+msgid "404 Log successfully deleted."
+msgstr "404 日志成功删除。"
+
+msgid "No Redirections found."
+msgstr "未找到重定向。"
+
+msgid "Redirection rules successfully deleted."
+msgstr "重定向规则成功删除。"
+
+msgid "Table re-creation started. It might take a couple of minutes."
+msgstr "表重新创建开始。可能需要几分钟时间。"
+
+msgid "No posts found to convert."
+msgstr "未发现要转换的帖子。"
+
+msgid ""
+"Conversion started. A success message will be shown here once the process "
+"completes. You can close this page."
+msgstr "转换已开始。一旦过程完成，这里将显示成功消息。您可以关闭此页面。"
+
+msgid "No data found to delete."
+msgstr "未发现要删除的数据。"
+
+msgid ""
+"Deletion started. A success message will be shown here once the process "
+"completes. You can close this page."
+msgstr "删除开始。一旦过程完成，这里将显示成功消息。您可以关闭此页面。"
+
+msgid "Flush SEO Analysis Data"
+msgstr "冲洗 SEO 分析数据"
+
+msgid ""
+"Need a clean slate or not able to run the SEO Analysis tool? Flushing the "
+"analysis data might fix the issue. Flushing SEO Analysis data is entirely "
+"safe and doesn't remove any critical data from your website."
+msgstr ""
+"需要一个干净的石板或无法运行SEO分析工具？冲洗分析数据可能会解决问题。冲洗 SEO 分析数据是完全安全的，不会从您的网站上删除任何关键数据。"
+
+msgid "Clear SEO Analysis"
+msgstr "清晰的搜索引擎优化分析"
+
+msgid "Remove Rank Math Transients"
+msgstr "删除排名数学瞬态"
+
+msgid ""
+"If you see any issue while using Rank Math or one of its options - clearing "
+"the Rank Math transients fixes the problem in most cases. Deleting "
+"transients does not delete ANY data added using Rank Math."
+msgstr "如果您在使用排名数学或其选项之一时看到任何问题 - 清除排名数学瞬态修复了大多数情况下的问题。删除瞬态不会删除使用排名数学添加的任何数据。"
+
+msgid "Remove transients"
+msgstr "删除瞬态"
+
+msgid "Clear 404 Log"
+msgstr "清除404日志"
+
+msgid ""
+"Is the 404 error log getting out of hand? Use this option to clear ALL 404 "
+"logs generated by your website in the Rank Math 404 Monitor."
+msgstr "404错误日志失控了吗？使用此选项清除您的网站在排名数学 404 监视器中生成的所有 404 日志。"
+
+msgid ""
+"Are you sure you want to delete the 404 log? This action is irreversible."
+msgstr "您确定要删除404日志吗？这一行动是不可逆转的。"
+
+msgid "Re-create Missing Database Tables"
+msgstr "重新创建缺失的数据库表"
+
+msgid "Check if required tables exist and create them if not."
+msgstr "检查是否存在所需的表，如果没有，则创建它们。"
+
+msgid "Re-create Tables"
+msgstr "重新创建表"
+
+msgid "Yoast Block Converter"
+msgstr "约斯特块转换器"
+
+msgid ""
+"Convert FAQ & HowTo Blocks created using Yoast. Use this option to easily "
+"move your previous blocks into Rank Math."
+msgstr "转换常见问题解答和如何使用Yoast创建的块。使用此选项轻松地将以前的块移动到排名数学中。"
+
+msgid ""
+"Are you sure you want to convert Yoast blocks into Rank Math blocks? This "
+"action is irreversible."
+msgstr "您是否确定要将Yoast块转换为排名数学块？这一行动是不可逆转的。"
+
+msgid "Convert Blocks"
+msgstr "转换块"
+
+msgid "Delete Internal Links Data"
+msgstr "删除内部链接数据"
+
+msgid ""
+"In some instances, the internal links data might show an inflated number or "
+"no number at all. Deleting the internal links data might fix the issue."
+msgstr "在某些情况下，内部链接数据可能显示夸大的数字或根本没有数字。删除内部链接数据可能会解决问题。"
+
+msgid ""
+"Are you sure you want to delete Internal Links Data? This action is "
+"irreversible."
+msgstr "您是否确定要删除内部链接数据？这一行动是不可逆转的。"
+
+msgid "Delete Internal Links"
+msgstr "删除内部链接"
+
+msgid "Delete Redirections Rules"
+msgstr "删除重定向规则"
+
+msgid ""
+"Getting a redirection loop or need a fresh start? Delete all the "
+"redirections using this tool. Note: This process is irreversible and will "
+"delete ALL your redirection rules."
+msgstr "获得重定向循环或需要一个新的开始？使用此工具删除所有重定向。注意：此过程不可逆转，并将删除所有重定向规则。"
+
+msgid ""
+"Are you sure you want to delete all the Redirection Rules? This action is "
+"irreversible."
+msgstr "您是否确定要删除所有重定向规则？这一行动是不可逆转的。"
+
+msgid "Delete Redirections"
+msgstr "删除重定向"
+
+msgid "Delete Old Schema Data"
+msgstr "删除旧图马数据"
+
+msgid ""
+"Delete the schema data from the old format (<1.0.48). Note: This process is "
+"irreversible and will delete all the metadata prefixed with "
+"rank_math_snippet."
+msgstr "从旧格式中删除图式数据（<1.0.48）。注意：此过程不可逆转，将删除所有预缀为rank_math_snippet的元数据。"
+
+msgid ""
+"Are you sure you want to delete the old schema data? This action is "
+"irreversible."
+msgstr "您是否确定要删除旧的模式数据？这一行动是不可逆转的。"
+
+msgid "Images"
+msgstr "图像"
+
+#. translators: Link to kb article
+msgid ""
+"SEO options related to featured images and media appearing in your post "
+"content. %s."
+msgstr "与帖子内容中显示的特色图片和媒体相关的 SEO 选项。% s."
+
+msgid "Add missing ALT attributes"
+msgstr "添加缺失的ALT属性"
+
+msgid ""
+"Add <code>alt</code> attributes for <code>images</code> without <code>"
+"alt</code> attributes automatically. The attribute is dynamically applied "
+"when the content is displayed, and the stored content is not changed."
+msgstr ""
+"自动添加<code>alt</code>属性以表示<code>图像</code>而无<code>alt</code>"
+"属性。显示内容时动态应用属性，并且存储的内容不更改。"
+
+msgid "Alt attribute format"
+msgstr "替代属性格式"
+
+msgid "Format used for the new <code>alt</code> attribute values."
+msgstr "用于新<code>alt</code>属性值的格式。"
+
+msgid "Add missing TITLE attributes"
+msgstr "添加缺失的标题属性"
+
+msgid ""
+"Add <code>TITLE</code> attribute for all <code>images</code> without a <code>"
+"TITLE</code> attribute automatically. The attribute is dynamically applied "
+"when the content is displayed, and the stored content is not changed."
+msgstr ""
+"自动添加所有<code>图像</code><code>TITLE</code>属性，无需<code>TITLE</code>"
+"属性。显示内容时动态应用属性，并且存储的内容不更改。"
+
+msgid "Title attribute format"
+msgstr "标题属性格式"
+
+msgid "Format used for the new <code>title</code> attribute values."
+msgstr "用于新<code>标题</code>属性值的格式。"
+
+msgid "Bing URL Submission API: Insert one or more URLs."
+msgstr "必应网址提交API：插入一个或多个网址。"
+
+#. translators: The placeholder is the number of URLs.
+msgid "Successfully submitted %s URL to the Bing URL Submission API."
+msgid_plural "Successfully submitted %s URLs to the Bing URL Submission API."
+msgstr[0] "成功将%s URL提交到必应网址提交API。"
+msgstr[1] ""
+
+msgid "Failed to submit post to the Bing URL Submission API."
+msgstr "未能将帖子提交到必应网址提交API。"
+
+msgid "Post successfully submitted to the Bing URL Submission API."
+msgstr "帖子成功提交到必应网址提交API。"
+
+#. translators: daily quota
+msgid "Please configure the Instant Indexing module in the Settings tab first."
+msgstr "请首先在\"设置\"选项卡中配置即时索引模块。"
+
+#. translators: placeholder is the error message.
+msgid "Bing URL Submission API error: %s"
+msgstr "必应网址提交API错误：%"
+
+#. translators: 1. the error code, 2. the error message.
+msgid "Bing URL Submission API HTTP error %1$s: %2$s"
+msgstr "必应网址提交API HTTP错误%1$s：%2$s"
+
+msgid "Instant Indexing: Submit to Bing"
+msgstr "即时索引：提交给必应"
+
+#. translators: Link to kb article
+msgid "Instant Indexing module settings. %s."
+msgstr "即时索引模块设置。% s."
+
+msgid "URL Submission"
+msgstr "网址提交"
+
+msgid "Send URLs directly to the Bing URL Submission API."
+msgstr "将网址直接发送到必应网址提交API。"
+
+msgid "Links: "
+msgstr "链接："
+
+msgid "Internal Links"
+msgstr "内部链接"
+
+msgid "External Links"
+msgstr "外部链接"
+
+msgid "Incoming Links"
+msgstr "传入链接"
+
+msgid "Maintenance Code"
+msgstr "维护代码"
+
+msgid "This field must not be empty."
+msgstr "此字段不得为空。"
+
+#. translators: Link to kb article
+msgid "Easily create redirects without fiddling with tedious code. %s."
+msgstr "轻松创建重定向，而无需繁琐的代码。% s."
+
+msgid "Redirection Count"
+msgstr "重定向计数"
+
+msgid "Total number of Redirections created in the Rank Math."
+msgstr "排名数学中创建的重定向总数。"
+
+msgid "Redirection Hits"
+msgstr "重定向命中"
+
+msgid "Total number of hits received by all the Redirections."
+msgstr "所有重定向接收的点击总数。"
+
+msgid "No valid ID found."
+msgstr "未找到有效 ID。"
+
+msgid "No valid action found."
+msgstr "未找到有效的操作。"
+
+msgid "Redirection successfully activated."
+msgstr "重定向成功激活。"
+
+msgid "Redirection successfully deactivated."
+msgstr "重定向成功停用。"
+
+msgid "Redirection successfully moved to Trash."
+msgstr "重定向成功移动到垃圾。"
+
+msgid "Redirection successfully restored."
+msgstr "重定向成功恢复。"
+
+#. translators: delete counter
+msgid "%d redirection(s) successfully deleted."
+msgstr "%d 重定向成功删除。"
+
+msgid "Add New"
+msgstr "添加新"
+
+msgid "Export Options"
+msgstr "出口选项"
+
+msgid "Add"
+msgstr "加"
+
+msgid "Update Redirection"
+msgstr "更新重定向"
+
+msgid "Add Redirection"
+msgstr "添加重定向"
+
+msgid "Source URLs"
+msgstr "源网址"
+
+msgid "Add another"
+msgstr "添加另一个"
+
+msgid "Remove"
+msgstr "删除"
+
+msgid "Ignore Case"
+msgstr "忽略案例"
+
+msgid "Destination URL"
+msgstr "目的地网址"
+
+msgid "Redirection Type"
+msgstr "重定向类型"
+
+msgid "Activate"
+msgstr "激活"
+
+msgid "Deactivate"
+msgstr "关闭"
+
+msgid "Please add at least one valid source URL."
+msgstr "请添加至少一个有效的源URL。"
+
+msgid "Export to .htaccess"
+msgstr "出口到。赫塔切斯"
+
+msgid "Export to Nginx config file"
+msgstr "导出到 Nginx 配置文件"
+
+msgid "Export"
+msgstr "出口"
+
+msgid "Edit redirection for the URL of this post."
+msgstr "编辑此帖子的URL重定向。"
+
+msgid "Create new redirection for the URL of this post."
+msgstr "为本文的 URL 创建新的重定向。"
+
+msgid "Redirection"
+msgstr "重定向"
+
+msgid "Publish or update the post to save the redirection."
+msgstr "发布或更新帖子以保存重定向。"
+
+msgid "Redirection successfully deleted."
+msgstr "重定向成功删除。"
+
+msgid "Can't update redirection."
+msgstr "无法更新重定向。"
+
+msgid "Redirection updated successfully."
+msgstr "重定向已成功更新。"
+
+msgid "New redirection created."
+msgstr "创建了新的重定向。"
+
+#. translators: source pattern
+msgid "Invalid regex pattern: %s"
+msgstr "无效注册模式：%"
+
+msgid "Create and edit redirections"
+msgstr "创建和编辑重定向"
+
+msgid "Manage Redirections"
+msgstr "管理重定向"
+
+msgid "Redirection Settings"
+msgstr "重定向设置"
+
+msgid "&raquo; Redirect this page"
+msgstr "»重定向此页面"
+
+msgid "Redirect the current URL"
+msgstr "重定向当前网址"
+
+msgid "No redirections found in Trash."
+msgstr "在垃圾中未找到重定向。"
+
+msgid ""
+"No redirections added yet. <a href=\"#\" class=\"rank-math-add-new-"
+"redirection\">Add New Redirection</a>"
+msgstr ""
+"尚未添加重定向。 <a href=\"#\" class=\"rank-math-add-new-redirection\">添加新重定向</a>"
+
+msgid "Show more"
+msgstr "显示更多"
+
+msgid "Hide details"
+msgstr "隐藏详细信息"
+
+msgid "Hide"
+msgstr "隐藏"
+
+msgid "Restore"
+msgstr "恢复"
+
+msgid "Delete Permanently"
+msgstr "永久删除"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Trash"
+msgstr "垃圾"
+
+msgid "From"
+msgstr "从"
+
+msgid "To"
+msgstr "自"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Last Accessed"
+msgstr "上次访问"
+
+msgid "Move to Trash"
+msgstr "移动到垃圾桶"
+
+msgid "All"
+msgstr "都"
+
+msgid "Active"
+msgstr "积极"
+
+msgid "Inactive"
+msgstr "无效"
+
+msgid "Empty Trash"
+msgstr "空垃圾"
+
+#. translators: 1. url to new screen, 2. old trashed post permalink
+msgid ""
+"<strong>SEO Notice:</strong> A previously published %1$s has been moved to "
+"trash. You may redirect <code>%2$s</code> to <a href=\"%3$s\">a new url</a>."
+msgstr ""
+"<strong>SEO 通知：</strong> 先前公布的 %1$s 已移入垃圾桶。您可以重 <code>%2$s</code> 定向到 <a "
+"href=\"%3$s\">一个新的网址</a>。"
+
+msgid "Edit robots.txt"
+msgstr "编辑机器人.txt"
+
+#. translators: Link to kb article
+msgid "Edit your robots.txt file to control what bots see. %s."
+msgstr "编辑您的机器人.txt文件来控制机器人看到的内容。% s."
+
+msgid ""
+"Leave the field empty to let WordPress handle the contents dynamically. If "
+"an actual robots.txt file is present in the root folder of your site, this "
+"option won't take effect and you have to edit the file directly, or delete "
+"it and then edit from here."
+msgstr ""
+"让字段空着，让 WordPress 动态处理内容。如果实际的机器人."
+"txt文件存在于您的网站的根文件夹中，此选项将不起作用，您必须直接编辑文件，或将其删除，然后从此处进行编辑。"
+
+msgid "robots.txt file is not writable."
+msgstr "机器人.txt文件是不能写的。"
+
+msgid ""
+"Contents are locked because robots.txt file is present in the root folder."
+msgstr "内容被锁定，因为机器人.txt文件存在于根文件夹中。"
+
+#. translators: placeholder is the Settings page URL.
+msgid ""
+"<strong>Warning:</strong> your site's search engine visibility is set to "
+"Hidden in <a href=\"%1$s\" target=\"_blank\">Settings &gt; Reading</a>. This "
+"means that the changes you make here will not take effect. Set the search "
+"engine visibility to Public to be able to change the robots.txt content."
+msgstr ""
+"<strong>警告：</strong> 您的网站的搜索引擎可见性设置为\"隐藏在 <a href=\"%1$s\" target=\"_blank\">"
+"设置中&gt;阅读</a>\"。这意味着您在这里做出的更改不会生效。设置搜索引擎的可见性，使公众能够改变机器人.txt内容。"
+
+msgid "Titles & Meta Settings"
+msgstr "标题和元设置"
+
+msgid "Sitemap Settings"
+msgstr "站点图设置"
+
+msgid "404 Monitor Log"
+msgstr "404 监视器日志"
+
+msgid "Link Builder"
+msgstr "链接构建器"
+
+msgid "Site-Wide Analysis"
+msgstr "全站点分析"
+
+msgid "On-Page Analysis"
+msgstr "页面分析"
+
+msgid "On-Page General Settings"
+msgstr "页面通用设置"
+
+msgid "On-Page Advanced Settings"
+msgstr "页面上高级设置"
+
+msgid "On-Page Schema Settings"
+msgstr "页面上选图设置"
+
+msgid "On-Page Social Settings"
+msgstr "页面社交设置"
+
+msgid "Top Admin Bar"
+msgstr "顶级管理栏"
+
+msgid "Schema"
+msgstr "图式"
+
+msgid "No schema found."
+msgstr "未找到模式。"
+
+msgid "Opening Hours"
+msgstr "开放时间"
+
+msgid "Days"
+msgstr "日"
+
+msgid "Opening Time"
+msgstr "开放时间"
+
+msgid "Closing Time"
+msgstr "关闭时间"
+
+msgid "Editor's Rating:"
+msgstr "编辑评分："
+
+msgid "How to fix"
+msgstr "如何修复"
+
+msgid "OK"
+msgstr "还行"
+
+msgid "Failed"
+msgstr "失败"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Info"
+msgstr "信息"
+
+msgid "Site-wide analysis"
+msgstr "全站点分析"
+
+msgid "Analyze this Page"
+msgstr "分析此页面"
+
+msgid "SEO Analysis for this page"
+msgstr "此页面的 SEO 分析"
+
+#. translators: API error
+msgid "<strong>API Error:</strong> %s"
+msgstr "<strong>API 错误：</strong> % s"
+
+msgid "Rank Math SEO Analysis error: "
+msgstr "排名 数学 SEO 分析错误："
+
+msgid "Rank Math auto-update option is enabled on your site."
+msgstr "排名数学自动更新选项在您的网站上启用。"
+
+#. translators: placeholder is a HTTP error code.
+msgid "HTTP %d error."
+msgstr "赫特普%d错误。"
+
+msgid "Unexpected API response."
+msgstr "意外的 API 响应。"
+
+msgid "Priority"
+msgstr "优先权"
+
+msgid "Advanced SEO"
+msgstr "高级搜索引擎优化"
+
+msgid "Basic SEO"
+msgstr "基本搜索引擎优化"
+
+msgid "Performance"
+msgstr "性能"
+
+msgid "Security"
+msgstr "安全"
+
+msgid "Site Tagline"
+msgstr "网站标签"
+
+#. translators: link to general setting screen
+msgid ""
+"Your theme may display the Site Tagline, and it can also be used in SEO "
+"titles &amp; descriptions. Set it to something unique. You can change it by "
+"navigating to <a href=\"%s\">Settings &gt; General</a>."
+msgstr ""
+"您的主题可能会显示网站标签，它也可以用于SEO标题和描述。将其设置为独特的东西。您可以通过导航到 <a href=\"%s\">\"设置\"&gt;"
+"通用</a>来更改它。"
+
+msgid ""
+"Most WordPress themes place your site's tagline in a prominent position "
+"(inside header tags near the top of the page).  Using the right tagline can "
+"give your site an SEO boost."
+msgstr "大多数 WordPress 主题将网站的标语放在显眼位置（页面顶部附近的标题标签内）。 使用正确的标语可以提升您的网站。"
+
+msgid ""
+"Unfortunately, the standard WordPress tagline is \"Just Another WordPress "
+"site.\"  That's pretty sloppy looking, and it does nothing for your SEO.  In "
+"fact, it's actually a security risk - it makes it easy for hackers with a "
+"WordPress exploit to locate your site with an automated search."
+msgstr ""
+"不幸的是，标准的WordPress口号是\"只是另一个WordPress网站\"。 这是相当草率的外观，它对你的SEO没有任何作用。 "
+"事实上，它实际上是一个安全风险 - 它使使用 WordPress 漏洞的黑客很容易通过自动搜索定位您的网站。"
+
+#. translators: link to general setting screen
+msgid ""
+"Changing your tagline is very easy.  Just head on over to <a "
+"target=\"_blank\" href=\"%1$s\">Settings - General</a> in WordPress's admin "
+"menu (on the left), or click on the link in this sentence."
+msgstr ""
+"更改标语非常容易。 只需前往 <a target=\"_blank\" href=\"%1$s\">\"设置\"-WordPress</a> "
+"管理菜单中的\"一般\"（左侧），或单击此句子中的链接。"
+
+msgid ""
+"The tagline is the second option.  Choose a tagline that summarizes your "
+"site in a few words.  The tagline is also a good place to use your main "
+"keyword."
+msgstr "标语是第二个选项。 选择用几句话总结您的网站的标语。 标语也是使用主关键字的好地方。"
+
+msgid "Blog Public"
+msgstr "博客公开"
+
+#. translators: link to general setting screen
+msgid "Your site may not be visible to search engine."
+msgstr "搜索引擎可能看不到您的网站。"
+
+#. translators: %1$s link to the reading settings, %2$s closing tag for the link
+#. translators: %1$s resolves to the opening tag of the link to the reading settings, %1$s resolves to the closing tag for the link
+msgid ""
+"You must %1$sgo to your Reading Settings%2$s and uncheck the box for Search "
+"Engine Visibility."
+msgstr "您必须将 %1$sgo 到您的阅读设置%2$s，并取消选中搜索引擎可见性的框。"
+
+msgid "Permalink Structure"
+msgstr "永久链接结构"
+
+#. translators: link to permalink setting screen
+msgid ""
+"For the best SEO results, use a custom permalink structure, preferably one "
+"that includes the post title (<code>%%postname%%</code>). You can change it "
+"by navigating to <a href=\"%s\">Settings &gt; Permalinks</a>"
+msgstr ""
+"要获得最佳的 SEO 结果，请使用自定义永久链接结构，最好是包含帖子标题 <code>%%postname%%</code> "
+"（）的结构。您可以通过导航到<a href=\"%s\">设置&gt;永久链接</a>来更改它"
+
+msgid ""
+"The standard permalink structure is pretty ugly - WordPress generates "
+"offputting URLs like: http://www.yoursite.com/?p=99"
+msgstr "标准的永久链接结构是相当丑陋的-WordPress生成的外置网址，如：http://www.yoursite.com/?p=99"
+
+msgid ""
+"It's not very kind on the eyes, and it does nothing for your site's SEO.  In "
+"fact, it can hurt it - Google's bot is quite cautious about crawling pages "
+"that look auto-generated."
+msgstr "它的眼睛不是很亲切， 它对您的网站的 Seo 没有任何作用。 事实上，它可以伤害它 - 谷歌的机器人是相当谨慎的爬行页面，看起来自动生成。"
+
+#. translators: link to permalink setting screen
+msgid ""
+"Fortunately, it's very easy to fix.  Just hop on over to <a "
+"target=\"_blank\" href=\"%1$s\">Settings - Permalinks</a>.  Then chose the "
+"\"Post Name\" option."
+msgstr ""
+"幸运的是，它很容易修复。 只需跳到设置 <a target=\"_blank\" href=\"%1$s\">- 永久链接</a>。 "
+"然后选择\"邮政名称\"选项。"
+
+msgid ""
+"This option will replace the \"?p=99\" part of the URL with the post's title,"
+" like this: http://www.yoursite.com/my-amazing-post-title/"
+msgstr ""
+"此选项将用帖子的标题替换 URL 中的\"p=99\"部分，例如：http://www.yoursite.com/my-amazing-post-"
+"title/"
+
+msgid ""
+"This looks nice for readers - and it gets your keywords into the URL "
+"(keywords in the URL is a ranking factor)."
+msgstr "这看起来对读者来说不错 - 它让你的关键字进入 URL（URL 中的关键字是一个排名因素）。"
+
+msgid ""
+"Setting focus keywords for your posts allows Rank Math to analyse the "
+"content."
+msgstr "为您的帖子设置焦点关键字允许排名数学分析内容。"
+
+msgid ""
+"Rank Math allows you to set a focus keyword for every post and page you "
+"write - the option is in the \"Meta Box\", which appears under the text "
+"editor in the screen where you write and edit content."
+msgstr "排名数学允许您为您编写的每个帖子和页面设置一个焦点关键字 - 选项位于\"元框\"中，该框显示在您编写和编辑内容的屏幕文本编辑器下。"
+
+msgid ""
+"Rank Math uses these focus keywords to analyze your on-page content.  It can "
+"tell if you've done a good job of optimizing your text to rank for these "
+"keywords."
+msgstr "排名数学使用这些焦点关键字来分析您的页面内容。 它可以判断您是否在优化文本以对这些关键字进行排名方面做得很好。"
+
+msgid ""
+"Of course, if you don't give Rank Math a focus keyword to work with, it "
+"can't give you any useful feedback."
+msgstr "当然，如果你不给排名数学一个焦点关键字的工作，它不能给你任何有用的反馈。"
+
+msgid ""
+"Fixing this issue is easy - just edit the post, and set a Focus Keyword.  "
+"Then follow Rank Math's analysis to improve your rankings."
+msgstr "解决这个问题很简单 - 只需编辑帖子，并设置一个焦点关键字。 然后按照排名数学的分析，以提高你的排名。"
+
+msgid "Post Titles Missing Focus Keywords"
+msgstr "帖子标题缺少焦点关键字"
+
+msgid ""
+"Make sure the focus keywords you set for the posts appear in their titles."
+msgstr "确保您为帖子设置的重点关键字出现在其标题中。"
+
+msgid ""
+"HTML Page Titles play a large role in Google's ranking algorithm.  When you "
+"add a Focus Keyword to a post or page, Rank Math will check to see that you "
+"used the keyword in the title.  If it finds any posts or pages that are "
+"missing the keyword in the title, it will tell you here."
+msgstr ""
+"HTML 页面标题在谷歌的排名算法中扮演了重要角色。 当您将焦点关键字添加到帖子或页面时，排名数学将检查您是否使用了标题中的关键字。 "
+"如果它发现任何帖子或页面缺少标题中的关键字，它会在这里告诉你。"
+
+msgid ""
+"Fixing the issue is simple - just edit the post/page and add the focus "
+"keyword(s) to the title."
+msgstr "解决问题很简单 - 只需编辑帖子/页面，并将焦点关键字添加到标题中即可。"
+
+msgid "Search Console"
+msgstr "搜索控制台"
+
+#. translators: link to plugin setting screen
+msgid ""
+"Register at Google Search Console and verificate your site by adding the "
+"code to <a href=\"%1$s\">Settings &gt; Verificate Tools</a>, then navigate "
+"to <a href=\"%2$s\">Settings &gt; Search Console</a> to authenticate and "
+"link your site."
+msgstr ""
+"在 Google 搜索控制台注册，通过将代码添加到 <a href=\"%1$s\">\"设置\"&gt; Verificate 工具</a>"
+"，然后导航到 <a href=\"%2$s\">\"设置\"&gt;搜索控制台</a> 以验证和链接您的网站，从而验证您的网站。"
+
+msgid ""
+"Google's Search Console is a vital source of information concerning your "
+"rankings and click-through rates.  Rank Math can import this data, so you "
+"don't have to log into your Google account to get the data you need."
+msgstr "谷歌的搜索控制台是有关您的排名和点击率的重要信息来源。 排名数学可以导入这些数据，因此您不必登录 Google 帐户即可获取所需的数据。"
+
+#. translators: link to plugin search console setting screen
+msgid ""
+"You can integrate the Google Search Console with Rank math in the <a "
+"href=\"%1$s\" target=\"_blank\">Search Console tab</a>. of Rank Math's "
+"General Settings menu."
+msgstr ""
+"您可以在搜索控制台 <a href=\"%1$s\" target=\"_blank\">选项卡</a>"
+"中将谷歌搜索控制台与排名数学集成。排名数学的一般设置菜单。"
+
+#. translators: Link to Search Console KB article
+msgid ""
+"Read <a href=\"%1$s\" target=\"_blank\">this article</a> for detailed "
+"instructions on setting up your Google Webmaster account and getting Rank "
+"Math to work with the Google Search Console."
+msgstr ""
+"阅读 <a href=\"%1$s\" target=\"_blank\">本文</a> ，了解有关设置您的 Google "
+"网站站长帐户和让排名数学与谷歌搜索控制台合作的详细信息。"
+
+msgid ""
+"XML sitemaps are a special type of text file that tells search engines about "
+"the structure of your site. They're a list of all the resources (pages and "
+"files) you would like the search engine to index. You can assign different "
+"priorities, so certain pages will be crawled first. Before XML sitemaps, "
+"search engines were limited to indexing the content they could find by "
+"following links. That's still an important feature for search engine spiders,"
+" but XML sitemaps have made it easier for content creators and search "
+"engines to collaborate."
+msgstr ""
+"XML "
+"站点映点是一种特殊类型的文本文件，可告诉搜索引擎有关您网站结构的了解。它们是您希望搜索引擎索引的所有资源（页面和文件）的列表。您可以分配不同的优先级，因此某些页面将首先被抓取。在"
+" XML 站点图之前，搜索引擎仅限于通过以下链接索引他们能找到的内容。这仍然是搜索引擎蜘蛛的一个重要功能，但XML网站图使内容创作者和搜索引擎更容易协作。"
+
+msgid ""
+"If you don't have an XML sitemap, the best option is to install a plugin "
+"that creates sitemaps for you. That way you'll know the sitemap will always "
+"be up-to-date. Plugins can also automatically ping the search engines when "
+"the XML file is updated. The Rank Math WordPress plugin gives you complete "
+"control over your site's XML sitemaps. You can control the settings for each "
+"page as you write or edit it, and Rank Math will ping Google as soon as you "
+"submit your edits. This results in fast crawls and indexing."
+msgstr ""
+"如果您没有 XML 站点图，最好的选择是安装一个插件，为您创建站点图。这样您就会知道站点图始终是最新的。当 XML 文件更新时，插件还可以自动 ping "
+"搜索引擎。排名数学WordPress插件让您完全控制您的网站的XML网站图。您可以在编写或编辑每个页面时控制每个页面的设置，并且一提交编辑，排名数学将立即"
+" ping Google。这会导致快速爬行和索引。"
+
+msgid "Automatic Updates"
+msgstr "自动更新"
+
+msgid ""
+"Enable automatic updates to ensure you are always using the latest version "
+"of Rank Math."
+msgstr "启用自动更新，以确保您始终使用最新版本的排名数学。"
+
+#. translators: placeholder is an activate button.
+msgid "Automatic updates are not enabled on your site. %s"
+msgstr "您的网站上未启用自动更新。% s"
+
+msgid "Enable Auto Updates"
+msgstr "启用自动更新"
+
+#. translators: %1$s link to the customize settings, %2$s closing tag for the link
+msgid ""
+"You have not entered a tagline yet. It is a good idea to choose one. %1$sYou "
+"can fix this in the customizer%2$s."
+msgstr "您尚未输入标语。选择一个是个好主意。%1$s您可以在自定义器%2$s中修复此问题。"
+
+msgid ""
+"Your Site Tagline is set to the default value <em>Just another WordPress "
+"site</em>."
+msgstr "您的网站标签设置为默认值<em>只是另一个WordPress网站</em>。"
+
+msgid "Your Site Tagline is set to a custom value."
+msgstr "您的网站标签设置为自定义值。"
+
+msgid ""
+"Permalinks are set to the default value. <em>Pretty permalinks</em> are "
+"disabled. "
+msgstr "永久链接设置为默认值。<em>普雷蒂永久链接</em>是禁用的。"
+
+msgid ""
+"Permalinks are set to a custom structure but the post titles do not appear "
+"in the permalinks."
+msgstr "永久链接设置为自定义结构，但帖子标题不会显示在永久链接中。"
+
+#. translators: permalink structure
+msgid "Post permalink structure is set to %s."
+msgstr "后永久链接结构设置为% s。"
+
+msgid "Google Search Console has been linked."
+msgstr "谷歌搜索控制台已链接。"
+
+msgid "You have not linked Google Search Console yet."
+msgstr "您尚未链接谷歌搜索控制台。"
+
+msgid "All published posts have focus keywords set."
+msgstr "所有已发布的帖子都有焦点关键字设置。"
+
+#. translators: post type links
+msgid "There are %s with no focus keyword set."
+msgstr "有%s没有焦点关键字集。"
+
+msgid "Focus keywords appear in the titles of published posts where it is set."
+msgstr "焦点关键字出现在已发布的帖子的标题中。"
+
+#. translators: post ID count
+msgid "+%d More..."
+msgstr "+%更多..."
+
+#. translators: post type links
+msgid ""
+"There are %s published posts where the focus keyword does not appear in the "
+"post title."
+msgstr "有%s 已发布的帖子，其中焦点关键字未显示在帖子标题中。"
+
+msgid "Your site has one or more sitemaps."
+msgstr "您的网站有一个或多个站点图。"
+
+msgid "No sitemaps found."
+msgstr "未找到站点图。"
+
+msgid "Attention: Search Engines can't see your website."
+msgstr "注意：搜索引擎看不到您的网站。"
+
+msgid "Your site is accessible by search engine."
+msgstr "您的网站可以通过搜索引擎访问。"
+
+msgid "This tab contains General settings related to the XML sitemaps."
+msgstr "此选项卡包含与 XML 站点图相关的一般设置。"
+
+#. translators: sitemap url
+msgid "Your sitemap index can be found here: %s"
+msgstr "您的网站图索引可在此处找到：%"
+
+#. translators: Learn more link.
+msgid "Set the sitemap options for author archive pages. %s."
+msgstr "为作者存档页面设置站点图选项。% s."
+
+msgid "attachments"
+msgstr "附件"
+
+msgid "your product pages"
+msgstr "您的产品页面"
+
+#. translators: Post Type label
+msgid "single %s"
+msgstr "单百分比"
+
+#. translators: %1$s: thing, %2$s: Learn more link.
+#. translators: %1$s: thing, %2$s: Learn more link.
+msgid "Change Sitemap settings of %1$s. %2$s."
+msgstr "更改站点图设置为 %1$s. %2$s."
+
+#. translators: Post Type Sitemap Url
+#. translators: Taxonomy Sitemap Url
+msgid "Sitemap URL: %s"
+msgstr "网站图网址：%"
+
+msgid ""
+"Please note that this will add the attachment page URLs to the sitemap, not "
+"direct image URLs."
+msgstr "请注意，这将将附件页面 URL 添加到站点映射中，而不是直接映像 URL。"
+
+msgid "Taxonomies:"
+msgstr "分类法："
+
+#. translators: Taxonomy singular label
+msgid "your product %s pages"
+msgstr "您的产品%s页面"
+
+#. translators: Taxonomy singular label
+msgid "%s archives"
+msgstr "%的档案"
+
+msgid "Exclude this image from sitemap"
+msgstr "将此图像排除在站点映中"
+
+#. translators: the placeholder is for the sitemap base url.
+msgid ""
+"Since you are using an NGINX server, you may need to add the following code "
+"to your %s <strong>if your Sitemap pages are not loading</strong>. If you "
+"are unsure how to do it, please contact your hosting provider."
+msgstr ""
+"由于您使用的是 NGINX 服务器，您可能需要将以下代码添加到您的 %s <strong> 如果您的 Sitemap 页面未加载</strong>"
+"。如果您不确定如何做到这一点，请联系您的托管提供商。"
+
+msgid "configuration file"
+msgstr "配置文件"
+
+msgid "Click here to see the code."
+msgstr "单击此处查看代码。"
+
+#. translators: placeholder is the post type name.
+msgid ""
+"Rank Math has detected a new post type: %1$s. You may want to check the "
+"settings of the <a href=\"%2$s\">Titles &amp; Meta page</a> and <a "
+"href=\"%3$s\">the Sitemap</a>."
+msgstr ""
+"排名数学已检测到一个新的职位类型：%1$s.您可能需要检查 <a href=\"%2$s\">标题和元页面</a> 的设置和 <a "
+"href=\"%3$s\">站点图</a>。"
+
+#. translators: placeholder is the post type names separated with commas.
+msgid ""
+"Rank Math has detected new post types: %1$s. You may want to check the "
+"settings of the <a href=\"%2$s\">Titles &amp; Meta page</a> and <a "
+"href=\"%3$s\">the Sitemap</a>."
+msgstr ""
+"排名数学已检测到新的帖子类型：%1$s。您可能需要检查 <a href=\"%2$s\">标题和元页面</a> 的设置和 <a "
+"href=\"%3$s\">站点图</a>。"
+
+#. translators: 1. separator, 2. blogname
+msgid "XML Sitemap %1$s %2$s"
+msgstr "XML网站图%1$s%2$s"
+
+#. translators: 1. separator, 2. blogname
+msgid "Locations Sitemap %1$s %2$s"
+msgstr "位置 网站图 %1$s %2$s"
+
+msgid "KML File"
+msgstr "公里文件"
+
+#. translators: link to rankmath.com
+msgid ""
+"This KML File is generated by <a href=\"%s\" target=\"_blank\">Rank Math "
+"WordPress SEO Plugin</a>. It is used to provide location information to "
+"Google."
+msgstr ""
+"此 KML 文件由 <a href=\"%s\" target=\"_blank\">排名数学单词新闻 SEO 插件</a>"
+"生成。它用于向谷歌提供位置信息。"
+
+#. translators: link to rankmath.com
+msgid "Learn more about <a href=\"%s\" target=\"_blank\">KML File</a>."
+msgstr "了解有关 <a href=\"%s\" target=\"_blank\">KML 文件的更多知识</a>。"
+
+#. translators: xsl value count
+#. translators: xsl value count
+msgid "<a href=\"%s\">&#8592; Sitemap Index</a>"
+msgstr "<a href=\"%s\">←站点图索引</a>"
+
+msgid "Name"
+msgstr "名字"
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Phone number"
+msgstr "电话号码"
+
+msgid "Latitude"
+msgstr "纬度"
+
+msgid "Longitude"
+msgstr "经度"
+
+msgid "XML Sitemap"
+msgstr "XML 网站图"
+
+#. translators: link to rankmath.com
+msgid ""
+"This XML Sitemap is generated by <a href=\"%s\" target=\"_blank\">Rank Math "
+"WordPress SEO Plugin</a>. It is what search engines like Google use to crawl "
+"and re-crawl posts/pages/products/images/archives on your website."
+msgstr ""
+"此 XML 站点图由 <a href=\"%s\" target=\"_blank\">排名数学单词新闻 SEO 插件</a>"
+"生成。这是像谷歌这样的搜索引擎用来爬行和重新爬行帖子/页面/产品/图像/档案在您的网站上。"
+
+#. translators: link to rankmath.com
+msgid "Learn more about <a href=\"%s\" target=\"_blank\">XML Sitemaps</a>."
+msgstr "了解更多关于<a href=\"%s\" target=\"_blank\">XML 网站图。</a>"
+
+#. translators: xsl value count
+msgid "This XML Sitemap Index file contains <strong>%s</strong> sitemaps."
+msgstr "此 XML 站点映点索引文件包含<strong>%s</strong>站点映点。"
+
+msgid "Last Modified"
+msgstr "最后修改"
+
+#. translators: xsl value count
+msgid "This XML Sitemap contains <strong>%s</strong> URLs."
+msgstr "此 XML 站点图包含 <strong>% s </strong> 网址。"
+
+msgid "URL"
+msgstr "网址"
+
+msgid "Last Mod."
+msgstr "最后一个模组。"
+
+msgid "Error Log"
+msgstr "错误日志"
+
+#. translators: placeholder is a link to WP_DEBUG documentation.
+msgid ""
+"If you have %s enabled, errors will be stored in a log file. Here you can "
+"find the last 100 lines in reversed order so that you or the Rank Math "
+"support team can view it easily. The file cannot be edited here."
+msgstr ""
+"如果启用了%s，则错误将存储在日志文件中。在这里，您可以找到倒序的最后 100 行，以便您或排名数学支持团队可以轻松查看它。文件不能在此处编辑。"
+
+msgid "Copy Log to Clipboard"
+msgstr "将日志复制到剪贴板"
+
+msgid "Copied!"
+msgstr "复制！"
+
+msgid "The error log cannot be retrieved."
+msgstr "无法检索错误日志。"
+
+msgid "The error log cannot be retrieved: Error log file is too large."
+msgstr "无法检索错误日志：错误日志文件太大。"
+
+msgid "Status & Tools"
+msgstr "状态和工具"
+
+msgid "System Status"
+msgstr "系统状态"
+
+msgid "System Info"
+msgstr "系统信息"
+
+msgid "Copy System Info to Clipboard"
+msgstr "将系统信息复制到剪贴板"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Database version"
+msgstr "数据库版本"
+
+msgid "Plugin subscription plan"
+msgstr "插件订阅计划"
+
+msgid "Free"
+msgstr "自由"
+
+msgid "Active modules"
+msgstr "活动模块"
+
+msgid "(none)"
+msgstr "（无）"
+
+msgid "Google Refresh token"
+msgstr "谷歌刷新令牌"
+
+msgid "No token"
+msgstr "无令牌"
+
+msgid "Token exists"
+msgstr "令牌存在"
+
+msgid "Google Permission"
+msgstr "谷歌权限"
+
+msgid "Database Table: 404 Log"
+msgstr "数据库表： 404 日志"
+
+msgid "Database Table: Redirection"
+msgstr "数据库表：重定向"
+
+msgid "Database Table: Redirection Cache"
+msgstr "数据库表：重定向缓存"
+
+msgid "Database Table: Internal Link"
+msgstr "数据库表：内部链接"
+
+msgid "Database Table: Internal Link Meta"
+msgstr "数据库表：内部链接元"
+
+msgid "Database Table: Google Search Console"
+msgstr "数据库表：谷歌搜索控制台"
+
+msgid "Database Table: Flat Posts"
+msgstr "数据库表：平帖"
+
+msgid "Database Table: Google Analytics"
+msgstr "数据库表：谷歌分析"
+
+msgid "Database Table: Google AdSense"
+msgstr "数据库表：谷歌广告感知"
+
+msgid "Database Table: Keyword Manager"
+msgstr "数据库表：关键字管理器"
+
+msgid "Created"
+msgstr "创建"
+
+msgid "Doesn't exists"
+msgstr "不存在"
+
+msgid "This update will install a beta version of Rank Math."
+msgstr "此更新将安装排名数学的测试版。"
+
+msgid "Rollback Plugin"
+msgstr "回滚插件"
+
+msgid "Plugin rollback successful."
+msgstr "插件回滚成功。"
+
+msgid "Installing the rollback version&#8230;"
+msgstr "安装回滚版本。。。"
+
+#. translators: Placeholder is version number.
+msgid "Are you sure you want to install version %s?"
+msgstr "您是否确定要安装版本%s？"
+
+#. translators: Link to kb article
+msgid "Choose how you want Rank Math to handle your WooCommerce SEO. %s."
+msgstr "选择您希望排名数学如何处理您的伍商业SEO。% s."
+
+msgid "Product's price."
+msgstr "产品价格。"
+
+msgid "Product's price of the current product"
+msgstr "当前产品的产品价格"
+
+msgid "Product's SKU."
+msgstr "产品的 SKU。"
+
+msgid "Product's SKU of the current product"
+msgstr "当前产品的产品 SKU"
+
+msgid "Product's short description."
+msgstr "产品的简短描述。"
+
+msgid "Product's short description of the current product"
+msgstr "产品对当前产品的简要描述"
+
+msgid "Product's brand."
+msgstr "产品的品牌。"
+
+msgid "Product's brand of the current product"
+msgstr "当前产品的产品品牌"
+
+msgid "Enable breadcrumbs function"
+msgstr "启用面包屑功能"
+
+msgid ""
+"Turning off breadcrumbs will hide breadcrumbs inserted in template files too."
+msgstr "关闭面包屑也会隐藏插入模板文件中的面包屑。"
+
+#. translators: Code to add support for Rank Math Breadcrumbs.
+msgid ""
+"This option cannot be changed since your theme has added the support for "
+"Rank Math Breadcrumbs using: %s"
+msgstr "此选项无法更改，因为您的主题已添加了使用：%s的排名数学面包屑的支持"
+
+msgid "Separator character or string that appears between breadcrumb items."
+msgstr "面包屑项目之间出现的分离字符或字符串。"
+
+msgid "Show Homepage Link"
+msgstr "显示主页链接"
+
+msgid "Display homepage breadcrumb in trail."
+msgstr "显示主页面包屑的线索。"
+
+msgid "Homepage label"
+msgstr "主页标签"
+
+msgid "Label used for homepage link (first item) in breadcrumbs."
+msgstr "用于主页链接的标签（第一个项目）在面包屑。"
+
+msgid "Homepage Link"
+msgstr "主页链接"
+
+msgid "Link to use for homepage (first item) in breadcrumbs."
+msgstr "链接用于主页（第一个项目）在面包屑。"
+
+msgid "Prefix Breadcrumb"
+msgstr "前缀面包屑"
+
+msgid "Prefix for the breadcrumb path."
+msgstr "面包屑路径的前缀。"
+
+msgid "Archive Format"
+msgstr "存档格式"
+
+msgid "Format the label used for archive pages."
+msgstr "格式化用于存档页面的标签。"
+
+msgid "Search Results Format"
+msgstr "搜索结果格式"
+
+msgid "Format the label used for search results pages."
+msgstr "格式化用于搜索结果页面的标签。"
+
+msgid "404 label"
+msgstr "404 标签"
+
+msgid "Label used for 404 error item in breadcrumbs."
+msgstr "用于面包屑中 404 个错误项目的标签。"
+
+msgid "Hide Post Title"
+msgstr "隐藏帖子标题"
+
+msgid "Hide Post title from Breadcrumb."
+msgstr "隐藏后标题从面包屑。"
+
+msgid "Show Category(s)"
+msgstr "显示类别"
+
+msgid "If category is a child category, show all ancestor categories."
+msgstr "如果类别是儿童类别，则显示所有祖先类别。"
+
+msgid "Hide Taxonomy Name"
+msgstr "隐藏分类名称"
+
+msgid "Hide Taxonomy Name from Breadcrumb."
+msgstr "从面包屑中隐藏分类名称。"
+
+msgid "Show Blog Page"
+msgstr "显示博客页面"
+
+msgid "Show Blog Page in Breadcrumb."
+msgstr "显示面包屑中的博客页面。"
+
+msgid ".htaccess file not found."
+msgstr "。找不到赫塔切斯文件。"
+
+msgid "I understand the risks and I want to edit the file"
+msgstr "我了解风险，我想编辑文件"
+
+msgid ""
+"Be careful when editing the htaccess file, it is easy to make mistakes and "
+"break your site. If that happens, you can restore the file to its state "
+"<strong>before the last edit</strong> by replacing the htaccess file with "
+"the backup copy created by Rank Math in the same directory (<em>."
+"htaccess_back_xxxxxx</em>) using an FTP client."
+msgstr ""
+"在编辑 htaccess 文件时要小心，很容易出错并破坏您的网站。如果发生这种情况，您可以将文件恢复到其状态<strong>"
+"在最后一次编辑之前</strong>，使用使用FTP客户端在同一目录（<em>.htaccess_back_xxxxxx</em>）中用 Rank "
+"Math 创建的备份副本替换 htaccess 文件。"
+
+msgid ".htaccess file is not writable."
+msgstr "。赫塔切斯文件是不可告人。"
+
+msgid "Strip Category Base"
+msgstr "条状类别基座"
+
+#. translators: Link to kb article
+msgid ""
+"Remove /category/ from category archive URLs. %s <br>E.g. <code>example."
+"com/category/my-category/</code> becomes <code>example.com/my-category</code>"
+msgstr ""
+"从类别存档网址中删除/类别/类别/%s <br>E. <code>example.com/category/my-category/</code>"
+"成为<code>example.com/my-category</code>"
+
+msgid "Why do this?"
+msgstr "为什么要这么做？"
+
+#. translators: Redirection page url
+msgid "Redirection Manager"
+msgstr "重定向管理器"
+
+msgid "Redirections Manager"
+msgstr "重定向管理器"
+
+msgid "Please enable Redirections module."
+msgstr "请启用重定向模块。"
+
+msgid "Redirect Attachments"
+msgstr "重定向附件"
+
+#. translators: Link to kb article
+msgid ""
+"Redirect all attachment page URLs to the post they appear in. For more "
+"advanced redirection control, use the built-in %s."
+msgstr "将所有附件页面网址重定向到它们显示的帖子。有关更高级的重定向控制，请使用内置% s。"
+
+msgid "Redirect Orphan Attachments"
+msgstr "重定向孤儿附件"
+
+msgid ""
+"Redirect attachments without a parent post to this URL. Leave empty for no "
+"redirection."
+msgstr "将无父帖的附件重定向到此URL。保持空，无需重定向。"
+
+msgid "Nofollow Image File Links"
+msgstr "无跟随图像文件链接"
+
+msgid ""
+"Automatically add <code>rel=\"nofollow\"</code> attribute for links pointing "
+"to external image files. The attribute is dynamically applied when the "
+"content is displayed, and the stored content is not changed."
+msgstr "自动添加指向外部图像文件的链接的<code>rel=\"不跟随\"</code>属性。显示内容时动态应用属性，并且存储的内容不更改。"
+
+msgid "Nofollow Domains"
+msgstr "无跟随域"
+
+msgid ""
+"Only add <code>nofollow</code> attribute for the link if target domain is in "
+"this list. Add one per line. Leave empty to apply nofollow for <strong>"
+"ALL</strong> external domains."
+msgstr ""
+"仅在此列表中添加<code>\"无跟随</code>链接属性。每行添加一个。请留下空位，不适用于<strong>ALL</strong>外部域。"
+
+msgid "Nofollow Exclude Domains"
+msgstr "无跟随排除域"
+
+msgid ""
+"The <code>nofollow</code> attribute <strong>will not be added</strong> for "
+"the link if target domain is in this list. Add one per line."
+msgstr "如果目标域在此列表中，则链接的<code>不跟随</code>属性<strong>不会添加</strong>。每行添加一个。"
+
+msgid ""
+"Automatically add <code>target=\"_blank\"</code> attribute for external "
+"links appearing in your posts, pages, and other post types to make them open "
+"in a new browser tab or window. The attribute is dynamically applied when "
+"the content is displayed, and the stored content is not changed."
+msgstr ""
+"自动添加<code>目标+\"_blank\"</code>"
+"属性，用于显示在帖子、页面和其他帖子类型中的外部链接，使其在新的浏览器选项卡或窗口中打开。显示内容时动态应用属性，并且存储的内容不更改。"
+
+msgid "Show SEO Score to Visitors"
+msgstr "向访客显示 SEO 分数"
+
+msgid ""
+"Proudly display the calculated SEO Score as a badge on the front end. It can "
+"be disabled for specific posts in the post editor."
+msgstr "自豪地将计算的 SEO 分数显示为前端的徽章。它可以禁用后编辑器中的特定帖子。"
+
+msgid "SEO Score Post Types"
+msgstr "SEO 得分后类型"
+
+msgid "SEO Score Template"
+msgstr "SEO 分数模板"
+
+msgid "Change the styling for the front end SEO score badge."
+msgstr "更改前端 SEO 分数徽章的造型。"
+
+msgid "Circle"
+msgstr "圈"
+
+msgid "Square"
+msgstr "广场"
+
+msgid "SEO Score Position"
+msgstr "SEO 分数位置"
+
+#. translators: 1.SEO Score Shortcode 2. SEO Score function
+msgid ""
+"Display the badges automatically, or insert the %1$s shortcode in your posts "
+"and the %2$s template tag in your theme template files."
+msgstr "自动显示徽章，或在帖子中插入 %1$s 短码，在主题模板文件中插入 %2$s 模板标签。"
+
+msgid "Below Content"
+msgstr "下文内容"
+
+msgid "Above Content"
+msgstr "以上内容"
+
+msgid "Above & Below Content"
+msgstr "以上内容"
+
+msgid "Custom (use shortcode)"
+msgstr "自定义（使用短码）"
+
+msgid "Support Us with a Link"
+msgstr "支持我们与链接"
+
+#. translators: %s is the word "nofollow" code tag and second one for the filter link
+msgid ""
+"If you are showing the SEO scores on the front end, this option will insert "
+"a %1$s backlink to RankMath.com to show your support. You can change the "
+"link & the text by using this %2$s."
+msgstr ""
+"如果您在前端显示 SEO 分数，此选项将插入 % 1$s 反向链接以显示您的支持 RankMath.com。您可以使用此%2$s更改链接和文本。"
+
+msgid "filter"
+msgstr "滤波器"
+
+msgid "RSS Before Content"
+msgstr "内容前的RSS"
+
+msgid "Add content before each post in your site feeds."
+msgstr "在网站源中的每个帖子之前添加内容。"
+
+msgid "RSS After Content"
+msgstr "内容后的RSS"
+
+msgid "Add content after each post in your site feeds."
+msgstr "在网站源中的每个帖子后添加内容。"
+
+msgid "Available variables"
+msgstr "可用变量"
+
+msgid "Variable"
+msgstr "变量"
+
+msgid ""
+"A link to the archive for the post author, with the authors name as anchor "
+"text."
+msgstr "帖子作者的存档链接，作者姓名为锚文本。"
+
+msgid "A link to the post, with the title as anchor text."
+msgstr "链接到帖子，标题为锚文本。"
+
+msgid "A link to your site, with your site's name as anchor text."
+msgstr "指向您的网站的链接，以您的网站名称作为锚文本。"
+
+msgid ""
+"A link to your site, with your site's name and description as anchor text."
+msgstr "指向您的网站的链接，其名称和描述为锚文本。"
+
+msgid "Featured image of the article."
+msgstr "文章的特色图像。"
+
+msgid "Google Search Console"
+msgstr "谷歌搜索控制台"
+
+#. translators: Google Search Console Link
+msgid ""
+"Enter your Google Search Console verification HTML code or ID. Get it from "
+"here: %s"
+msgstr "输入您的谷歌搜索控制台验证HTML代码或ID。从这里获取：%"
+
+msgid "Search Console Verification Page"
+msgstr "搜索控制台验证页面"
+
+msgid "Bing Webmaster Tools"
+msgstr "必应网站站长工具"
+
+#. translators: Bing webmaster link
+msgid ""
+"Enter your Bing Webmaster Tools verification HTML code or ID. Get it here: %s"
+msgstr "输入必应网站站长 工具验证HTML代码或ID。"
+
+msgid "Bing Webmaster Verification Page"
+msgstr "必应网站站长验证页面"
+
+msgid "Baidu Webmaster Tools"
+msgstr "百度网站站长工具"
+
+#. translators: Baidu webmaster link
+msgid ""
+"Enter your Baidu Webmaster Tools verification HTML code or ID. Get it from "
+"here: %s"
+msgstr "输入您的百度网站站长工具验证HTML代码或ID。从这里获取：%"
+
+msgid "Alexa Verification ID"
+msgstr "亚历克萨验证 ID"
+
+#. translators: Alexa webmaster link
+msgid "Enter your Alexa verification HTML code or ID. Get it from here: %s"
+msgstr "输入您的亚历克萨验证HTML代码或ID。从这里获取：%s"
+
+msgid "Alexa Account"
+msgstr "亚历克萨帐户"
+
+msgid "Yandex Verification ID"
+msgstr "延德克斯验证 ID"
+
+#. translators: Yandex webmaster link
+msgid "Enter your Yandex verification HTML code or ID. Get it from here: %s"
+msgstr "输入您的延德克斯验证HTML代码或ID。从这里获取：%s"
+
+msgid "Yandex.Webmaster Page"
+msgstr "延德克斯.网站站长页面"
+
+msgid "Pinterest Verification ID"
+msgstr "兴趣验证 ID"
+
+#. translators: Pinterest webmaster link
+msgid "Enter your Pinterest verification HTML code or ID. Get it from here: %s"
+msgstr "输入您的兴趣验证HTML代码或ID。从这里获取：%"
+
+msgid "Pinterest Account"
+msgstr "兴趣帐户"
+
+msgid "Norton Safe Web Verification ID"
+msgstr "诺顿安全网络验证 ID"
+
+#. translators: Norton webmaster link
+msgid ""
+"Enter your Norton Safe Web verification HTML code or ID. Get it from here: %s"
+msgstr "输入您的诺顿安全网络验证HTML代码或ID。从这里获取：%s"
+
+msgid "Norton Ownership Verification Page"
+msgstr "诺顿所有权验证页面"
+
+msgid "Author Archives"
+msgstr "作者档案"
+
+msgid ""
+"Enables or disables Author Archives. If disabled, the Author Archives are "
+"redirected to your homepage. To avoid duplicate content issues, noindex "
+"author archives if you keep them enabled."
+msgstr "启用或禁用作者档案。如果禁用，作者档案将重定向到您的主页。为了避免重复的内容问题，如果您启用了这些内容，请保留提交者档案。"
+
+msgid "Disabled"
+msgstr "禁用"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Author Base"
+msgstr "作者基础"
+
+msgid "Change the <code>/author/</code> part in author archive URLs."
+msgstr "更改作者存档网址中的<code>/作者/</code>部分。"
+
+#. translators: post type name
+msgid "Author Robots Meta"
+msgstr "作者 机器人 元"
+
+msgid ""
+"Select custom robots meta for author page, such as <code>nofollow</code>, "
+"<code>noarchive</code>, etc. Otherwise the default meta will be used, as set "
+"in the Global Meta tab."
+msgstr ""
+"为作者页面选择自定义机器人元，如<code>不跟随</code>、<code>无政府状态</code>"
+"等。否则，将使用默认元，如全球元选项卡中所设置的那样。"
+
+msgid "Default"
+msgstr "违约"
+
+msgid "Custom"
+msgstr "习惯"
+
+msgid "Custom values for robots meta tag on author page."
+msgstr "作者页面上的机器人元标记自定义值。"
+
+msgid "Author Advanced Robots"
+msgstr "作者 高级机器人"
+
+msgid "Author Archive Title"
+msgstr "作者档案标题"
+
+msgid ""
+"Title tag on author archives. SEO options for specific authors can be set "
+"with the meta box available in the user profiles."
+msgstr "作者档案上的标题标签。特定作者的 SEO 选项可以设置为用户配置文件中可用的元框。"
+
+msgid "Author Archive Description"
+msgstr "作者 档案描述"
+
+msgid ""
+"Author archive meta description. SEO options for specific author archives "
+"can be set with the meta box in the user profiles."
+msgstr "作者存档元描述。特定作者档案的 SEO 选项可以设置为用户配置文件中的元框。"
+
+msgid "Add SEO Meta Box for Users"
+msgstr "为用户添加 SEO 元框"
+
+msgid ""
+"Add SEO Meta Box for user profile pages. Access to the Meta Box can be fine "
+"tuned with code, using a special filter hook."
+msgstr "为用户配置文件页面添加 SEO 元框。使用特殊的滤钩，可以使用代码对元框的访问进行微调。"
+
+msgid ""
+"Default values for robots meta tag. These can be changed for individual "
+"posts, taxonomies, etc."
+msgstr "机器人元标记的默认值。这些可以更改为个别职位、分类等。"
+
+msgid ""
+"You can use the separator character in titles by inserting <code>"
+"%separator%</code> or <code>%sep%</code> in the title fields."
+msgstr "您可以在标题字段中插入<code>%分离器%</code>或<code>%sep%</code>，从而在标题中使用分离器字符。"
+
+msgid "Rewrite Titles"
+msgstr "重写标题"
+
+msgid ""
+"Your current theme doesn't support title-tag. Enable this option to rewrite "
+"page, post, category, search and archive page titles."
+msgstr "您当前的主题不支持标题标记。启用此选项重写页面、帖子、类别、搜索和存档页面标题。"
+
+msgid "Capitalize Titles"
+msgstr "大写标题"
+
+msgid "Automatically capitalize the first character of all title tags."
+msgstr "自动大写所有标题标签的第一个字符。"
+
+msgid "OpenGraph Thumbnail"
+msgstr "打开图缩略图"
+
+msgid ""
+"When a featured image is not set, this image will be used as a thumbnail "
+"when your post is shared on Facebook. Recommended image size 1200 x 630 "
+"pixels."
+msgstr "未设置特色图像时，当您的帖子在 Facebook 上共享时，此图像将用作缩略图。推荐的图像大小 1200 x 630 像素。"
+
+msgid "Twitter Card Type"
+msgstr "推特卡类型"
+
+msgid ""
+"Card type selected when creating a new post. This will also be applied for "
+"posts without a card type selected."
+msgstr "创建新帖子时选择的卡类型。这也将适用于未选定卡类型的帖子。"
+
+#. translators: something
+msgid ""
+"Static page is set as the front page (WP Dashboard > Settings > Reading). To "
+"add SEO title, description, and meta for the homepage, please click here: %s"
+msgstr "静态页面设置为头版（WP 仪表板>设置>阅读）。要为主页添加SEO标题、描述和元，请单击此处：%s"
+
+msgid "Edit Page: "
+msgstr "编辑页面："
+
+msgid "Homepage Title"
+msgstr "主页标题"
+
+msgid "Homepage title tag."
+msgstr "主页标题标签。"
+
+msgid "Homepage Meta Description"
+msgstr "主页元描述"
+
+msgid "Homepage meta description."
+msgstr "主页元描述。"
+
+msgid "Homepage Robots Meta"
+msgstr "主页机器人元"
+
+msgid ""
+"Select custom robots meta for homepage, such as <code>nofollow</code>, <code>"
+"noarchive</code>, etc. Otherwise the default meta will be used, as set in "
+"the Global Meta tab."
+msgstr ""
+"选择自定义机器人元主页，如<code>低</code>，<code>无政府状态</code>等。否则，将使用默认元，如全球元选项卡中所设置的那样。"
+
+msgid "Custom values for robots meta tag on homepage."
+msgstr "主页上机器人元标记的自定义值。"
+
+msgid "Homepage Advanced Robots"
+msgstr "主页高级机器人"
+
+msgid "Homepage Title for Facebook"
+msgstr "脸谱网主页标题"
+
+msgid ""
+"Title of your site when shared on Facebook, Twitter and other social "
+"networks."
+msgstr "在 Facebook、推特和其他社交网络上共享网站名称。"
+
+msgid "Homepage Description for Facebook"
+msgstr "脸谱网主页描述"
+
+msgid ""
+"Description of your site when shared on Facebook, Twitter and other social "
+"networks."
+msgstr "在 Facebook、推特和其他社交网络上共享时对网站的描述。"
+
+msgid "Homepage Thumbnail for Facebook"
+msgstr "脸谱网主页缩略图"
+
+msgid ""
+"Image displayed when your homepage is shared on Facebook and other social "
+"networks. Use images that are at least 1200 x 630 pixels for the best "
+"display on high resolution devices."
+msgstr ""
+"当您的主页在 Facebook 和其他社交网络上共享时显示的图像。使用至少 1200 x 630 像素的图像，在高分辨率设备上获得最佳显示效果。"
+
+msgid "Person or Company"
+msgstr "人员或公司"
+
+msgid "Organization"
+msgstr "组织"
+
+msgid "Choose whether the site represents a person or an organization."
+msgstr "选择网站是代表个人还是组织。"
+
+msgid "Your name or company name"
+msgstr "您的姓名或公司名称"
+
+msgid "Logo"
+msgstr "商标"
+
+msgid ""
+"<strong>Min Size: 160Χ90px, Max Size: 1920X1080px</strong>.<br /> A squared "
+"image is preferred by the search engines."
+msgstr "<strong>最小尺寸：160Χ90px，最大尺寸：1920X1080px</strong>。<br /> 搜索引擎更喜欢方形图像。"
+
+msgid "URL of the item."
+msgstr "项目网址。"
+
+msgid "Date Archives"
+msgstr "日期档案"
+
+#. translators: placeholder is an example URL.
+msgid ""
+"Enable or disable the date archives (e.g: %s). If this option is disabled, "
+"the date archives will be redirected to the homepage."
+msgstr "启用或禁用日期存档（例如：% s）。如果禁用此选项，日期存档将重定向到主页。"
+
+msgid "Date Archive Title"
+msgstr "日期存档标题"
+
+msgid "Title tag on day/month/year based archives."
+msgstr "基于日/月/年档案的标题标签。"
+
+msgid "Date Archive Description"
+msgstr "日期存档说明"
+
+msgid "Date archive description."
+msgstr "日期存档描述。"
+
+#. translators: post type name
+msgid "Date Robots Meta"
+msgstr "日期机器人元"
+
+msgid "Custom values for robots meta tag on date page."
+msgstr "日期页上机器人元标记的自定义值。"
+
+msgid "Date Advanced Robots"
+msgstr "日期 高级机器人"
+
+msgid "404 Title"
+msgstr "404 标题"
+
+msgid "Title tag on 404 Not Found error page."
+msgstr "404未找到错误页面上的标题标记。"
+
+msgid "Search Results Title"
+msgstr "搜索结果标题"
+
+msgid "Title tag on search results page."
+msgstr "搜索结果页面上的标题标记。"
+
+msgid "Noindex Search Results"
+msgstr "诺因德克斯搜索结果"
+
+msgid ""
+"Prevent search results pages from getting indexed by search engines. Search "
+"results could be considered to be thin content and prone to duplicate "
+"content issues."
+msgstr "防止搜索结果页面被搜索引擎索引。搜索结果可被视为内容薄，容易出现重复的内容问题。"
+
+msgid "Noindex Paginated Pages"
+msgstr "无内存页面"
+
+msgid ""
+"Set this to on to prevent /page/2 and further of any archive to show up in "
+"the search results."
+msgstr "将此设置为防止/page/2 和任何存档的进一步显示在搜索结果中。"
+
+msgid "Noindex Archive Subpages"
+msgstr "诺因德克斯存档子页"
+
+msgid "Prevent paginated archive pages from getting indexed by search engines."
+msgstr "防止被搜索引擎索引的已填充存档页面。"
+
+msgid "Noindex Password Protected Pages"
+msgstr "无输入密码保护页面"
+
+msgid ""
+"Prevent password protected pages & posts from getting indexed by search "
+"engines."
+msgstr "防止密码保护页面和帖子被搜索引擎索引。"
+
+msgid ""
+"To configure attachment-related meta tags disable attachment redirection to "
+"parent."
+msgstr "要配置与附件相关的元标记，禁用附件重定向到父级。"
+
+#. translators: post type name
+msgid "Single %s Title"
+msgstr "单个 %s 标题"
+
+#. translators: post type name
+msgid ""
+"Default title tag for single %s pages. This can be changed on a per-post "
+"basis on the post editor screen."
+msgstr "单个%页的默认标题标记。这可以在帖子编辑器屏幕上按每个帖子进行更改。"
+
+#. translators: post type name
+msgid "Single %s Description"
+msgstr "单个百分比描述"
+
+#. translators: post type name
+msgid ""
+"Default description for single %s pages. This can be changed on a per-post "
+"basis on the post editor screen."
+msgstr "单个%页的默认描述。这可以在帖子编辑器屏幕上按每个帖子进行更改。"
+
+#. translators: post type name
+msgid "%s Archive Title"
+msgstr "%s 存档标题"
+
+#. translators: post type name
+msgid "Title for %s archive pages."
+msgstr "%s存档页面的标题。"
+
+#. translators: post type name
+msgid "%s Archive Description"
+msgstr "%s 存档描述"
+
+#. translators: post type name
+msgid "Description for %s archive pages."
+msgstr "%存档页面的描述。"
+
+msgid "Headline"
+msgstr "标题"
+
+#. translators: post type name
+#. translators: post type name
+msgid "%s Robots Meta"
+msgstr "%s 机器人元"
+
+#. translators: post type name
+msgid ""
+"Select custom robots meta, such as <code>nofollow</code>, <code>"
+"noarchive</code>, etc. for single %s pages. Otherwise the default meta will "
+"be used, as set in the Global Meta tab."
+msgstr ""
+"选择自定义机器人元，如<code>不跟随</code>，<code>无政府状态</code>"
+"等为单个%的页面。否则，将使用默认元，如全球元选项卡中所设置的那样。"
+
+#. translators: post type name
+msgid "Custom values for robots meta tag on %s."
+msgstr "在%s上对机器人元标记进行自定义值。"
+
+#. translators: post type name
+msgid "%s Advanced Robots Meta"
+msgstr "%s 高级机器人元"
+
+msgid ""
+"Enable Link Suggestions meta box for this post type, along with the Pillar "
+"Content feature."
+msgstr "启用此帖子类型的链接建议元框以及支柱内容功能。"
+
+msgid "Link Suggestion Titles"
+msgstr "链接建议标题"
+
+msgid ""
+"Use the Focus Keyword as the default text for the links instead of the post "
+"titles."
+msgstr "使用\"焦点关键字\"作为链接的默认文本，而不是帖子标题。"
+
+msgid "Titles"
+msgstr "标题"
+
+msgid "Primary Taxonomy"
+msgstr "初级分类学"
+
+#. translators: post type name
+msgid ""
+"Choose which taxonomy you want to use with the Primary Term feature. This "
+"will also be the taxonomy shown in the Breadcrumbs when a single %1$s is "
+"being viewed."
+msgstr "选择您希望使用哪个分类法与主要术语功能。这也是在查看单个 %1$时在面包屑中显示的分类法。"
+
+msgid "Thumbnail for Facebook"
+msgstr "脸谱网的缩略图"
+
+msgid ""
+"Image displayed when your page is shared on Facebook and other social "
+"networks. Use images that are at least 1200 x 630 pixels for the best "
+"display on high resolution devices."
+msgstr ""
+"当您的页面在 Facebook 和其他社交网络上共享时显示的图像。使用至少 1200 x 630 像素的图像，在高分辨率设备上获得最佳显示效果。"
+
+msgid "Add SEO Meta Box"
+msgstr "添加搜索引擎优化元框"
+
+msgid ""
+"Add the SEO Meta Box for the editor screen to customize SEO options for "
+"posts in this post type."
+msgstr "为编辑器屏幕添加 SEO 元框，以便自定义此帖子类型帖子的 SEO 选项。"
+
+msgid "Bulk Editing"
+msgstr "批量编辑"
+
+msgid "Add bulk editing columns to the post listing screen."
+msgstr "将批量编辑列添加到帖子列表屏幕。"
+
+msgid "Read Only"
+msgstr "只读"
+
+msgid "Custom Fields"
+msgstr "自定义字段"
+
+msgid ""
+"List of custom fields name to include in the Page analysis. Add one per line."
+msgstr "要包含在页面分析中的自定义字段名称列表。每行添加一个。"
+
+msgid "Facebook Page URL"
+msgstr "脸谱网页网址"
+
+msgid "Enter your complete Facebook page URL here. eg:"
+msgstr "在此处输入完整的 Facebook 页面 URL。例如："
+
+msgid "Facebook Authorship"
+msgstr "脸谱作者"
+
+msgid ""
+"Insert personal Facebook profile URL to show Facebook Authorship when your "
+"articles are being shared on Facebook. eg:"
+msgstr "插入个人 Facebook 个人资料 URL，以显示您的文章在 Facebook 上共享时的 Facebook 作者身份。例如："
+
+msgid "Facebook Admin"
+msgstr "脸谱管理员"
+
+#. translators: numeric user ID link
+msgid ""
+"Enter %s. Use a comma to separate multiple IDs. Alternatively, you can enter "
+"an app ID below."
+msgstr "输入百分比。使用逗号分离多个 ID。或者，您可以输入下面的应用 ID。"
+
+msgid "Facebook App"
+msgstr "脸谱应用程序"
+
+#. translators: numeric app ID link
+msgid "Enter %s. Alternatively, you can enter a user ID above."
+msgstr "输入百分比。或者，您可以输入上面的用户 ID。"
+
+msgid "Facebook Secret"
+msgstr "脸谱网秘密"
+
+#. translators: Learn more link
+msgid "Enter alphanumeric secret ID. %s."
+msgstr "输入字母数字秘密 ID. % s."
+
+msgid "Twitter Username"
+msgstr "推特用户名"
+
+msgid ""
+"Enter the Twitter username of the author to add <code>twitter:creator</code> "
+"tag to posts. eg: <code>RankMathSEO</code>"
+msgstr "输入作者的 Twitter 用户名，在帖子中添加<code>推特：创建者</code>标签。例如： <code>兰克马塞奥</code>"
+
+#. translators: taxonomy name
+msgid "%s Archive Titles"
+msgstr "%s 存档标题"
+
+#. translators: taxonomy name
+msgid "Title tag for %s archives"
+msgstr "%s 档案的标题标记"
+
+#. translators: taxonomy name
+msgid "%s Archive Descriptions"
+msgstr "%s 存档说明"
+
+#. translators: taxonomy name
+msgid "Description for %s archives"
+msgstr "%的档案描述"
+
+#. translators: taxonomy name
+#. translators: taxonomy name
+msgid "%s Archives Robots Meta"
+msgstr "%s 档案机器人元"
+
+#. translators: taxonomy name
+msgid ""
+"Select custom robots meta, such as <code>nofollow</code>, <code>"
+"noarchive</code>, etc. for %s archive pages. Otherwise the default meta will "
+"be used, as set in the Global Meta tab."
+msgstr ""
+"选择自定义机器人元，如<code>不跟随</code>，<code>无政府状态</code>"
+"等为%的存档页面。否则，将使用默认元，如全球元选项卡中所设置的那样。"
+
+#. translators: taxonomy name
+msgid "Custom values for robots meta tag on %s archives."
+msgstr "在%s存档上对机器人元标记进行自定义值。"
+
+#. translators: taxonomy name
+msgid "%s Archives Advanced Robots Meta"
+msgstr "%s 档案高级机器人元"
+
+msgid ""
+"Add the SEO Meta Box for the term editor screen to customize SEO options for "
+"individual terms in this taxonomy."
+msgstr "为术语编辑器屏幕添加 SEO 元框，以自定义本分类中单个术语的 SEO 选项。"
+
+msgid "Remove Snippet Data"
+msgstr "删除片段数据"
+
+#. translators: taxonomy name
+msgid "Remove schema data from %s."
+msgstr "从%s中删除图解体数据。"
+
+msgid "Create Backup"
+msgstr "创建备份"
+
+msgid "Settings Backup"
+msgstr "设置备份"
+
+msgid ""
+"Take a backup of your plugin settings in case you wish to restore them in "
+"future. Use it as backup before making substantial changes to Rank Math "
+"settings. For taking a backup of the SEO data of your content, use the XML "
+"Export option."
+msgstr "备份插件设置，以防将来恢复它们。在对排名数学设置进行重大更改之前，请将其用作备份。要备份内容中的 SEO 数据，请使用 XML 导出选项。"
+
+msgid "There is no backup."
+msgstr "没有备份。"
+
+msgid "Plugin Settings"
+msgstr "插件设置"
+
+#. translators: Link to learn about import export panel KB article
+msgid ""
+"Import or export your Rank Math settings, This option is useful for "
+"replicating Rank Math settings across multiple websites. %s"
+msgstr "导入或导出您的排名数学设置，此选项可用于在多个网站上复制排名数学设置。% s"
+
+msgid "Learn more about the Import/Export options."
+msgstr "了解有关进出口选项的更多了解。"
+
+msgid "Export Settings"
+msgstr "导出设置"
+
+msgid "Settings File"
+msgstr "设置文件"
+
+msgid "Please select a file to import."
+msgstr "请选择要导入的文件。"
+
+msgid ""
+"Import settings by locating settings file and clicking \"Import settings\"."
+msgstr "通过定位设置文件并单击\"导入设置\"导入设置。"
+
+msgid "Titles &amp; Metas"
+msgstr "标题 » 梅塔斯"
+
+msgid "Role Manager Settings"
+msgstr "角色经理设置"
+
+msgid "Choose the panels to export."
+msgstr "选择要导出的面板。"
+
+msgid "Other Plugins"
+msgstr "其他插件"
+
+#. translators: Link to learn about import export panel KB article
+msgid ""
+"If you were using another plugin to add important SEO information to your "
+"website before switching to Rank Math SEO, you can import the settings and "
+"data here. %s"
+msgstr "如果您在切换到排名数学 SEO 之前使用另一个插件将重要的 SEO 信息添加到您的网站，则可以在此处导入设置和数据。% s"
+
+msgid "Clean"
+msgstr "干净"
+
+msgid "No plugin detected with importable data."
+msgstr "未检测到可导入数据的插件。"
+
+msgid "Your website is compatible to run Rank Math SEO"
+msgstr "您的网站兼容运行排名数学SEO"
+
+msgid "More"
+msgstr "更多"
+
+msgid "Less"
+msgstr "少"
+
+#. translators: php version
+msgid "Your PHP Version: %s | Recommended version: 7.2 | Minimal required: 5.4"
+msgstr "您的PHP版本：%的|推荐版本： 7.2 |最小要求： 5.4"
+
+msgid "Your PHP Version: %s"
+msgstr "您的PHP版本：%"
+
+msgid "Recommended: PHP 7.2 or later"
+msgstr "推荐： PHP 7.2 或更晚"
+
+msgid ""
+"Rank Math is compatible with your PHP version but we recommend updating to "
+"PHP 7.2 for increased speed and security."
+msgstr "排名数学与您的PHP版本兼容，但我们建议更新到PHP 7.2，以提高速度和安全性。"
+
+msgid "More information"
+msgstr "更多信息"
+
+msgid ""
+"This plugin is compatible with your PHP version but we recommend updating to "
+"PHP 7.2 for increased speed and security."
+msgstr "此插件与您的 PHP 版本兼容，但我们建议更新到 PHP 7.2 以提高速度和安全性。"
+
+msgid "You are using the recommended WordPress version."
+msgstr "您使用的是推荐的WordPress版本。"
+
+msgid "PHP DOM Extension installed"
+msgstr "安装的PHP多姆扩展"
+
+msgid "PHP DOM Extension missing"
+msgstr "缺少PHP多姆扩展"
+
+msgid "PHP SimpleXML Extension installed"
+msgstr "安装的 PHP 简单XML 扩展"
+
+msgid "PHP SimpleXML Extension missing"
+msgstr "缺少 PHP 简单XML扩展"
+
+msgid "PHP GD Extension installed"
+msgstr "安装PHP GD扩展"
+
+msgid "PHP GD Extension missing"
+msgstr "缺少PHP GD扩展"
+
+msgid "PHP MBstring Extension installed"
+msgstr "安装的 PHP MB 串延"
+
+msgid "PHP MBstring Extension missing"
+msgstr "缺少PHP MB串延"
+
+msgid "PHP OpenSSL Extension installed"
+msgstr "安装PHP开启扩展"
+
+msgid "PHP OpenSSL Extension missing"
+msgstr "缺少PHP开启扩展"
+
+msgid ""
+"Please resolve the issues above to be able to use all features of Rank Math "
+"plugin. If you are not sure how to do it, please contact your hosting "
+"provider."
+msgstr "请解决上述问题，以便能够使用排名数学插件的所有功能。如果您不知道如何做到这一点，请联系您的托管提供商。"
+
+msgid ""
+"Please resolve the issues above to be able to use all SEO features. If you "
+"are not sure how to do it, please contact your hosting provider."
+msgstr "请解决上述问题，以便能够使用所有 SEO 功能。如果您不知道如何做到这一点，请联系您的托管提供商。"
+
+msgid "Your server is correctly configured to use Rank Math."
+msgstr "您的服务器被正确配置为使用排名数学。"
+
+msgid "Your server is correctly configured to use this plugin."
+msgstr "您的服务器已正确配置为使用此插件。"
+
+msgid "No known conflicting plugins found."
+msgstr "未找到已知的冲突插件。"
+
+msgid ""
+"The following active plugins on your site may cause conflict issues when "
+"used alongside Rank Math: "
+msgstr "当与排名数学一起使用时，网站上的以下活动插件可能会导致冲突问题："
+
+msgid ""
+"The following active plugins on your site may cause conflict issues when "
+"used alongside this plugin: "
+msgstr "当与此插件一起使用时，网站上的以下活动插件可能会导致冲突问题："
+
+msgid "You can import settings in the next step."
+msgstr "您可以在下一步导入设置。"
+
+msgid "Deactivate Plugin"
+msgstr "停用插件"
+
+msgid "Start Wizard"
+msgstr "启动向导"
+
+msgid "Connect Google Services"
+msgstr "连接谷歌服务"
+
+msgid "Benefits of Connecting Google Account"
+msgstr "连接谷歌帐户的好处"
+
+msgid "Verify site ownership on Google Search Console in a single click"
+msgstr "只需单击一下即可验证 Google 搜索控制台上的站点所有权"
+
+msgid "Track page and keyword rankings with the Advanced Analytics module"
+msgstr "使用高级分析模块跟踪页面和关键字排名"
+
+msgid "Easily set up Google Analytics without using another 3rd party plugin"
+msgstr "轻松设置谷歌分析，无需使用其他第三方插件"
+
+msgid "Automatically submit sitemaps to the Google Search Console"
+msgstr "自动将网站地图提交到谷歌搜索控制台"
+
+msgid "Learn more about the benefits of connecting your account here."
+msgstr "在此处了解有关连接帐户的好处的更多信息。"
+
+msgid ""
+"We do not store any of the data from your Google account on our servers, "
+"everything is processed & stored on your server. We take your privacy "
+"extremely seriously and ensure it is never misused. %s"
+msgstr ""
+"我们不会将 Google 帐户中的任何数据存储在我们的服务器上，所有内容都经过处理并存储在您的服务器上。我们非常重视您的隐私，并确保它永远不会被滥用。% "
+"s"
+
+msgid "Setup Wizard - Rank Math"
+msgstr "设置向导 - 排名数学"
+
+msgid "Connect Your Rank Math Account"
+msgstr "连接您的排名数学帐户"
+
+msgid "Benefits of Connecting Rank Math Account"
+msgstr "连接排名数学帐户的好处"
+
+msgid "Free keyword suggestions when entering a focus keyword"
+msgstr "输入焦点关键字时免费关键字建议"
+
+msgid "Use our revolutionary SEO Analyzer to scan your website for SEO errors"
+msgstr "使用我们的革命性 SEO 分析仪扫描您的网站以了解 SEO 错误"
+
+msgid "Your site is ready!"
+msgstr ""
+
+msgid "Enable auto update of the plugin"
+msgstr ""
+
+msgid "Your site is now optimized."
+msgstr ""
+
+msgid "Proceed to Settings"
+msgstr ""
+
+msgid "Subscribe to Our YouTube Channel"
+msgstr ""
+
+msgid "Know more about the PRO version"
+msgstr ""
+
+msgid "Join FREE Facebook Group"
+msgstr ""
+
+msgid "Rank Math Knowledge Base"
+msgstr ""
+
+msgid "Get 24x7 Support"
+msgstr ""
+
+msgid "Proceed to Help Page"
+msgstr ""
+
+msgid "Setup Advanced Options"
+msgstr ""
+
+msgid "Reconnect"
+msgstr ""
+
+msgid "Disconnect"
+msgstr ""
+
+msgid "Site"
+msgstr ""
+
+msgid "Property"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "Install analytics code"
+msgstr ""
+
+msgid ""
+"Enable this option only if you are not using any other plugin/theme to "
+"install Google Analytics code."
+msgstr ""
+
+msgid "Anonymize IP addresses"
+msgstr ""
+
+msgid "PRO"
+msgstr ""
+
+msgid "Enable Cookieless Tracking. Want to make Analytics GDPR ready? %s"
+msgstr ""
+
+msgid "Click here."
+msgstr ""
+
+msgid "Self-Hosted Analytics JS File"
+msgstr ""
+
+msgid "Exclude Logged-in users"
+msgstr ""
+
+msgid "AdSense"
+msgstr ""
+
+msgid ""
+"Google AdSense support is only available in Rank Math Pro's Advanced "
+"Analytics module."
+msgstr ""
+
+msgid "Email Reports"
+msgstr ""
+
+msgid "Receive Analytics reports periodically in email."
+msgstr ""
+
+msgid "Learn more about Email Reports."
+msgstr ""
+
+#. translators: sitename
+msgid "Your Website: %s"
+msgstr ""
+
+msgid "Let us know a few things about your site&hellip;"
+msgstr "让我们了解一些关于您的网站。。。"
+
+#. translators: help link
+msgid ""
+"If you are new to Rank Math, <a href=\"#\" data-target=\"rank-math-wizard-"
+"tabs\" class=\"rank-math-collapsible-trigger\">click here</a> to learn more."
+msgstr ""
+"如果您是新进入排名数学， <a href=\"#\" data-target=\"rank-math-wizard-tabs\" "
+"class=\"rank-math-collapsible-trigger\">请单击此处</a> 了解更多信息。"
+
+msgid "Setup Tutorial"
+msgstr ""
+
+msgid "Knowledge Base"
+msgstr ""
+
+msgid "Click here to learn how to setup Rank Math properly"
+msgstr ""
+
+msgid "Search the Knowledge Base for answers to your questions:"
+msgstr ""
+
+msgid "Type here to search..."
+msgstr ""
+
+msgid ""
+"Hovering over a row in the list will display action links that allow you to "
+"manage the item. You can perform the following actions:"
+msgstr ""
+
+msgid "<strong>View Details</strong> shows details about the 404 requests."
+msgstr ""
+
+msgid ""
+"<strong>Redirect</strong> takes you to the Redirections manager to redirect "
+"the 404 URL."
+msgstr ""
+
+msgid "<strong>Delete</strong> permanently removes the item from the list."
+msgstr ""
+
+msgid ""
+"You can also redirect or delete multiple items at once. Selecting multiple "
+"items to redirect allows you to redirect them to a single URL."
+msgstr ""
+
+msgid ""
+"With the 404 monitor you can see where users and search engines are unable "
+"to find your content."
+msgstr ""
+
+msgid "Knowledge Base Articles:"
+msgstr ""
+
+msgid "404 Monitor Settings"
+msgstr ""
+
+msgid "Fix 404 Errors"
+msgstr ""
+
+msgid ""
+"You can customize the display of this screen's contents in a number of ways:"
+msgstr ""
+
+msgid "You can hide/display columns based on your needs."
+msgstr ""
+
+msgid ""
+"You can decide how many items to list per screen using the Screen Options "
+"tab."
+msgstr ""
+
+msgid "You can search items using the search form at the top."
+msgstr ""
+
+msgid "You can reorder the list by clicking on the column headings. "
+msgstr ""
+
+msgid ""
+"If you have hundreds of 404 errors, your error log might increase quickly. "
+"Only choose this option if you have a very few 404s and are unable to "
+"replicate the 404 error on a particular URL from your end."
+msgstr ""
+
+msgid "Mode"
+msgstr ""
+
+msgid ""
+"The Simple mode only logs URI and access time, while the Advanced mode "
+"creates detailed logs including additional information such as the Referer "
+"URL."
+msgstr ""
+
+msgid "Simple"
+msgstr ""
+
+msgid "Log Limit"
+msgstr ""
+
+msgid "Sets the max number of rows in a log. Set to 0 to disable the limit."
+msgstr ""
+
+msgid "Exclude Paths"
+msgstr ""
+
+msgid ""
+"Enter URIs or keywords you wish to prevent from getting logged by the 404 "
+"monitor."
+msgstr ""
+
+msgid "Ignore Query Parameters"
+msgstr ""
+
+msgid ""
+"Turn ON to ignore all query parameters (the part after a question mark in a "
+"URL) when logging 404 errors."
+msgstr ""
+
+msgid "Given"
+msgstr ""
+
+msgid "Not Given"
+msgstr ""
+
+msgid "Warning:"
+msgstr ""
+
+msgid ""
+"You have not given the permission to fetch this data. Please <a href=\"%s\">"
+"reconnect</a> with all required permissions."
+msgstr "您尚未授予获取此数据的权限。请 <a href=\"%s\">重新连接</a> 所有所需的权限。"
+
+#. translators: reconnect link
+msgid ""
+"There is a problem with the Google auth token. Please <a href=\"%1$s\" "
+"class=\"button button-link rank-math-reconnect-google\">reconnect your "
+"app</a>"
+msgstr ""
+"谷歌身份验证令牌有问题。请 <a href=\"%1$s\" class=\"button button-link rank-math-"
+"reconnect-google\">重新连接您的应用程序</a>"
+
+msgid "Bad request. Please check the code."
+msgstr ""
+
+msgid "Sorry, no preference found."
+msgstr ""
+
+msgid "Sorry, no post id found."
+msgstr ""
+
+#. translators: number of days
+msgid "Storage Days: %s"
+msgstr ""
+
+#. translators: number of rows
+msgid "Data Rows: %s"
+msgstr ""
+
+#. translators: database size
+msgid "Size: %s"
+msgstr ""
+
+#. translators: date
+msgid "Next data fetch on %s"
+msgstr ""
+
+msgid "Delete Data"
+msgstr ""
+
+msgid "Update Data manually"
+msgstr ""
+
+msgid "Fetching in Progress"
+msgstr ""
+
+msgid "Cancel Fetching"
+msgstr ""
+
+#. translators: placeholder is a link to rankmath.com, with "free version" as the anchor text.
+msgid ""
+"Enter the number of days to keep Analytics data in your database. The "
+"maximum allowed days are 90 in the %s. Though, 2x data will be stored in the "
+"DB for calculating the difference properly."
+msgstr ""
+
+msgid "free version"
+msgstr ""
+
+msgid "Analytics Database"
+msgstr ""
+
+#. translators: Placeholders are the opening and closing tag for the link.
+msgid ""
+"Receive periodic SEO Performance reports via email. Once enabled and options "
+"are saved, you can see %1$s the preview here%2$s."
+msgstr ""
+
+msgid "Turn on email reports."
+msgstr ""
+
+msgid "Email Frequency"
+msgstr ""
+
+msgid "Email report frequency."
+msgstr ""
+
+msgid "Every 30 days"
+msgstr ""
+
+msgid "Group Title"
+msgstr ""
+
+msgid "Title tag for groups"
+msgstr ""
+
+msgid "Group Description"
+msgstr ""
+
+msgid "BuddyPress group description"
+msgstr ""
+
+msgid "Group Robots Meta"
+msgstr ""
+
+msgid ""
+"Select custom robots meta for Group archive pages. Otherwise the default "
+"meta will be used, as set in the Global Meta tab."
+msgstr ""
+
+msgid "Custom values for robots meta tag on groups page."
+msgstr ""
+
+msgid "Group Advanced Robots Meta"
+msgstr ""
+
+#. translators: daily quota
+msgid ""
+"Insert URLs to send to the Bing URL Submission API (one per line, up to 500):"
+msgstr ""
+
+msgid "Submit URLs"
+msgstr ""
+
+#. translators: daily quota
+msgid "Quota Left Today: %s"
+msgstr ""
+
+msgid "Bing API Key"
+msgstr ""
+
+#. translators: Link to KB article
+msgid "Insert your Bing Webmaster Tools API Key. %s"
+msgstr ""
+
+msgid "How to obtain it?"
+msgstr ""
+
+msgid "Auto-Submit to Bing"
+msgstr ""
+
+msgid ""
+"Submit posts from these post types automatically to the Bing URL Submission "
+"API when a post is published or edited."
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Search engines display your email address."
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid ""
+"Search engines may prominently display your contact phone number for mobile "
+"users."
+msgstr ""
+
+msgid "Address Format"
+msgstr ""
+
+msgid ""
+"Format used when the address is displayed using the <code>"
+"[rank_math_contact_info]</code> shortcode.<br><strong>Available Tags: "
+"{address}, {locality}, {region}, {postalcode}, {country}, {gps}</strong>"
+msgstr ""
+
+msgid "Opening Hours Format"
+msgstr ""
+
+msgid "Time format used in the contact shortcode."
+msgstr ""
+
+msgid ""
+"Select opening hours. You can add multiple sets if you have different "
+"opening or closing hours on some days or if you have a mid-day break. Times "
+"are specified using 24:00 time."
+msgstr ""
+
+msgid "Add time"
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+msgid "Friday"
+msgstr ""
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Sunday"
+msgstr ""
+
+msgid "e.g. 09:00-17:00"
+msgstr ""
+
+msgid "Phone Number"
+msgstr ""
+
+msgid "Add number"
+msgstr ""
+
+msgid "Format: +1-401-555-1212"
+msgstr ""
+
+msgid "Price Range"
+msgstr ""
+
+msgid "The price range of the business, for example $$$."
+msgstr ""
+
+msgid "Select Page"
+msgstr ""
+
+msgid "About Page"
+msgstr ""
+
+msgid ""
+"Select a page on your site where you want to show the LocalBusiness meta "
+"data."
+msgstr ""
+
+msgid "Contact Page"
+msgstr ""
+
+msgid "Google Maps API Key"
+msgstr ""
+
+#. translators: %s expands to "Google Maps Embed API" https://developers.google.com/maps/documentation/embed
+msgid ""
+"An API Key is required to display embedded Google Maps on your site. Get it "
+"here: %s"
+msgstr ""
+
+msgid "Google Maps Embed API"
+msgstr ""
+
+msgid "Geo Coordinates"
+msgstr ""
+
+msgid "Latitude and longitude values separated by comma."
+msgstr ""
+
+#. translators: placeholder is a link to the Pro version
+msgid "Multiple Locations are available in the %s."
+msgstr ""
+
+msgid "Redirection Debugger"
+msgstr ""
+
+msgid "Redirecting from "
+msgstr ""
+
+msgid " To "
+msgstr ""
+
+#. translators: countdown seconds
+msgid "Redirecting in %s seconds..."
+msgstr ""
+
+msgid "Stop Redirection"
+msgstr ""
+
+msgid "Continue redirecting"
+msgstr ""
+
+msgid "Manage This Redirection"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "Manage All Redirections"
+msgstr ""
+
+msgid ""
+"<strong>Note:</strong> This interstitial page is displayed only to "
+"administrators. Site visitors are redirected without delay."
+msgstr ""
+
+msgid ""
+"<strong>Edit</strong> redirection details: from/to URLs and the redirection "
+"type."
+msgstr ""
+
+msgid ""
+"<strong>Activate/Deactivate</strong> redirections. Deactivated redirections "
+"do not take effect on your site."
+msgstr ""
+
+msgid "<strong>Delete</strong> permanently removes the redirection."
+msgstr ""
+
+msgid ""
+"You can also activate, deactivate, or delete multiple items at once using "
+"the Bulk Actions dropdown."
+msgstr ""
+
+msgid ""
+"Here you can set up custom redirections. It is important to choose the right "
+"type of redirection."
+msgstr ""
+
+msgid ""
+"301 redirections are <em>permanent</em>. The old URL will be removed in "
+"search engines and replaced by the new one, passing on SearchRank and other "
+"SEO scores. Browsers may also store the new URL in cache and redirect to it "
+"even after the redirection is deleted from the list here."
+msgstr ""
+
+msgid ""
+"Using a 302 <em>temporary</em> redirection is useful when you want to test a "
+"new page for client feedback temporarily without affecting the SEO scores of "
+"the original page."
+msgstr ""
+
+msgid ""
+"Redirections can be exported to your .htaccess file for faster redirections, "
+"in SEO > Settings > Import/Export."
+msgstr ""
+
+msgid "Debug Redirections"
+msgstr ""
+
+msgid ""
+"Display the Debug Console instead of being redirected. Administrators only."
+msgstr ""
+
+msgid "Fallback Behavior"
+msgstr ""
+
+msgid ""
+"If nothing similar is found, this behavior will be applied. <strong>"
+"Note</strong>: If the requested URL ends with <code>/login</code>, <code>"
+"/admin</code>, or <code>/dashboard</code>, WordPress will automatically "
+"redirect to respective locations within the WordPress admin area."
+msgstr ""
+
+msgid "Default 404"
+msgstr ""
+
+msgid "Redirect to Homepage"
+msgstr ""
+
+msgid "Custom Redirection"
+msgstr ""
+
+msgid "Custom Url "
+msgstr ""
+
+msgid "Auto Post Redirect"
+msgstr ""
+
+msgid ""
+"Extend the functionality of WordPress by creating redirects in our plugin "
+"when you change the slug of a post, page, category or a CPT. You can modify "
+"the redirection further according to your needs."
+msgstr ""
+
+#. translators: %s is a Learn More link to the documentation.
+msgid "Control which user has access to which options of Rank Math. %s"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Update Capabilities"
+msgstr ""
+
+#. translators: %s expands to a unit of time (e.g. 1 day).
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s expands to a unit of time (e.g. 1 hour).
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s expands to a unit of time (e.g. 1 minute).
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s expands to a unit of time (e.g. 1 day).
+msgid "%1$s and %2$s"
+msgstr ""
+
+#. translators: %s expands to a unit of time (e.g. 1 day).
+msgid "%1$s, %2$s and %3$s"
+msgstr ""
+
+msgid "Total Time:"
+msgstr ""
+
+msgid "Author"
+msgstr ""
+
+msgid "Edition"
+msgstr ""
+
+msgid "Url"
+msgstr ""
+
+msgid "ISBN"
+msgstr ""
+
+msgid "Format"
+msgstr ""
+
+msgid "Course Provider"
+msgstr ""
+
+msgid "Course Provider Name"
+msgstr ""
+
+msgid "Course Provider URL"
+msgstr ""
+
+msgid "Online + Offline"
+msgstr ""
+
+msgid "Event Type"
+msgstr ""
+
+msgid "Event Attendance Mode"
+msgstr ""
+
+msgid "Event Status"
+msgstr ""
+
+msgid "Venue Name"
+msgstr ""
+
+msgid "Venue URL"
+msgstr ""
+
+msgid "Online Event URL"
+msgstr ""
+
+msgid "Performer"
+msgstr ""
+
+msgid "Performer Name"
+msgstr ""
+
+msgid "Performer URL"
+msgstr ""
+
+msgid "Start Date"
+msgstr ""
+
+msgid "End Date"
+msgstr ""
+
+msgid "Ticket URL"
+msgstr ""
+
+msgid "Entry Price"
+msgstr ""
+
+msgid "Currency"
+msgstr ""
+
+msgid "Availability"
+msgstr ""
+
+msgid "Availability Starts"
+msgstr ""
+
+msgid "Stock Inventory"
+msgstr ""
+
+msgid "Salary"
+msgstr ""
+
+msgid "Salary Currency"
+msgstr ""
+
+msgid "Payroll"
+msgstr ""
+
+msgid "Date Posted"
+msgstr ""
+
+msgid "Expiry Posted"
+msgstr ""
+
+msgid "Unpublish when expired"
+msgstr ""
+
+msgid "Employment Type "
+msgstr ""
+
+msgid "Hiring Organization "
+msgstr ""
+
+msgid "Gender"
+msgstr ""
+
+msgid "Job Title"
+msgstr ""
+
+msgid "Product SKU"
+msgstr ""
+
+msgid "Product Brand"
+msgstr ""
+
+msgid "Product Currency"
+msgstr ""
+
+msgid "Product Price"
+msgstr ""
+
+msgid "Price Valid Until"
+msgstr ""
+
+msgid "Product In-Stock"
+msgstr ""
+
+msgid "Cuisine"
+msgstr ""
+
+msgid "Keywords"
+msgstr ""
+
+msgid "Recipe Yield"
+msgstr ""
+
+msgid "Preparation Time"
+msgstr ""
+
+msgid "Cooking Time"
+msgstr ""
+
+msgid "Total Time"
+msgstr ""
+
+msgid "Recipe Video Name"
+msgstr ""
+
+msgid "Recipe Video Description"
+msgstr ""
+
+msgid "Recipe Video Thumbnail"
+msgstr ""
+
+msgid "Recipe Ingredients"
+msgstr ""
+
+msgid "Recipe Instructions"
+msgstr ""
+
+msgid "Serves Cuisine"
+msgstr ""
+
+msgid "Menu URL"
+msgstr ""
+
+msgid "Service Type"
+msgstr ""
+
+msgid "Price Currency"
+msgstr ""
+
+msgid "Operating System"
+msgstr ""
+
+msgid "Application Category"
+msgstr ""
+
+msgid "Start Site-Wide Analysis"
+msgstr ""
+
+msgid "Analysing Website&hellip;"
+msgstr "分析网站。。。"
+
+msgid "Selected page: %s"
+msgstr ""
+
+msgid "Change URL"
+msgstr ""
+
+msgid "Start Page Analysis"
+msgstr ""
+
+msgid "Analysing Page&hellip;"
+msgstr "分析页面..."
+
+msgid "Complete"
+msgstr ""
+
+msgid "Passed Tests"
+msgstr ""
+
+msgid "Warnings"
+msgstr ""
+
+msgid "Failed Tests"
+msgstr ""
+
+msgid "What is this?"
+msgstr ""
+
+msgid "Start Analysis Again"
+msgstr ""
+
+#. translators: placeholders are opening and closing tag for link.
+msgid "Analyze your site by %1$s linking your Rank Math account %2$s"
+msgstr ""
+
+msgid "Exclude User Roles"
+msgstr ""
+
+msgid "Selected roles will be excluded in the sitemap."
+msgstr ""
+
+msgid "Exclude Users"
+msgstr ""
+
+msgid "Add user IDs, separated by commas, to exclude them from the sitemap."
+msgstr ""
+
+#. translators: hreflang tags documentation link
+msgid ""
+"Rank Math generates the default Sitemaps only and WPML takes care of the "
+"rest. When a search engine bot visits any post/page, it is shown hreflang "
+"tag that helps it crawl the translated pages. This is one of the recommended "
+"methods by Google. Please %s"
+msgstr ""
+
+msgid "read here"
+msgstr ""
+
+msgid "Links Per Sitemap"
+msgstr ""
+
+msgid "Max number of links on each sitemap page."
+msgstr ""
+
+msgid "Images in Sitemaps"
+msgstr ""
+
+msgid ""
+"Include reference to images from the post content in sitemaps. This helps "
+"search engines index the important images on your pages."
+msgstr ""
+
+msgid "Include Featured Images"
+msgstr ""
+
+msgid ""
+"Include the Featured Image too, even if it does not appear directly in the "
+"post content."
+msgstr ""
+
+msgid "Exclude Posts"
+msgstr ""
+
+msgid ""
+"Enter post IDs of posts you want to exclude from the sitemap, separated by "
+"commas. This option **applies** to all posts types including posts, pages, "
+"and custom post types."
+msgstr ""
+
+msgid "Exclude Terms"
+msgstr ""
+
+msgid ""
+"Add term IDs, separated by comma. This option is applied for all taxonomies."
+msgstr ""
+
+msgid "Ping Search Engines"
+msgstr ""
+
+msgid "Automatically notify Google &amp; Bing when a sitemap gets updated."
+msgstr "当网站地图更新时，自动通知谷歌和必应。"
+
+msgid ""
+"To generate attachment sitemap disable attachment redirection to parent."
+msgstr ""
+
+msgid "Include in Sitemap"
+msgstr ""
+
+msgid "Include this post type in the XML sitemap."
+msgstr ""
+
+msgid "Image Custom Fields"
+msgstr ""
+
+msgid ""
+"Insert custom field (post meta) names which contain image URLs to include "
+"them in the sitemaps. Add one per line."
+msgstr ""
+
+msgid "Include archive pages for terms of this taxonomy in the XML sitemap."
+msgstr ""
+
+msgid "Include Empty Terms"
+msgstr ""
+
+msgid "Include archive pages of terms that have no posts associated."
+msgstr ""
+
+msgid "Auto Update"
+msgstr ""
+
+msgid ""
+"Turn on auto-updates to automatically update to stable versions of Rank Math "
+"as soon as they are released. The beta versions will never install "
+"automatically."
+msgstr ""
+
+msgid "Auto Update Plugin"
+msgstr ""
+
+msgid ""
+"When auto-updates are turned off, you can enable update notifications, to "
+"send an email to the site administrator when an update is available for Rank "
+"Math."
+msgstr ""
+
+msgid "Update Notification Email"
+msgstr ""
+
+msgid ""
+"Rank Math will not auto-update because you have rolled back to a previous "
+"version. Update to the latest version manually to make this option work "
+"again."
+msgstr ""
+
+msgid "Beta Opt-in"
+msgstr ""
+
+msgid ""
+"You can take part in shaping Rank Math by test-driving the newest features "
+"and letting us know what you think. Turn on the Beta Tester feature to get "
+"notified about new beta releases. The beta version will not install "
+"automatically and you always have the option to ignore it."
+msgstr ""
+
+#. translators: Warning.
+msgid ""
+"%s It is not recommended to use the beta version on live production sites."
+msgstr ""
+
+msgid "Warning: "
+msgstr ""
+
+msgid "Beta Tester"
+msgstr ""
+
+msgid "Rollback to Previous Version"
+msgstr ""
+
+msgid ""
+"If you are facing issues after an update, you can reinstall a previous "
+"version with this tool."
+msgstr ""
+
+#. translators: placeholder is the word "warning".
+msgid ""
+"%s Previous versions may not be secure or stable. Proceed with caution and "
+"always create a backup."
+msgstr ""
+
+msgid "Your Version"
+msgstr ""
+
+#. translators: placeholder is "Rolled Back Version:".
+msgid "%s Auto updates will not work, please update the plugin manually."
+msgstr ""
+
+msgid "Rolled Back Version: "
+msgstr ""
+
+msgid "This is the version you are using on this site."
+msgstr ""
+
+msgid "You are using the latest version of the plugin."
+msgstr ""
+
+msgid "Latest Stable Version"
+msgstr ""
+
+msgid "Update Now"
+msgstr ""
+
+msgid "This is the latest version of the plugin."
+msgstr ""
+
+msgid "Rollback Version"
+msgstr ""
+
+msgid "Roll back to this version."
+msgstr ""
+
+#. translators: Version number.
+msgid "Install Version %s"
+msgstr ""
+
+msgid "Install Selected Version"
+msgstr ""
+
+msgid "Reinstalling, please wait..."
+msgstr ""
+
+msgid "Remove base"
+msgstr ""
+
+#. translators: 1. Example text 2. Example text
+msgid "Remove prefix like %1$s from product URL chosen at %2$s"
+msgstr ""
+
+msgid ""
+"WordPress Dashboard > Settings > Permalinks > Product permalinks Example: "
+"default: /product/accessories/action-figures/acme/ - becomes: "
+"/accessories/action-figures/acme/"
+msgstr ""
+
+msgid "Remove category base"
+msgstr ""
+
+msgid "Remove prefix from category URL."
+msgstr ""
+
+msgid ""
+"default: /product-category/accessories/action-figures/ - changed: "
+"/accessories/action-figures/"
+msgstr ""
+
+msgid " Remove parent slugs"
+msgstr ""
+
+msgid "Remove parent slugs from category URL."
+msgstr ""
+
+msgid ""
+"default: /product-category/accessories/action-figures/ - changed: /product-"
+"category/action-figures/"
+msgstr ""
+
+msgid "Remove Generator Tag"
+msgstr ""
+
+msgid "Remove WooCommerce generator tag from the source code."
+msgstr ""
+
+msgid "Remove Schema Markup on Shop Archives"
+msgstr ""
+
+msgid "Remove Schema Markup Data from WooCommerce Shop archive pages."
+msgstr ""
+
+msgid "Brand"
+msgstr ""
+
+msgid "Select Product Brand Taxonomy to use in Schema.org & OpenGraph markup."
+msgstr ""
+
+msgid "Rank Math PRO"
+msgstr ""
+
+msgid "SEO Report of Your Website"
+msgstr ""
+
+msgid "FULL REPORT"
+msgstr ""
+
+msgid "External Link Icon"
+msgstr ""
+
+#. translators: don't translate the variable names between the #hashes#.
+msgid "Last ###PERIOD_DAYS### Days"
+msgstr ""
+
+msgid "Data Chart"
+msgstr ""
+
+msgid "Top 3 Positions"
+msgstr ""
+
+msgid "4-10 Positions"
+msgstr ""
+
+msgid "11-50 Positions"
+msgstr ""

@@ -1,0 +1,24 @@
+/*	
+Theme Name:One Nav
+Theme URI:https://www.iotheme.cn
+Description:一导航， 集网址、资源、资讯于一体的导航主题。 <br /> 官网：<a href="https://www.iotheme.cn">一主题</a>
+Version: 3.1009
+Requires at least: 5.4
+Tested up to: 5.8
+Requires PHP: 5.6
+Author:一为
+Author URI: https://www.iowen.cn/
+License URI: https://www.iotheme.cn/disclaimer
+Text Domain: i_theme
+*/
+
+/*
+优化登录注册页第三方验证插件兼容性
+修复投稿页开启腾讯防水墙后提示“验证未通过”的问题
+修复网址等自定义文章类型正文无法分页的问题
+修复在线更新检查可能会失效的问题
+TODO 书签归档页
+TODO 网站 app 书籍 归档页  
+TODO 个人标签页网址增加选项卡切换模式
+TODO 投稿邮件通知
+*/

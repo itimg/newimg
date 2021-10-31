@@ -1,0 +1,645 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Sakurairo\n"
+"POT-Creation-Date: 2021-08-24 18:18+0800\n"
+"PO-Revision-Date: 2021-06-26 15:15+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:18
+#, php-format
+msgid "page %s"
+msgstr ""
+
+#: 404.php:47
+msgid "return to previous page"
+msgstr ""
+
+#: 404.php:48
+msgid "return to home page"
+msgstr ""
+
+#: 404.php:51
+msgid "Don't worry, search in site?"
+msgstr ""
+
+#: 404.php:54 footer.php:56 search.php:42
+msgid "Search..."
+msgstr ""
+
+#: archive.php:55 author.php:76 index.php:73
+msgid " Previous"
+msgstr ""
+
+#: comments.php:21
+msgid "view comments"
+msgstr ""
+
+#: comments.php:22 comments.php:27
+msgid " comment"
+msgstr ""
+
+#: comments.php:22 comments.php:27
+msgid " comments"
+msgstr ""
+
+#: comments.php:50
+msgid "no comment"
+msgstr ""
+
+#: comments.php:61
+msgid "I'm not a robot"
+msgstr ""
+
+#: comments.php:62
+msgid "Comment in private"
+msgstr ""
+
+#: comments.php:63
+msgid "Comment reply notify"
+msgstr ""
+
+#: comments.php:71
+msgid "Leave a Reply to"
+msgstr ""
+
+#: comments.php:72
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:73
+msgid "BiuBiuBiu~"
+msgstr ""
+
+#: comments.php:74
+msgid "You are a surprise that I will only meet once in my life"
+msgstr ""
+
+#: comments.php:78
+msgid "Click me OωO"
+msgstr ""
+
+#: comments.php:79
+msgid "Woooooow ヾ(≧∇≦*)ゝ"
+msgstr ""
+
+#: comments.php:100
+msgid "Auto pull nickname and avatar with a QQ num. entered"
+msgstr ""
+
+#: comments.php:100
+msgid "Nickname or QQ number"
+msgstr ""
+
+#: comments.php:100
+msgid "Name* "
+msgstr ""
+
+#: comments.php:102
+msgid "You will receive notification by email"
+msgstr ""
+
+#: comments.php:102
+msgid "email"
+msgstr ""
+
+#: comments.php:102
+msgid "Must* "
+msgstr ""
+
+#: comments.php:104
+msgid "Advertisement is forbidden 😀"
+msgstr ""
+
+#: comments.php:104
+msgid "Site"
+msgstr ""
+
+#: footer.php:70 footer.php:78
+msgid "Want to find something?"
+msgstr ""
+
+#: footer.php:80
+msgid "Search"
+msgstr ""
+
+#: footer.php:132
+msgid "Widgets"
+msgstr ""
+
+#: functions.php:92
+msgid "Nav Menus"
+msgstr ""
+
+#: functions.php:199 functions.php:210
+msgid "Ideas"
+msgstr ""
+
+#: functions.php:200
+msgid "Idea"
+msgstr ""
+
+#: functions.php:201 functions.php:202
+msgid "Publish New Idea"
+msgstr ""
+
+#: functions.php:203
+msgid "Edit Idea"
+msgstr ""
+
+#: functions.php:204
+msgid "New Idea"
+msgstr ""
+
+#: functions.php:205
+msgid "View Idea"
+msgstr ""
+
+#: functions.php:206
+msgid "Search Idea"
+msgstr ""
+
+#: functions.php:207
+msgid "Not Found Idea"
+msgstr ""
+
+#: functions.php:208
+msgid "No Idea in the Trash"
+msgstr ""
+
+#: functions.php:307
+msgid "Copied!"
+msgstr ""
+
+#: functions.php:308
+msgid "Copy Code"
+msgstr ""
+
+#: functions.php:309
+msgid ""
+"Your cover API seems to not support Cross Origin Access. In this case, "
+"Cover Cache won't take effect."
+msgstr ""
+
+#: functions.php:310
+msgid "Commiting...."
+msgstr ""
+
+#: functions.php:311
+msgid "Succeed"
+msgstr ""
+
+#: functions.php:312
+msgid "10 files max per request"
+msgstr ""
+
+#: functions.php:313
+msgid ""
+"5 MB max per file.\n"
+"\n"
+"「{0}」\n"
+"\n"
+"This image is too large~Please reupload!"
+msgstr ""
+
+#: functions.php:314
+msgid "Uploading..."
+msgstr ""
+
+#: functions.php:315
+msgid "Uploaded successfully~"
+msgstr ""
+
+#: functions.php:316
+msgid ""
+"Upload failed!\n"
+"File Name=> {0}\n"
+"code=> {1}\n"
+"{2}"
+msgstr ""
+
+#: functions.php:317
+msgid "Upload failed, please retry."
+msgstr ""
+
+#: functions.php:318
+msgid "Page Load failed. HTTP {0}"
+msgstr ""
+
+#: functions.php:319
+msgid "Glad you come, but we've got nothing left."
+msgstr ""
+
+#: functions.php:406 inc/theme_plus.php:191 layouts/authorprofile.php:11
+msgid "Author"
+msgstr ""
+
+#: functions.php:406
+msgid "Blogger"
+msgstr ""
+
+#: functions.php:412
+msgid "Location"
+msgstr ""
+
+#: functions.php:418
+msgid "Private"
+msgstr ""
+
+#: functions.php:420
+msgid "Yes"
+msgstr ""
+
+#: functions.php:422
+msgid "No"
+msgstr ""
+
+#: functions.php:425
+msgid "Edit"
+msgstr ""
+
+#: functions.php:514
+msgid ""
+"Please install pulgin <a href=\"https://wordpress.org/plugins/wp-statistics/"
+"\" target=\"_blank\">WP-Statistics</a>"
+msgstr ""
+
+#: functions.php:544
+msgid "This guy is so lazy ╮(╯▽╰)╭"
+msgstr ""
+
+#: functions.php:1213
+msgid "All expand/collapse"
+msgstr ""
+
+#: functions.php:1234
+msgid " "
+msgstr ""
+
+#: functions.php:1238
+msgid " post(s)"
+msgstr ""
+
+#: functions.php:1261 functions.php:1264 inc/theme_plus.php:483
+msgid "Dashboard"
+msgstr ""
+
+#: functions.php:1492
+msgid "<b>ERROR</b>: This email domain (<b>@"
+msgstr ""
+
+#: functions.php:1591
+msgid "QQ"
+msgstr ""
+
+#: functions.php:1653
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:1783
+msgid ""
+"<b> For a better experience, please do not set <a href=\"/wp-admin/options-"
+"permalink.php\"> permalink </a> as plain. To do this, you may need to "
+"configure <a href=\"https://www.wpdaxue.com/wordpress-rewriterule.html\" "
+"target=\"_blank\"> pseudo-static </a>. </ b>"
+msgstr ""
+
+#: header.php:41
+#, php-format
+msgid "page %s "
+msgstr ""
+
+#: inc/categories-images.php:45 inc/categories-images.php:66
+msgid "category/tag image"
+msgstr ""
+
+#: inc/categories-images.php:48 inc/categories-images.php:68
+#: inc/categories-images.php:197
+msgid "add image"
+msgstr ""
+
+#: inc/categories-images.php:69 inc/categories-images.php:198
+msgid "remove image"
+msgstr ""
+
+#: inc/categories-images.php:211
+msgid "image"
+msgstr ""
+
+#: inc/categories-images.php:223
+msgid "no image"
+msgstr ""
+
+#: inc/classes/Cache.php:70 inc/theme_plus.php:723
+msgid "The comment is private"
+msgstr ""
+
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:65
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:72 tpl/content-page.php:35
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/theme_plus.php:61
+msgid " days ago"
+msgstr ""
+
+#: inc/theme_plus.php:62
+msgid " hours ago"
+msgstr ""
+
+#: inc/theme_plus.php:63
+msgid " minutes ago"
+msgstr ""
+
+#: inc/theme_plus.php:64
+msgid " seconds ago"
+msgstr ""
+
+#: inc/theme_plus.php:72
+msgid "Posted on "
+msgstr ""
+
+#: inc/theme_plus.php:131
+msgid "Please upgrade wordpress to version 4.4+"
+msgstr ""
+
+#: inc/theme_plus.php:237
+msgid "dashboard"
+msgstr ""
+
+#: inc/theme_plus.php:239
+msgid "home"
+msgstr ""
+
+#: inc/theme_plus.php:246
+msgid "Login successful, "
+msgstr ""
+
+#: inc/theme_plus.php:246
+msgid "seconds later automatically transfer to"
+msgstr ""
+
+#: inc/theme_plus.php:269
+msgid "Change avatar"
+msgstr ""
+
+#: inc/theme_plus.php:270
+msgid "Hello, "
+msgstr ""
+
+#: inc/theme_plus.php:274
+msgid "Home"
+msgstr ""
+
+#: inc/theme_plus.php:276
+msgid "Manage"
+msgstr ""
+
+#: inc/theme_plus.php:278
+msgid "Logout"
+msgstr ""
+
+#: inc/theme_plus.php:278
+msgid "Sign out? "
+msgstr ""
+
+#: inc/theme_plus.php:303 inc/theme_plus.php:358 inc/theme_plus.php:426
+#: tpl/content-single.php:20 tpl/single-image.php:18
+msgid "View"
+msgid_plural "Views"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/theme_plus.php:315 inc/theme_plus.php:373 inc/theme_plus.php:441
+#, php-format
+msgid "Search results for \" %s \""
+msgstr ""
+
+#: inc/theme_plus.php:421
+msgid "EDIT"
+msgstr ""
+
+#: inc/theme_plus.php:484
+msgid "New post"
+msgstr ""
+
+#: inc/theme_plus.php:486
+msgid "Profile"
+msgstr ""
+
+#: inc/theme_plus.php:487
+msgid "Sign out"
+msgstr ""
+
+#: layouts/post-nextprev.php:11
+msgid "Previous Post"
+msgstr ""
+
+#: layouts/post-nextprev.php:14
+msgid "Next Post"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "search result: %s"
+msgstr ""
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "NOTHING"
+msgstr ""
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "1 Comment"
+msgstr ""
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "Comments"
+msgstr ""
+
+#: tpl/content-category.php:31 tpl/content-image.php:36
+#: tpl/content-status.php:32 tpl/content-thumb.php:61 tpl/content.php:36
+msgid "Comment Closed"
+msgstr ""
+
+#: tpl/content-image.php:40 tpl/content-status.php:36 tpl/content-thumb.php:58
+#: tpl/content.php:40
+msgid "Hit"
+msgid_plural "Hits"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tpl/content-none.php:14
+msgid "There is nothing here！"
+msgstr ""
+
+#: tpl/content-none.php:21
+#, php-format
+msgid ""
+"Ready to post your first article? <a href=\"%1$s\">Click here to start</a>."
+msgstr ""
+
+#: tpl/content-none.php:25
+msgid "Didn't find what you want, look at the other ones."
+msgstr ""
+
+#: tpl/content-none.php:43
+msgid "We didn't seem to find what you want. Maybe you can search for it."
+msgstr ""
+
+#: tpl/content-page.php:24 tpl/content-single.php:29 tpl/single-image.php:28
+msgid "Pages:"
+msgstr ""
+
+#: user/page-bangumi.php:30 user/page-followVideos.php:29
+msgid "Please fill in the Bilibili UID in Sakura Options."
+msgstr ""
+
+#: user/page-login.php:18
+msgid "Remember_Me"
+msgstr ""
+
+#: user/page-register.php:14 user/page-register.php:16
+#: user/page-register.php:19 user/page-register.php:24
+#: user/page-register.php:26 user/page-register.php:29
+#: user/page-register.php:34 user/page-register.php:36
+#: user/page-register.php:43
+msgid "Error"
+msgstr ""
+
+#: user/page-register.php:14
+msgid "Please enter username."
+msgstr ""
+
+#: user/page-register.php:16
+msgid "Invalid characters, please enter a valid username."
+msgstr ""
+
+#: user/page-register.php:19
+msgid "This username has been registered."
+msgstr ""
+
+#: user/page-register.php:24
+msgid "Please enter email address."
+msgstr ""
+
+#: user/page-register.php:26
+msgid "Invalid email address."
+msgstr ""
+
+#: user/page-register.php:29
+msgid "This email address has been registered."
+msgstr ""
+
+#: user/page-register.php:34
+msgid "Password length is at least 6 digits."
+msgstr ""
+
+#: user/page-register.php:36
+msgid "Inconsistent password entered twice."
+msgstr ""
+
+#: user/page-register.php:43
+msgid "Unable to complete registration request...Please contact"
+msgstr ""
+
+#: user/page-register.php:43
+msgid "administrator"
+msgstr ""
+
+#: user/page-register.php:70
+msgid "Sign up"
+msgstr ""
+
+#: user/page-register.php:77
+msgid "Success! Redirecting......"
+msgstr ""
+
+#: user/page-register.php:82
+msgid "Registration is not open yet."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Sakurairo"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/mirai-mamori/Sakurairo"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A colorful, Easy-to-use, Perfect Experience, and Powerful Customizable "
+"WordPress Theme (Based on Theme Sakura)"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Created by Fuukei"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://iro.tw/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "文章模版"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "友情链接模版"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "说说模版"
+msgstr ""

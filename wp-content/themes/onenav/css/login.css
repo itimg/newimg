@@ -1,0 +1,79 @@
+/*!
+ * Theme Name:One Nav
+ * Theme URI:https://www.iotheme.cn/
+ * Author:iowen
+ * Author URI:https://www.iowen.cn/
+ */
+body{background:-o-linear-gradient(45deg,var(--bg-color-l),var(--bg-color-r));background:linear-gradient(45deg,var(--bg-color-l),var(--bg-color-r));height:100vh}
+a{text-decoration:none}
+a:visited{text-decoration:none}
+a:hover{text-decoration:none}
+a:active{text-decoration:none}
+.disabled{pointer-events:none;filter:grayscale(100%);-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:url("data:image/svg+xml;utf8,#grayscale");filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter:grayscale(1)}
+.login-page{position:relative}
+.login-page .container{min-height:100vh;padding:20px;position:relative}
+.login-page .form-holder{width:100%;margin-bottom:50px}
+.login-page .form-holder .info,.login-page .form-holder .form{min-height:450px;height:100%}
+.login-page .form-holder .info{background:rgba(241,64,75,.9);color:#fff;background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.login-page .form-holder .form .content{width:100%}
+.login-page .form-holder .form form{width:100%}
+.login-page .mr-n5{margin-right:-5.575rem!important}
+.login-page .nav-link{position:relative;color:#333}
+.login-page .nav-link:hover{color:#000}
+.login-page .nav-link::after{position:absolute;content:"";width:0px;height:5px;border-radius:5px;bottom:-5px;left:50%;background:#f1404b;box-shadow:0 1px 4px -1px #f1404b;transition:.3s}
+.login-page .nav-link:hover::after{width:8px;left:calc(50% - 4px)}
+.login-page .nav-link.active::after{width:40px;left:calc(50% - 20px)}
+.rounded-xl{border-radius:.525rem!important}
+button,input{outline:none !important}
+input.input-material{width:100%;border:none;border-bottom:1px solid rgba(136,136,136,.2);padding:.375rem 0;background:transparent;transition:.3s;letter-spacing:.115rem}
+input.input-material.is-invalid{border-color:#f1404b !important}
+input.input-material:focus{border-color:#f1404b}
+.btn-danger{color:color-yiq(#f1404b);background-color:#f1404b;border-color:#f1404b;box-shadow:0 6px 20px -5px #f1404b}
+.btn-danger:hover{color:color-yiq(#222);background-color:#222;border-color:#222;box-shadow:none}
+.btn-danger:focus,.btn-danger.focus{-webkit-box-shadow:0 0 0 0.2rem rgba(241,64,75,0.5);box-shadow:0 0 0 0.2rem rgba(241,64,75,0.5)}
+.btn-danger.disabled,.btn-danger:disabled{color:color-yiq(#f1404b);background-color:#f1404b;border-color:#f1404b}
+.btn-danger:not(:disabled):not(.disabled):active,.btn-danger:not(:disabled):not(.disabled).active,.show > .btn-danger.dropdown-toggle{color:color-yiq(#222);background-color:#222;border-color:#222}
+.btn-danger:not(:disabled):not(.disabled):active:focus,.btn-danger:not(:disabled):not(.disabled).active:focus,.show > .btn-danger.dropdown-toggle:focus{-webkit-box-shadow:0 0 0 0.2rem rgba(20,20,20,0.5);box-shadow:0 0 0 0.2rem rgba(20,20,20,0.5)}
+.btn-outline-danger{color:#f1404b;border-color:#f1404b}
+.btn-outline-danger:hover{color:#fff;background-color:#f1404b;border-color:#f1404b;box-shadow:0 6px 20px -5px #f1404b}
+.btn-outline-danger:focus,.btn-outline-danger.focus{box-shadow:0 0 0 0.2rem rgba(220,53,69,0.5)}
+.btn-outline-danger.disabled,.btn-outline-danger:disabled{color:#f1404b;background-color:transparent}
+.btn-outline-danger:not(:disabled):not(.disabled):active,.btn-outline-danger:not(:disabled):not(.disabled).active,.show > .btn-outline-danger.dropdown-toggle{color:#fff;background-color:#f1404b;border-color:#f1404b}
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus,.btn-outline-danger:not(:disabled):not(.disabled).active:focus,.show > .btn-outline-danger.dropdown-toggle:focus{box-shadow:0 0 0 0.2rem rgba(220,53,69,0.5)}
+.iconfont{display:inline-block;font-size:inherit;font-variant:normal;text-rendering:auto;line-height:1}
+.icon-spin{-webkit-animation:icon-spin 2s infinite linear;animation:icon-spin 2s infinite linear}
+.verification{position:relative}
+.btn-token{position:absolute;color:#888;background-color:rgba(136,136,136,.2);padding:3px 5px;top:.375rem;border-radius:5px;font-size:12px;right:0;transition:color .3s,background-color .3s;}
+.btn-token:hover{color:#222;background-color:rgba(156,156,156,.5);}
+@-webkit-keyframes icon-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
+}
+@keyframes icon-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
+}
+.signin-qrcode-img{max-width:100%}
+.io-wx-box{display:flex;justify-content:center}
+.io-wx-box .io-wx-input{display:initial;width:150px!important;font-size:inherit!important;margin:0!important}
+.io-wx-box .io-wx-btn{background: #2fc215;color:#fff;margin-top:0!important}
+.io-wx-box .io-wx-btn:hover{background: #24a00e;color:#fff}
+.footer-copyright{position:absolute;bottom:0;width:100%}
+.text-ss{font-size:.45rem!important}
+.text-xs{font-size:.75rem!important}
+.separator{display:block}
+.separator:after,.separator:before{content:"";background:rgba(136,136,136,.2);width:20%;vertical-align:middle;height:1px;display:inline-block;margin:0 1em}
+.openlogin-box{display:block;margin:0!important}
+.openlogin-box a{width:35px;height:35px;line-height:35px;text-align:center;display:inline-block;margin-right:10px;margin-left:10px;color:#fff;border-radius:30px;text-decoration:none;background:#0354da;transition:transform .2s ease-out}
+.openlogin-box a:hover{transform:scale(1.1)}
+.openlogin-box a.openlogin-weibo-a{background:#ff545a}
+.openlogin-box a.openlogin-wechat-a{background:#2fac1a}
+.openlogin-box a.openlogin-wechat-gzh-a,.openlogin-box a.openlogin-wechat-dyh-a{background:#2fc215}
+@media (max-width:767.98px){input.input-material{padding:5px 0}
+.btn-token{top:5px}
+}
+.io-black-mode{color:#ddd;background-color:#1b1d1f}
+.io-black-mode::before{content:"";position:absolute;width:100%;height:100%;background:rgba(0,0,0,.7);}
+.io-black-mode .login-img::before{content:"";position:absolute;width:100%;height:100%;top:0;left:0;border-radius:.525rem;background:rgba(0,0,0,.5);}
+.io-black-mode .bg-white{background-color:#2c2e2f!important}
+.io-black-mode .login-page .nav-link{color:#ccc}
+.io-black-mode .login-page .nav-link:hover{color:#fff}
+.io-black-mode .input-material{color:#ddd;}

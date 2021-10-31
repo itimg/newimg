@@ -1,0 +1,12 @@
+.notice.cx-notice.cx-plugin-notice {
+	border: 0px solid;
+	padding: 0;
+	line-height: 1;
+}
+.notice.cx-notice.cx-plugin-notice a:focus {
+	display: inherit;
+	box-shadow: 0 0 0 0;
+}
+.notice.cx-notice.cx-plugin-notice img {
+	max-width: 100%;
+}

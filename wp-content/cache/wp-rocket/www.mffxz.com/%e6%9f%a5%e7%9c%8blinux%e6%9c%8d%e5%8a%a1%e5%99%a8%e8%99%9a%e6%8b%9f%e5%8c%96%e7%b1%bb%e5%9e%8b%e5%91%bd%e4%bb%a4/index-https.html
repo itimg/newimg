@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>查看Linux服务器虚拟化类型命令 | 云梦泽</title>
+<meta name="theme-color" content="#f9f9f9" />
+<meta name="keywords" content="" />
+<meta name="description" content="通过lscpu命令查询    lscpu        &nbsp;    通过virt-what命令查询    先使用apt/yum install virt-what 命令安装 virt-what    sudo virt-what        &nbsp;" />
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/"/> 
+<meta property="og:title" content="查看Linux服务器虚拟化类型命令 | 云梦泽">
+<meta property="og:description" content="通过lscpu命令查询    lscpu        &nbsp;    通过virt-what命令查询    先使用apt/yum install virt-what 命令安装 virt-what    sudo virt-what        &nbsp;">
+<meta property="og:image" content="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg">
+<meta property="og:site_name" content="云梦泽">
+<link rel="shortcut icon" href="https://www.mffxz.com/wp-content/uploads/2021/08/161925.png">
+<link rel="apple-touch-icon" href="https://www.mffxz.com/wp-content/uploads/2021/08/161925-e1635064015167.png">
+
+<!-- 按排名排列的搜索引擎优化数学专业版 - https://s.rankmath.com/home -->
+<meta name="description" content="2021年10月31日 - 虚拟机隔离、独立于系统的其余部分，而且单个硬件（如服务器）上可以有多个虚拟机。您可以根据自己的需要在主机服务器之间移动这些虚拟机，更有效地利用资源，那么我们该如何查看linux服务器的虚拟化类型呢？"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="查看Linux服务器虚拟化类型命令 - 云梦泽" />
+<meta property="og:description" content="2021年10月31日 - 虚拟机隔离、独立于系统的其余部分，而且单个硬件（如服务器）上可以有多个虚拟机。您可以根据自己的需要在主机服务器之间移动这些虚拟机，更有效地利用资源，那么我们该如何查看linux服务器的虚拟化类型呢？" />
+<meta property="og:url" content="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/" />
+<meta property="og:site_name" content="云梦泽" />
+<meta property="article:section" content="Linux" />
+<meta property="og:updated_time" content="2021-10-24T13:36:01+08:00" />
+<meta property="og:image" content="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg" />
+<meta property="og:image:secure_url" content="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg" />
+<meta property="og:image:width" content="768" />
+<meta property="og:image:height" content="432" />
+<meta property="og:image:alt" content="查看Linux服务器虚拟化命令" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="查看Linux服务器虚拟化类型命令 - 云梦泽" />
+<meta name="twitter:description" content="2021年10月31日 - 虚拟机隔离、独立于系统的其余部分，而且单个硬件（如服务器）上可以有多个虚拟机。您可以根据自己的需要在主机服务器之间移动这些虚拟机，更有效地利用资源，那么我们该如何查看linux服务器的虚拟化类型呢？" />
+<meta name="twitter:image" content="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["Organization","Person"],"@id":"https://www.mffxz.com/#person","name":"\u4e91\u68a6\u6cfd","url":"https://www.yygbk.com","logo":{"@type":"ImageObject","@id":"https://www.mffxz.com/#logo","url":"https://www.mffxz.com/wp-content/uploads/2021/08/161925.png","caption":"\u4e91\u68a6\u6cfd","inLanguage":"zh-CN","width":"80","height":"80"},"image":{"@id":"https://www.mffxz.com/#logo"}},{"@type":"WebSite","@id":"https://www.mffxz.com/#website","url":"https://www.mffxz.com","name":"\u4e91\u68a6\u6cfd","publisher":{"@id":"https://www.mffxz.com/#person"},"inLanguage":"zh-CN"},{"@type":"ImageObject","@id":"https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg","url":"https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg","width":"2039","height":"1147","inLanguage":"zh-CN"},{"@type":"Person","@id":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#author","name":"\u4e91\u68a6\u6cfd","image":{"@type":"ImageObject","@id":"https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=96&amp;d=mm&amp;r=g","url":"https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=96&amp;d=mm&amp;r=g","caption":"\u4e91\u68a6\u6cfd","inLanguage":"zh-CN"},"sameAs":["http://www.gjkey.com"]},{"@type":"WebPage","@id":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#webpage","url":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/","name":"\u67e5\u770bLinux\u670d\u52a1\u5668\u865a\u62df\u5316\u7c7b\u578b\u547d\u4ee4 - \u4e91\u68a6\u6cfd","datePublished":"2021-07-30T15:24:35+08:00","dateModified":"2021-10-24T13:36:01+08:00","author":{"@id":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#author"},"isPartOf":{"@id":"https://www.mffxz.com/#website"},"primaryImageOfPage":{"@id":"https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg"},"inLanguage":"zh-CN"},{"@type":"NewsArticle","headline":"\u67e5\u770bLinux\u670d\u52a1\u5668\u865a\u62df\u5316\u7c7b\u578b\u547d\u4ee4 - \u4e91\u68a6\u6cfd","keywords":"\u67e5\u770bLinux\u670d\u52a1\u5668\u865a\u62df\u5316\u547d\u4ee4,\u865a\u62df\u5316\u7c7b\u578b,Linux\u865a\u62df\u5316\u7c7b\u578b","datePublished":"2021-07-30T15:24:35+08:00","dateModified":"2021-10-24T13:36:01+08:00","author":{"@id":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#author"},"publisher":{"@id":"https://www.mffxz.com/#person"},"description":"2021\u5e7410\u670831\u65e5 - \u865a\u62df\u673a\u9694\u79bb\u3001\u72ec\u7acb\u4e8e\u7cfb\u7edf\u7684\u5176\u4f59\u90e8\u5206\uff0c\u800c\u4e14\u5355\u4e2a\u786c\u4ef6\uff08\u5982\u670d\u52a1\u5668\uff09\u4e0a\u53ef\u4ee5\u6709\u591a\u4e2a\u865a\u62df\u673a\u3002\u60a8\u53ef\u4ee5\u6839\u636e\u81ea\u5df1\u7684\u9700\u8981\u5728\u4e3b\u673a\u670d\u52a1\u5668\u4e4b\u95f4\u79fb\u52a8\u8fd9\u4e9b\u865a\u62df\u673a\uff0c\u66f4\u6709\u6548\u5730\u5229\u7528\u8d44\u6e90\uff0c\u90a3\u4e48\u6211\u4eec\u8be5\u5982\u4f55\u67e5\u770blinux\u670d\u52a1\u5668\u7684\u865a\u62df\u5316\u7c7b\u578b\u5462\uff1f","copyrightYear":"2021","copyrightHolder":{"@id":"https://www.mffxz.com/#person"},"name":"\u67e5\u770bLinux\u670d\u52a1\u5668\u865a\u62df\u5316\u7c7b\u578b\u547d\u4ee4 - \u4e91\u68a6\u6cfd","@id":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#richSnippet","isPartOf":{"@id":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#webpage"},"image":{"@id":"https://www.mffxz.com/wp-content/uploads/2021/07/pcimg19.jpg"},"inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#webpage"}}]}</script>
+<!-- /排名 数学 单词 新闻 SEO 插件 -->
+
+
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.18.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+		<link rel='stylesheet' id='iconfont-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/iconfont.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome4-css'  href='//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/v4-shims.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/bootstrap.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='lightbox-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/jquery.fancybox.min.css?ver=3.1009' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://www.mffxz.com/wp-content/themes/onenav/css/style.min.css?ver=3.1009' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/jquery.min.js?ver=3.1009' id='jquery-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+/* <![CDATA[ */ 
+        function loadFunc(func) {var oldOnload = window.onload;if(typeof window.onload != "function"){window.onload = func;}else{window.onload = function(){oldOnload();func();}}} 
+        /* ]]> */
+</script>
+<link rel="alternate" type="application/json+oembed" href="https://www.mffxz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mffxz.com%2F%25e6%259f%25a5%25e7%259c%258blinux%25e6%259c%258d%25e5%258a%25a1%25e5%2599%25a8%25e8%2599%259a%25e6%258b%259f%25e5%258c%2596%25e7%25b1%25bb%25e5%259e%258b%25e5%2591%25bd%25e4%25bb%25a4%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.mffxz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mffxz.com%2F%25e6%259f%25a5%25e7%259c%258blinux%25e6%259c%258d%25e5%258a%25a1%25e5%2599%25a8%25e8%2599%259a%25e6%258b%259f%25e5%258c%2596%25e7%25b1%25bb%25e5%259e%258b%25e5%2591%25bd%25e4%25bb%25a4%2F&#038;format=xml" />
+<!-- Analytics by WP-Statistics v13.1 - https://wp-statistics.com/ -->
+<script>var WP_Statistics_http = new XMLHttpRequest();WP_Statistics_http.open('GET', 'https://www.mffxz.com/wp-json/wp-statistics/v2/hit?_=1635693246&_wpnonce=79df79be62&wp_statistics_hit_rest=yes&browser=未知&platform=未知&version=未知&referred=https://www.mffxz.com/{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E6{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}9F{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}A5{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E7{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}9C{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}8Blinux{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E6{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}9C{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}8D{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E5{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}8A{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}A1{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E5{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}99{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}A8{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E8{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}99{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}9A{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E6{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}8B{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}9F{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E5{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}8C{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}96{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E7{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}B1{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}BB{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E5{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}9E{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}8B{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E5{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}91{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}BD{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}E4{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}BB{03ab51e8992f71222fc1f5f57dd5aefe39d588b0ac58ce57025aa1165f240974}A4/&ip=75.119.139.141&exclusion_match=yes&exclusion_reason=CrawlerDetect&ua=WP Rocket/Preload&track_all=1&timestamp=1635722046&current_page_type=post&current_page_id=292&search_query&page_uri=/%E6%9F%A5%E7%9C%8Blinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B1%BB%E5%9E%8B%E5%91%BD%E4%BB%A4/&user_id=0', true);WP_Statistics_http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");WP_Statistics_http.send(null);</script>
+<link rel="amphtml" href="https://www.mffxz.com/%E6%9F%A5%E7%9C%8Blinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B1%BB%E5%9E%8B%E5%91%BD%E4%BB%A4/amp/"><!-- 自定义代码 -->
+<!-- end 自定义代码 -->
+</head> 
+<body class="post-template-default single single-post postid-292 single-format-standard io-grey-mode" >
+<script type="text/javascript">
+    var default_c = "io-grey-mode";
+    var night = document.cookie.replace(/(?:(?:^|.*;\s*)io_night_mode\s*\=\s*([^;]*).*$)|^.*$/, "$1"); 
+    if(night == "1"){
+        document.body.classList.remove("io-black-mode");
+        document.body.classList.add(default_c);
+    }else if(night == "0"){
+        document.body.classList.remove(default_c);
+        document.body.classList.add("io-black-mode");
+    }
+    </script> <div id="loading"><style> 
+.loader{position:absolute;top:50%;margin-left:-50px;left:50%;animation:speeder 0.4s linear infinite}
+.loader-text{position:absolute;text-transform:uppercase;left:50%;top:53%;margin-left:-20px}
+.loader>span{height:5px;width:35px;background:#000;position:absolute;top:-19px;left:60px;border-radius:2px 10px 1px 0}
+.base span{position:absolute;width:0;height:0;border-top:6px solid transparent;border-right:100px solid #000;border-bottom:6px solid transparent}
+.base span:before{content:"";height:22px;width:22px;border-radius:50%;background:#000;position:absolute;right:-110px;top:-16px}
+.base span:after{content:"";position:absolute;width:0;height:0;border-top:0 solid transparent;border-right:55px solid #000;border-bottom:16px solid transparent;top:-16px;right:-98px}
+.face{position:absolute;height:12px;width:20px;background:#000;border-radius:20px 20px 0 0;transform:rotate(-40deg);right:-125px;top:-15px}
+.face:after{content:"";height:12px;width:12px;background:#000;right:4px;top:7px;position:absolute;transform:rotate(40deg);transform-origin:50% 50%;border-radius:0 0 0 2px}
+.loader>span>span{width:30px;height:1px;background:#000;position:absolute;animation:fazer1 0.2s linear infinite}
+.loader>span>span:nth-child(2){top:3px;animation:fazer2 0.4s linear infinite}
+.loader>span>span:nth-child(3){top:1px;animation:fazer3 0.4s linear infinite;animation-delay:-1s}
+.loader>span>span:nth-child(4){top:4px;animation:fazer4 1s linear infinite;animation-delay:-1s}
+@keyframes fazer1{0%{left:0}
+100%{left:-80px;opacity:0}
+}@keyframes fazer2{0%{left:0}
+100%{left:-100px;opacity:0}
+}@keyframes fazer3{0%{left:0}
+100%{left:-50px;opacity:0}
+}@keyframes fazer4{0%{left:0}
+100%{left:-150px;opacity:0}
+}@keyframes speeder{0%{transform:translate(2px,1px) rotate(0deg)}
+10%{transform:translate(-1px,-3px) rotate(-1deg)}
+20%{transform:translate(-2px,0px) rotate(1deg)}
+30%{transform:translate(1px,2px) rotate(0deg)}
+40%{transform:translate(1px,-1px) rotate(1deg)}
+50%{transform:translate(-1px,3px) rotate(-1deg)}
+60%{transform:translate(-1px,1px) rotate(0deg)}
+70%{transform:translate(3px,1px) rotate(-1deg)}
+80%{transform:translate(-2px,-1px) rotate(1deg)}
+90%{transform:translate(2px,1px) rotate(0deg)}
+100%{transform:translate(1px,-2px) rotate(-1deg)}
+}.longfazers{position:absolute;width:100%;height:100%}
+.longfazers span{position:absolute;height:2px;width:20%;background:#000}
+.longfazers span:nth-child(1){top:20%;animation:lf 0.6s linear infinite;animation-delay:-5s}
+.longfazers span:nth-child(2){top:40%;animation:lf2 0.8s linear infinite;animation-delay:-1s}
+.longfazers span:nth-child(3){top:60%;animation:lf3 0.6s linear infinite}
+.longfazers span:nth-child(4){top:80%;animation:lf4 0.5s linear infinite;animation-delay:-3s}
+@keyframes lf{0%{left:200%}
+100%{left:-200%;opacity:0}
+}@keyframes lf2{0%{left:200%}
+100%{left:-200%;opacity:0}
+}@keyframes lf3{0%{left:200%}
+100%{left:-100%;opacity:0}
+}@keyframes lf4{0%{left:200%}
+100%{left:-100%;opacity:0}
+}
+.io-black-mode .loader>span{background:#f1404b}
+.io-black-mode .base span{border-right-color:#f1404b}
+.io-black-mode .base span:before{background:#f1404b}
+.io-black-mode .base span:after{border-right-color:#f1404b}
+.io-black-mode .face{background:#f1404b}
+.io-black-mode .face:after{background:#f1404b}
+.io-black-mode .loader>span>span{background:#f1404b}
+.io-black-mode .longfazers span{background:#f1404b}
+</style>
+<div class='loader'>
+  <span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+  <div class='base'>
+    <span></span>
+    <div class='face'></div>
+  </div>
+</div>
+<div class='longfazers'>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<p class="loader-text">LOADING</p>
+</div>   <div class="page-container">
+
+
+        <div id="sidebar" class="sticky sidebar-nav fade mini-sidebar">
+            <div class="modal-dialog h-100  sidebar-nav-inner">
+                <div class="sidebar-logo border-bottom border-color">
+                    <!-- logo -->
+                    <div class="logo overflow-hidden">
+                                                <a href="https://www.mffxz.com" class="logo-expanded">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/08/161925.png" height="40" class="logo-light" alt="云梦泽">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/08/161925.png" height="40" class="logo-dark d-none" alt="云梦泽">
+                        </a>
+                        <a href="https://www.mffxz.com" class="logo-collapsed">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" height="40" class="logo-light" alt="云梦泽">
+                            <img src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" height="40" class="logo-dark d-none" alt="云梦泽">
+                        </a>
+                    </div>
+                    <!-- logo end -->
+                </div>
+                <div class="sidebar-menu flex-fill">
+                    <div class="sidebar-scroll" >
+                        <div class="sidebar-menu-inner">
+                            <ul>
+                                                                <li class="sidebar-item top-menu">
+                                    <a href="javascript:;" class="  change-href">
+                                        <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                        <span>站点推荐</span>
+                                    </a>
+                                    <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                    <ul>
+                                                                            </ul>
+                                </li> 
+                                                                            <li class="sidebar-item">
+                                                <a href="https://www.mffxz.com" target="">
+                                                    <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                    <span>首页</span>
+                                                </a>
+                                            </li> 
+                                                                                <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-133" class="" data-change="https://www.mffxz.com/#term-133">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>ACGLN</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-43" class=""><span>常用</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-132" class=""><span>动漫</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-134" class=""><span>漫画</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-135" class=""><span>轻小说</span></a>
+                                                </li>
+                                                                                        </ul>
+                                        </li>
+                                                                        <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-20" class="" data-change="https://www.mffxz.com/#term-20">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>活动促销</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-21" class=""><span>游戏活动</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-26" class=""><span>虚拟物品</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-27" class=""><span>实体物品</span></a>
+                                                </li>
+                                                                                        </ul>
+                                        </li>
+                                                                        <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-1" class="" data-change="https://www.mffxz.com/#term-1">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>建站相关</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-6" class=""><span>实用教程</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-19" class=""><span>常用脚本</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-13" class=""><span>CDN</span></a>
+                                                </li>
+                                             
+                                                <li>
+                                                    <a href="https://www.mffxz.com/#term-14" class=""><span>VPS</span></a>
+                                                </li>
+                                                                                        </ul>
+                                        </li>
+                                                                        <li class="sidebar-item">
+                                                                                        <a href="https://www.mffxz.com/#term-8" class="" data-change="https://www.mffxz.com/#term-8">
+                                                <i class="iconfont icon-category icon-fw icon-lg mr-2"></i>
+                                                <span>其他</span>
+                                            </a>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                            <ul >
+                                                                                            <li>
+                                                    <a href="https://tz.ttt.bz/" target="">
+                                                        <span>探针</span>
+                                                    </a>
+                                                </li> 
+                                                                                                <li>
+                                                    <a href="https://www.mffxz.com/mibiao" target="">
+                                                        <span>米表</span>
+                                                    </a>
+                                                </li> 
+                                                                                            </ul>
+                                        </li>
+                                 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top py-2 border-color">
+                    <div class="flex-bottom">
+                        <ul> 
+                            Array 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content flex-fill page">
+		<div id="header" class="page-header sticky">
+			<div class="navbar navbar-expand-md">
+                <div class="container-fluid p-0">
+
+                    <a href="https://www.mffxz.com" class="navbar-brand d-md-none" title="云梦泽">
+						<img width="36" height="36" src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" class="logo-light" alt="云梦泽">
+						<img width="36" height="36" src="https://www.mffxz.com/wp-content/uploads/2021/10/1635067190827.png" class="logo-dark d-none" alt="云梦泽">
+                    </a>
+                    
+                    <div class="collapse navbar-collapse order-2 order-md-1">
+                        <div class="header-mini-btn">
+                            <label>
+                                <input id="mini-button" type="checkbox" >
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> 
+                                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55"></path>
+                                    <path class="line--2" d="M0 50h80"></path>
+                                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45"></path>
+                                </svg>
+                            </label>
+                        
+                        </div>
+                        						<ul class="navbar-nav site-menu mr-4">
+                             
+						</ul>
+                    </div>
+                    
+                    <ul class="nav navbar-menu text-xs order-1 order-md-2">
+                                                                        						<li class="nav-item d-md-none mobile-menu ml-3 ml-md-4">
+							<a href="javascript:" id="sidebar-switch" data-toggle="modal" data-target="#sidebar"><i class="iconfont icon-classification icon-2x"></i></a>
+						</li>
+                    </ul>
+				</div>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+<div id="content" class="container my-3 my-md-4">
+    <nav class="text-xs mb-3 mb-md-4"  aria-label="breadcrumb"><i class="iconfont icon-home"></i> <a class="crumbs" href="https://www.mffxz.com/">首页</a><i class="text-danger px-1">•</i><a href="https://www.mffxz.com/websiterelated/">建站相关</a><i class="text-danger px-1">•</i><a href="https://www.mffxz.com/websiterelated/tutorials/">实用教程</a><i class="text-danger px-1">•</i><a href="https://www.mffxz.com/websiterelated/tutorials/linux/" rel="category tag">Linux</a><i class="text-danger px-1">•</i><span aria-current="page">查看Linux服务器虚拟化类型命令</span></nav>    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel card">
+            <div class="card-body">
+                <div class="panel-header mb-4">
+                                        <h1 class="h3 mb-3">查看Linux服务器虚拟化类型命令</h1>
+                    <div class="d-flex flex-fill text-muted text-sm pb-4 border-bottom border-t">
+                    <span class="mr-3 d-none d-sm-block"><a href="https://www.mffxz.com/websiterelated/tutorials/linux/"><i class="iconfont icon-classification"></i> Linux</a></span>                    <span class="mr-3 d-none d-sm-block"><i class="iconfont icon-time"></i> 3个月前</span>
+                    <span class="mr-3"><a href="https://www.mffxz.com/author/1/" title="云梦泽"><i class="iconfont icon-user-circle"></i> 云梦泽</a></span>
+                    <div class="flex-fill"></div>
+                                        <span class="mr-3"><a class="smooth-n" href="#comments"> <i class="iconfont icon-comment"></i> 0</a></span>
+                    
+                <span class="mr-3"><a class="btn-like btn-link-like " href="javascript:;" data-action="post_like" data-id="292"><i class="iconfont icon-like"></i> <span class="like-count">0</span></a></span>                    </div>
+                </div>
+                                <div class="panel-body single mt-2"> 
+                    <p><!-- wp:heading --></p>
+<h2 id="h-"></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:heading --></p>
+<h2 id="h-lscpu">通过lscpu命令查询</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>lscpu</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":295,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img width="1953" height="511" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/屏幕截图-2021-07-30-152740.png" src="https://www.mffxz.com/wp-content/themes/onenav/images/t.png" alt="" class="wp-image-295" title="查看Linux服务器虚拟化类型命令 2021 07 30 152740 查看Linux服务器虚拟化命令,虚拟化类型,Linux虚拟化类型"><figcaption>查看Linux服务器虚拟化类型命令 1</figcaption></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>&nbsp;</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2 id="h-virt-what">通过virt-what命令查询</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>先使用apt/yum install virt-what 命令安装 virt-what</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>sudo virt-what</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":296,"sizeSlug":"full","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-full"><img width="388" height="42" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/屏幕截图-2021-07-30-153249.png" src="https://www.mffxz.com/wp-content/themes/onenav/images/t.png" alt="" class="wp-image-296" title="查看Linux服务器虚拟化类型命令 2021 07 30 153249 查看Linux服务器虚拟化命令,虚拟化类型,Linux虚拟化类型"><figcaption>查看Linux服务器虚拟化类型命令 2</figcaption></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>&nbsp;</p>
+<p><!-- /wp:paragraph --></p>
+                                    </div>
+            
+                <div class="tags my-2">
+                                    </div>
+                                 
+                            </div>
+            </div>
+            <div class="single-top-area text-sm card mt-4">
+                    
+                <div class="card-body"> 
+                    <strong>版权声明：</strong><a href="https://www.mffxz.com/author/1/" title="云梦泽">云梦泽</a> 发表于 2021年7月30日 下午3:24。<br/>
+                    <strong>转载请注明：</strong><a href="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/" rel="bookmark" title="本文固定链接 https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/">查看Linux服务器虚拟化类型命令 | 云梦泽</a>
+                </div>
+                    
+            </div>
+            <div class="near-navigation rounded mt-4 py-2">
+                                                <div class="nav previous border-right border-color">
+                    <a class="near-permalink" href="https://www.mffxz.com/%e8%85%be%e8%ae%af%e4%ba%91%e8%bd%bb%e9%87%8f%e5%ba%94%e7%94%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%b3%e9%97%ad%e7%9b%91%e6%8e%a7%e7%a8%8b%e5%ba%8f/">
+                    <span>上一篇</span>
+                    <h4 class="near-title">腾讯云轻量应用服务器关闭监控程序</h4>
+                    </a>
+                </div>
+                                                <div class="nav next border-left border-color">
+                    <a class="near-permalink" href="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/">
+                    <span>下一篇</span>
+                    <h4 class="near-title">自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则</h4>
+                </a>
+                </div>
+                            </div>
+            <h4 class="text-gray text-lg my-4"><i class="site-tag iconfont icon-book icon-lg mr-1" ></i>相关文章</h4>
+            <div class="row mb-n4 customize-site"> 
+                                <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/%e8%85%be%e8%ae%af%e4%ba%91%e8%bd%bb%e9%87%8f%e5%ba%94%e7%94%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%b3%e9%97%ad%e7%9b%91%e6%8e%a7%e7%a8%8b%e5%ba%8f/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg56.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/%e8%85%be%e8%ae%af%e4%ba%91%e8%bd%bb%e9%87%8f%e5%ba%94%e7%94%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%b3%e9%97%ad%e7%9b%91%e6%8e%a7%e7%a8%8b%e5%ba%8f/" target="_blank" class="list-title text-md overflowClip_2">
+                        腾讯云轻量应用服务器关闭监控程序                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/%e8%85%be%e8%ae%af%e4%ba%91%e8%bd%bb%e9%87%8f%e5%ba%94%e7%94%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%b3%e9%97%ad%e7%9b%91%e6%8e%a7%e7%a8%8b%e5%ba%8f/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/ubuntu%e5%ae%89%e8%a3%85vnc%e5%92%8c%e5%9b%be%e5%83%8f%e5%8c%96%e6%a1%8c%e9%9d%a2/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg44-scaled.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/ubuntu%e5%ae%89%e8%a3%85vnc%e5%92%8c%e5%9b%be%e5%83%8f%e5%8c%96%e6%a1%8c%e9%9d%a2/" target="_blank" class="list-title text-md overflowClip_2">
+                        Ubuntu安装vnc和图像化桌面                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/ubuntu%e5%ae%89%e8%a3%85vnc%e5%92%8c%e5%9b%be%e5%83%8f%e5%8c%96%e6%a1%8c%e9%9d%a2/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/%e7%94%b2%e9%aa%a8%e6%96%87vps%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/屏幕截图-2021-05-16-142024.png"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/%e7%94%b2%e9%aa%a8%e6%96%87vps%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/" target="_blank" class="list-title text-md overflowClip_2">
+                        甲骨文VPS使用教程                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/%e7%94%b2%e9%aa%a8%e6%96%87vps%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/ubuntu-%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%af%ad%e8%a8%80%e5%8c%85/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/07/pcimg45.jpg"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/ubuntu-%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%af%ad%e8%a8%80%e5%8c%85/" target="_blank" class="list-title text-md overflowClip_2">
+                        Ubuntu安装中文语言包                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/ubuntu-%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%af%ad%e8%a8%80%e5%8c%85/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                            <div class="col-6 col-md-4">
+                   
+    		<div class="card-post list-item">
+                <div class="media media-4x3 p-0 rounded">
+                                        <a class="media-content" href="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/" target="_blank" data-src="https://www.mffxz.com/wp-content/uploads/2021/10/MMVDU4XXJVQOSIDBFXY.png"></a>
+                                    </div>
+                <div class="list-content">
+                    <div class="list-body">
+                        <a href="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/" target="_blank" class="list-title text-md overflowClip_2">
+                        自建Clash订阅转换，Sub-Web前端搭建教程+SubConverter后端搭建教程，更换ACL4SSR远程规则                        </a>
+                    </div>
+                    <div class="list-footer">
+                        <div class="d-flex flex-fill align-items-center">
+                            <a href="https://www.mffxz.com/author/1/" class="flex-avatar mr-1" target="_blank">
+                            <img alt="Avatar of 云梦泽" src="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=20&#038;d=mm&#038;r=g" srcset="https://sdn.geekzu.org/avatar/7adec88fe0b710d2caab122497b22152?s=40&#038;d=mm&#038;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy">               
+                            </a>
+                            <a href="https://www.mffxz.com/author/1/" class="d-none d-md-inline-block text-xs" target="_blank">云梦泽</a>
+                            <div class="flex-fill"></div>
+                            <div class="text-muted text-xs">
+                                                                                                <a href="https://www.mffxz.com/%e8%87%aa%e5%bb%baclash%e8%ae%a2%e9%98%85%e8%bd%ac%e6%8d%a2sub-web%e5%89%8d%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b%e5%92%8csubconverter%e5%90%8e%e7%ab%af%e6%90%ad%e5%bb%ba%e6%95%99%e7%a8%8b/"><i class="iconfont icon-heart mr-1"></i>0</a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>								
+
+                </div>
+                        </div>
+            
+<!-- comments -->
+<div id="comments" class="comments">
+	<h2 id="comments-list-title" class="comments-title h5 mx-1 my-4">
+		<i class="iconfont icon-comment"></i>
+		<span class="noticom">
+			<a href="https://www.mffxz.com/%e6%9f%a5%e7%9c%8blinux%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e5%8c%96%e7%b1%bb%e5%9e%8b%e5%91%bd%e4%bb%a4/#respond" class="comments-title" >暂无评论</a> 
+		</span>
+	</h2> 
+	<div class="card">
+		<div class="card-body"> 
+						<div id="respond_box">
+				<div id="respond" class="comment-respond">
+										<form action="https://www.mffxz.com/wp-comments-post.php" method="post" id="commentform" class="text-sm mb-4">	
+						<div class="visitor-avatar d-flex flex-fill mb-2">
+														<img width="82" height="82" class="v-avatar rounded-circle" src="https://www.mffxz.com/wp-content/themes/onenav/images/gravatar.jpg">
+													</div> 
+						<div class="comment-textarea mb-3">
+							<textarea name="comment" id="comment" class="form-control" placeholder="输入评论内容..." tabindex="4" cols="50" rows="3"></textarea>
+						</div>
+							
+						<div id="comment-author-info" class="row  row-sm">
+							<div class="col-sm-6 col-lg-4 mb-3"><input type="text" name="author" id="author" class="form-control" value="" size="22" placeholder="昵称" tabindex="2"/></div>	
+							<div class="col-sm-6 col-lg-4 mb-3"><input type="text" name="email" id="email" class="form-control" value="" size="22" placeholder="邮箱" tabindex="3" /></div>
+							<div class="col-sm-12 col-lg-4 mb-3"><input type="text" name="url" id="url" class="form-control" value="" size="22"placeholder="网址"  tabindex="4" /></div>
+						</div>
+																		<div class="com-footer text-right">
+							<input type="hidden" id="_wpnonce" name="_wpnonce" value="d679ee7f10" /><input type="hidden" name="_wp_http_referer" value="/%E6%9F%A5%E7%9C%8Blinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B1%BB%E5%9E%8B%E5%91%BD%E4%BB%A4/" />							<a rel="nofollow" id="cancel-comment-reply-link" style="display: none;" href="javascript:;" class="btn btn-light custom_btn-outline mx-2">再想想</a>
+														<input class="btn btn-dark custom_btn-d" name="submit" type="submit" id="submit" tabindex="5" value="发表评论"/>
+														<input type='hidden' name='comment_post_ID' value='292' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</div>
+					</form>
+										<div class="clear"></div>
+									</div>
+			</div>	
+						<div id="loading-comments"><span></span></div>
+						<div class="not-comment card"><div class="card-body nothing text-center color-d">暂无评论...</div></div>
+					
+		</div>	
+	</div>
+</div><!-- comments end -->
+        </div> 
+        <div class="sidebar sidebar-tools col-lg-4 pl-xl-4 d-none d-lg-block">
+            
+
+	
+						<div id="add-widgets" class="card widget_text bk">
+				
+				<div class="card-header">
+					<span><i class="iconfont icon-category mr-2"></i>添加小工具</span>
+				</div>
+				<div class="card-body text-sm">
+					<a href="https://www.mffxz.com/wp-admin/widgets.php" target="_blank">点此为“正文侧边栏”添加小工具</a>
+				</div>
+			</div>
+			
+	
+        </div>
+    </div> 
+</div>
+             
+            <footer class="main-footer footer-type-1 text-xs">
+                <div id="footer-tools" class="d-flex flex-column">
+                    <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
+                        <i class="iconfont icon-to-up"></i>
+                    </a>
+                                                                                <a href="javascript:" id="switch-mode" class="btn rounded-circle switch-dark-mode m-1" data-toggle="tooltip" data-placement="left" title="夜间模式">
+                        <i class="mode-ico iconfont icon-light"></i>
+                    </a>
+                </div>
+                <div class="footer-inner">
+                    <div class="footer-text">
+                                                Copyright © 2021 云梦泽  
+                                                &nbsp;&nbsp;Designed by <a href="https://www.iotheme.cn" target="_blank"><strong>一为</strong></a>&nbsp;&nbsp;                                            </div>
+                </div>
+            </footer>
+                    </div><!-- main-content end -->
+    </div><!-- page-container end -->
+<script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.mffxz.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/clipboard.min.js?ver=3.1009' id='clipboard-mini-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/popper.min.js?ver=3.1009' id='popper-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/bootstrap.min.js?ver=3.1009' id='bootstrap-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/theia-sticky-sidebar.js?ver=3.1009' id='sidebar-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/lazyload.min.js?ver=3.1009' id='lazyload-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/jquery.fancybox.min.js?ver=3.1009' id='lightbox-js-js'></script>
+<script type='text/javascript' id='appjs-js-extra'>
+/* <![CDATA[ */
+var theme = {"ajaxurl":"https:\/\/www.mffxz.com\/wp-admin\/admin-ajax.php","addico":"https:\/\/www.mffxz.com\/wp-content\/themes\/onenav\/images\/add.png","order":"asc","formpostion":"top","defaultclass":"io-grey-mode","isCustomize":"1","icourl":"https:\/\/api.iowen.cn\/favicon\/","icopng":".png","urlformat":"1","customizemax":"10","newWindow":"1","lazyload":"1","minNav":"1","loading":"1","hotWords":"baidu","classColumns":" col-sm-6 col-md-4 col-xl-5a col-xxl-6a ","apikey":"TWpBeU1USTJNemd4TWpZM0d6RS9oYkhWSE9UVjNiM1puU2xWck0xQjJNRnB6YmpaTWFsSTJaVWhsZFRoTg==","isHome":"","version":"3.1009"};
+var localize = {"liked":"\u60a8\u5df2\u7ecf\u8d5e\u8fc7\u4e86!","like":"\u8c22\u8c22\u70b9\u8d5e!","networkerror":"\u7f51\u7edc\u9519\u8bef --.","selectCategory":"\u4e3a\u4ec0\u4e48\u4e0d\u9009\u5206\u7c7b\u3002","addSuccess":"\u6dfb\u52a0\u6210\u529f\u3002","timeout":"\u8bbf\u95ee\u8d85\u65f6\uff0c\u8bf7\u518d\u8bd5\u8bd5\uff0c\u6216\u8005\u624b\u52a8\u586b\u5199\u3002","lightMode":"\u65e5\u95f4\u6a21\u5f0f","nightMode":"\u591c\u95f4\u6a21\u5f0f","editBtn":"\u7f16\u8f91","okBtn":"\u786e\u5b9a","urlExist":"\u8be5\u7f51\u5740\u5df2\u7ecf\u5b58\u5728\u4e86 --.","cancelBtn":"\u53d6\u6d88","successAlert":"\u6210\u529f","infoAlert":"\u4fe1\u606f","warningAlert":"\u8b66\u544a","errorAlert":"\u9519\u8bef","extractionCode":"\u7f51\u76d8\u63d0\u53d6\u7801\u5df2\u590d\u5236\uff0c\u70b9\u201c\u786e\u5b9a\u201d\u8fdb\u5165\u4e0b\u8f7d\u9875\u9762\u3002"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/app.min.js?ver=3.1009' id='appjs-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-includes/js/comment-reply.min.js?ver=5.8.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-content/themes/onenav/js/comments-ajax.js?ver=3.1009' id='comments-ajax-js'></script>
+<script type='text/javascript' src='https://www.mffxz.com/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+ 
+<!-- 自定义代码 -->
+<!-- end 自定义代码 -->
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1635693247 -->

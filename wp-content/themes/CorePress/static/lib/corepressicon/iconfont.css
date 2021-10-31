@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "corepress";
+    src: url('iconfont.woff2?t=1626746726634') format('woff2'),
+    url('iconfont.woff?t=1626746726634') format('woff');
+}
+.corepress-iconfont {
+    font-family: "corepress" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dashicons-icon-corepress:before {
+    font-family: "corepress" !important;
+    content: "\e678";
+}
+
+div[id*=_corepress_] .widget-title h3:before {
+    font-family: "corepress" !important;
+    margin-right: 5px;
+    content: "\e678";
+    color: #409EFF;
+    vertical-align: text-bottom;
+    opacity: .7;
+}

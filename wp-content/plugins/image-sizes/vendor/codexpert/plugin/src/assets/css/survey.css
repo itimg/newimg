@@ -1,0 +1,28 @@
+.notice.cx-notice {
+    border: 1px solid #f1f1f1;
+    padding: 20px;
+}
+.notice .cx-notice-content h3 {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+p.cx-notice-btn-wrapper {
+    margin: 0;
+}
+.cx-notice-btn-wrapper .cx-notice-btn {
+    display: inline-block;
+    padding: 0.75em;
+    background-color: #4c3f93;
+    transition: 0.4s;
+    border-color: #4c3f93;
+    outline: 0;
+}
+.cx-notice-btn-wrapper .cx-notice-btn:hover {
+    background-color: #554d82;
+}
+.cx-notice-img {
+    float: left;
+    height: 105px;
+    margin-right: 10px;
+}
